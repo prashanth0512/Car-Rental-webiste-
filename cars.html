@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Our Cars & Vehicle Fleet | VELOCE LUXURY FLEET — Find Your Perfect Drive</title>
+  <meta name="description" content="Explore VELOCE's curated collection of 12 premium self-drive vehicles. Hatchbacks, sedans, luxury SUVs, and executive cruisers ready for every journey.">
+  <meta name="keywords" content="car rental fleet, self-drive cars, luxury SUV hire, Innova Crysta rental, Fortuner self-drive, BMW 3 Series rental, Mercedes C-Class">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="cars.css">
+</head>
+<body class="cars-page">
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+      <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+        <div class="logo-icon-wrap">
+          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VELOCE</span>
+          <span class="brand-sub">LUXURY FLEET</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link" id="homeDropdownBtn" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu" id="homeDropdownMenu">
+              <li>
+                <a href="index.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 1 - Red Dynamic</span>
+                    <span class="dropdown-desc">Cinematic curves & floating fleet hero</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home2.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 2 - Minimal Luxury</span>
+                    <span class="dropdown-desc">Monochrome elegance & travel stories</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="cars.html" class="nav-link active">Our Cars</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link" id="navDashboardBtn">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <button type="button" class="action-btn dir-toggle" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+          <span class="dir-text" id="dirText">RTL</span>
+        </button>
+
+        <button type="button" class="action-btn theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-primary header-login-btn" id="loginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login</span>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-name">VELOCE</span>
+        <span class="brand-sub">LUXURY FLEET</span>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <div class="mobile-dropdown-header" id="mobileHomeDropdown">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul class="mobile-sub-menu" id="mobileHomeSubmenu">
+            <li><a href="index.html" class="mobile-link">Home 1 - Red Dynamic</a></li>
+            <li><a href="home2.html" class="mobile-link">Home 2 - Minimal Luxury</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item"><a href="about.html" class="mobile-link">About Us</a></li>
+        <li class="mobile-nav-item"><a href="cars.html" class="mobile-link active">Our Cars</a></li>
+        <li class="mobile-nav-item"><a href="pricing.html" class="mobile-link">Pricing &amp; Plans</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-link">Contact</a></li>
+        <li class="mobile-nav-item"><a href="dashboard.html" class="mobile-link" id="mobileDashboardBtn">Customer Dashboard</a></li>
+      </ul>
+
+      <div class="mobile-drawer-actions">
+        <div class="mobile-settings-row">
+          <button type="button" class="action-btn mobile-dir-btn" id="mobileDirToggle">
+            <span id="mobileDirText">Switch to RTL</span>
+          </button>
+          <button type="button" class="action-btn mobile-theme-btn" id="mobileThemeToggle">
+            <i class="fa-solid fa-moon"></i>
+            <span id="mobileThemeText">Dark Mode</span>
+          </button>
+        </div>
+        <a href="login.html" class="btn btn-primary w-100 mobile-login-btn" id="mobileLoginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login / Register</span>
+        </a>
+      </div></div>
+  </aside>
+
+  <main id="mainContent">
+
+        <section class="cars-hero-section" id="cars-hero">
+
+      <div class="cars-hero-bg-stage" aria-hidden="true">
+        <div class="cars-stage-radial-glow"></div>
+        <div class="cars-stage-grid-lines"></div>
+        <div class="cars-stage-ellipse-floor"></div>
+      </div>
+
+      <div class="section-container cars-hero-container">
+
+        <div class="cars-hero-header text-center">
+
+          <div class="cars-hero-tag">
+            <span class="cars-tag-pulse"></span>
+            <span class="cars-tag-text">VELOCE FLEET COLLECTION // 2026</span>
+          </div>
+
+          <h1 class="cars-hero-title">
+            Explore The <span class="cars-title-accent">Ultimate Fleet.</span>
+          </h1>
+
+          <p class="cars-hero-lead">
+            Curated precision engineering and peerless prestige. Discover our collection of hand-picked self-drive vehicles tailored for extraordinary escapes and corporate touring.
+          </p>
+
+          <div class="cars-hero-ctas">
+            <a href="#fleet-collection" class="btn btn-primary cars-cta-primary">
+              <span>Explore Fleet Grid</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#philosophy" class="btn btn-secondary cars-cta-secondary">
+              <span>Driving Philosophy</span>
+              <i class="fa-solid fa-compass"></i>
+            </a>
+          </div>
+
+          <div class="cars-hero-metrics-pill">
+            <div class="hero-metric-cell">
+              <strong>14+</strong>
+              <span>Curated Vehicles</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="hero-metric-cell">
+              <strong>0 Deposit</strong>
+              <span>Fast Track Booking</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="hero-metric-cell">
+              <strong>24/7</strong>
+              <span>Concierge Delivery</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="cars-fan-stage" id="carsFanStage" aria-label="5-Vehicle Interactive Showcase">
+
+          <div class="cars-stage-shadow"></div>
+
+          <div class="fan-car-item car-outer-left" data-car="jeep-green" title="Jeep Cherokee 4x4 Emerald">
+            <div class="fan-car-shadow"></div>
+            <img src="assets/hero-jeep-green.png" alt="Jeep Cherokee 4x4 Emerald" class="fan-car-img" loading="eager">
+            <div class="fan-car-tooltip">
+              <span class="tooltip-badge">4x4 All-Terrain</span>
+              <span class="tooltip-name">Jeep Cherokee 4x4</span>
+            </div>
+          </div>
+
+          <div class="fan-car-item car-inner-left" data-car="thar" title="Mahindra Thar 4x4 Fiery Red">
+            <div class="fan-car-shadow"></div>
+            <img src="assets/hero-thar-red.png" alt="Mahindra Thar 4x4 Fiery Red" class="fan-car-img" loading="eager">
+            <div class="fan-car-tooltip">
+              <span class="tooltip-badge text-primary">Off-Road Legend</span>
+              <span class="tooltip-name">Mahindra Thar 4x4</span>
+            </div>
+          </div>
+
+          <div class="fan-car-item car-center" data-car="jeep-black" title="Jeep Grand Cherokee Trackhawk">
+            <div class="fan-car-shadow"></div>
+            <img src="assets/hero-jeep-black.png" alt="Jeep Grand Cherokee Trackhawk Midnight" class="fan-car-img" loading="eager">
+            <div class="fan-car-tooltip">
+              <span class="tooltip-badge text-primary">Fleet Flagship</span>
+              <span class="tooltip-name">Jeep Grand Cherokee</span>
+            </div>
+          </div>
+
+          <div class="fan-car-item car-inner-right" data-car="jeep-orange" title="Jeep Renegade Trailhawk Orange">
+            <div class="fan-car-shadow"></div>
+            <img src="assets/hero-jeep-orange.png" alt="Jeep Renegade Trailhawk Orange" class="fan-car-img" loading="eager">
+            <div class="fan-car-tooltip">
+              <span class="tooltip-badge">Adventure Compact</span>
+              <span class="tooltip-name">Jeep Renegade Trailhawk</span>
+            </div>
+          </div>
+
+          <div class="fan-car-item car-outer-right" data-car="jeep-white" title="Jeep Grand Cherokee Summit Pearl White">
+            <div class="fan-car-shadow"></div>
+            <img src="assets/hero-jeep-white.png" alt="Jeep Grand Cherokee Summit Pearl White" class="fan-car-img" loading="eager">
+            <div class="fan-car-tooltip">
+              <span class="tooltip-badge">Luxury Touring</span>
+              <span class="tooltip-name">Jeep Grand Cherokee Summit</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="cars-collection-section" id="fleet-collection">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">SELECT YOUR VEHICLE</span>
+          <h2 class="section-heading">Explore Our Premium Fleet</h2>
+          <p class="section-subtitle">
+            Choose the right vehicle for your lifestyle, travel plans, and budget. Transparent pricing with zero hidden charges.
+          </p>
+        </div>
+
+        <div class="fleet-control-bar">
+
+          <div class="fleet-search-wrap">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="fleetSearchInput" class="fleet-search-input" placeholder="Search vehicle by name, category, or fuel..." aria-label="Search vehicles">
+            <button type="button" id="fleetSearchClear" class="search-clear-btn" aria-label="Clear search" style="display: none;">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="fleet-bar-right">
+            <div class="fleet-counter" id="fleetCount">
+              Showing <strong id="visibleCarCount">14</strong> of <strong>14</strong> Vehicles
+            </div>
+
+            <button type="button" class="btn btn-secondary fleet-filter-trigger" id="mobileFilterOpenBtn">
+              <i class="fa-solid fa-filter"></i>
+              <span>Filter Your Ride</span>
+              <span class="filter-count-badge" id="activeFilterBadge" style="display: none;">0</span>
+            </button>
+
+            <div class="fleet-sort-wrap">
+              <label for="fleetSortSelect" class="sort-label"><i class="fa-solid fa-arrow-down-short-wide"></i> Sort:</label>
+              <select id="fleetSortSelect" class="fleet-sort-select" aria-label="Sort vehicle collection">
+                <option value="recommended">Recommended</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="fleet-layout">
+
+          <aside class="fleet-sidebar" id="fleetSidebar" aria-label="Vehicle Filters">
+            <div class="sidebar-header">
+              <div class="sidebar-title-wrap">
+                <i class="fa-solid fa-filter text-primary"></i>
+                <h3 class="sidebar-title">Filter Your Ride</h3>
+              </div>
+              <button type="button" class="clear-all-btn" id="clearAllFiltersBtn" title="Reset all applied filters">
+                <span>Clear All</span>
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+            </div>
+
+            <div class="filter-group">
+              <button type="button" class="filter-group-header" aria-expanded="true">
+                <span>Travel Purpose</span>
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+              <div class="filter-group-body">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="purpose" value="Family">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Family</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="purpose" value="Friends">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Friends</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="purpose" value="Business Travel">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Business Travel</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="purpose" value="Special Occasions">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Special Occasions</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="purpose" value="Weekend Getaways">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Weekend Getaways</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="purpose" value="Long Road Trips">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Long Road Trips</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <button type="button" class="filter-group-header" aria-expanded="true">
+                <span>Vehicle Category</span>
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+              <div class="filter-group-body">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="category" value="Economy">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Economy</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="category" value="Hatchback">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Hatchback</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="category" value="Sedan">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Sedan</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="category" value="SUV">
+                  <span class="checkmark"></span>
+                  <span class="label-text">SUV</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="category" value="MPV">
+                  <span class="checkmark"></span>
+                  <span class="label-text">MPV</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="category" value="Luxury">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Luxury</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <button type="button" class="filter-group-header" aria-expanded="true">
+                <span>Price Range (per day)</span>
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+              <div class="filter-group-body">
+                <div class="price-slider-wrap">
+                  <div class="price-range-display">
+                    <span class="price-min-val" id="priceMinDisplay">₹2,000</span>
+                    <span class="price-dash">—</span>
+                    <span class="price-max-val" id="priceMaxDisplay">₹12,000</span>
+                  </div>
+                  <input type="range" id="priceRangeSlider" min="2000" max="12000" step="500" value="12000" class="fleet-range-slider" aria-label="Filter maximum price per day">
+                  <div class="price-range-limits">
+                    <span>Min: ₹2,000</span>
+                    <span>Max: ₹12,000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <button type="button" class="filter-group-header" aria-expanded="true">
+                <span>Seating Capacity</span>
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+              <div class="filter-group-body">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="seats" value="2">
+                  <span class="checkmark"></span>
+                  <span class="label-text">2 Seaters</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="seats" value="4">
+                  <span class="checkmark"></span>
+                  <span class="label-text">4 Seaters</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="seats" value="5">
+                  <span class="checkmark"></span>
+                  <span class="label-text">5 Seaters</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="seats" value="6">
+                  <span class="checkmark"></span>
+                  <span class="label-text">6 Seaters</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="seats" value="7">
+                  <span class="checkmark"></span>
+                  <span class="label-text">7 Seaters</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="seats" value="8">
+                  <span class="checkmark"></span>
+                  <span class="label-text">8 Seaters</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <button type="button" class="filter-group-header" aria-expanded="true">
+                <span>Transmission</span>
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+              <div class="filter-group-body">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="transmission" value="Manual">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Manual</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="transmission" value="Automatic">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Automatic</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <button type="button" class="filter-group-header" aria-expanded="true">
+                <span>Fuel Type</span>
+                <i class="fa-solid fa-chevron-up"></i>
+              </button>
+              <div class="filter-group-body">
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="fuel" value="Petrol">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Petrol</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="fuel" value="Diesel">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Diesel</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="fuel" value="Electric">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Electric</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" name="fuel" value="Hybrid">
+                  <span class="checkmark"></span>
+                  <span class="label-text">Hybrid</span>
+                </label>
+              </div>
+            </div>
+
+          </aside>
+
+          <div class="fleet-grid-wrap">
+            <div class="fleet-cars-grid" id="fleetCarsGrid">
+
+            </div>
+
+            <div class="fleet-empty-state" id="fleetEmptyState" style="display: none;">
+              <div class="empty-icon-box">
+                <i class="fa-solid fa-car-tunnel"></i>
+              </div>
+              <h3 class="empty-title">No Vehicles Match Your Current Filters</h3>
+              <p class="empty-desc">
+                Try widening your price range, clearing specific transmission constraints, or resetting all filters to see our full 12-vehicle collection.
+              </p>
+              <button type="button" class="btn btn-primary" id="emptyResetBtn">
+                <i class="fa-solid fa-rotate-right"></i>
+                <span>Reset All Filters</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="mobile-filter-overlay" id="mobileFilterOverlay"></div>
+    <div class="mobile-filter-drawer" id="mobileFilterDrawer">
+      <div class="mobile-filter-header">
+        <div class="sidebar-title-wrap">
+          <i class="fa-solid fa-filter text-primary"></i>
+          <h3 class="sidebar-title">Filter Your Ride</h3>
+        </div>
+        <button type="button" class="mobile-close-btn" id="mobileFilterCloseBtn" aria-label="Close filters">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="mobile-filter-content" id="mobileFilterContainer">
+
+      </div>
+      <div class="mobile-filter-actions">
+        <button type="button" class="btn btn-secondary w-50" id="mobileClearAllBtn">Clear All</button>
+        <button type="button" class="btn btn-primary w-50" id="mobileApplyFiltersBtn">Apply Filters</button>
+      </div>
+    </div>
+
+    <section class="cars-philosophy-section" id="philosophy">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">SERVICE PHILOSOPHY</span>
+          <h2 class="section-heading">More Than a Rental. A Better Way to Drive.</h2>
+          <p class="section-subtitle">
+            Every journey matters. Our approach is built around the freedom, confidence, and comfort of every driver.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+
+          <article class="phil-card">
+            <div class="phil-card-media">
+              <img src="assets/exp-weekend.jpg" alt="Freedom to Explore Self-Drive" class="phil-img" loading="lazy">
+              <div class="phil-overlay"></div>
+              <div class="phil-icon-badge">
+                <i class="fa-solid fa-compass"></i>
+              </div>
+            </div>
+            <div class="phil-card-content">
+              <span class="phil-step-label">PRINCIPLE 01</span>
+              <h3 class="phil-title">Freedom to Explore</h3>
+              <p class="phil-desc">
+                Enjoy the flexibility to choose your destination, travel at your own pace, and experience every journey on your terms without mileage boundaries.
+              </p>
+              <a href="cars details.html?type=freedom" class="btn btn-secondary phil-cta-btn">
+                <span>Explore Freedom</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="phil-card">
+            <div class="phil-card-media">
+              <img src="assets/exp-roadtrip.jpg" alt="Safety and Trust Guaranteed" class="phil-img" loading="lazy">
+              <div class="phil-overlay"></div>
+              <div class="phil-icon-badge">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+            </div>
+            <div class="phil-card-content">
+              <span class="phil-step-label">PRINCIPLE 02</span>
+              <h3 class="phil-title">Safety &amp; Trust</h3>
+              <p class="phil-desc">
+                Travel with confidence through dependable vehicles, responsible multi-point maintenance, and a rental experience built on transparency.
+              </p>
+              <a href="cars details.html?type=safety" class="btn btn-secondary phil-cta-btn">
+                <span>Discover Our Promise</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="phil-card">
+            <div class="phil-card-media">
+              <img src="assets/exp-city.jpg" alt="Comfort and Convenience" class="phil-img" loading="lazy">
+              <div class="phil-overlay"></div>
+              <div class="phil-icon-badge">
+                <i class="fa-solid fa-car"></i>
+              </div>
+            </div>
+            <div class="phil-card-content">
+              <span class="phil-step-label">PRINCIPLE 03</span>
+              <h3 class="phil-title">Comfort &amp; Convenience</h3>
+              <p class="phil-desc">
+                From choosing your vehicle to completing your journey, enjoy a comfortable and convenient self-drive experience with doorstep delivery.
+              </p>
+              <a href="cars details.html?type=comfort" class="btn btn-secondary phil-cta-btn">
+                <span>Experience Comfort</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cars-faq-section" id="faq">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">GOT QUESTIONS?</span>
+          <h2 class="section-heading">Everything You Need to Know</h2>
+          <p class="section-subtitle">
+            Find answers to common questions about our vehicles, booking procedures, and rental policies.
+          </p>
+        </div>
+
+        <div class="faq-accordion-stack" id="faqAccordion">
+
+          <div class="faq-item active">
+            <button type="button" class="faq-question-btn" aria-expanded="true">
+              <span class="faq-q-num">01</span>
+              <span class="faq-q-text">What documents are required to rent a car?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                You will need a valid government-issued Driver's License (held for at least 1 year), a valid Government ID (Aadhaar Card, Passport, or Voter ID), and a credit or debit card for the nominal security authorization. International guests may provide an International Driving Permit along with their passport.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">02</span>
+              <span class="faq-q-text">Can I choose my pickup and return locations?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Yes. We offer complete flexibility. You can collect your vehicle from our flagship Beverly Hills / metropolitan atelier, request direct VIP airport terminal curbside delivery, or opt for seamless doorstep drop-off at your residence or hotel.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">03</span>
+              <span class="faq-q-text">Are there daily, weekly, and monthly rental options?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Absolutely. We offer short-term Daily Freedom rentals, discounted Weekly Explorer packages for vacations, and Monthly Executive subscriptions with complimentary vehicle swaps and maintenance included.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">04</span>
+              <span class="faq-q-text">Can I select a specific vehicle model?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Yes! Unlike traditional car rental agencies that assign generic "or similar" categories, VELOCE guarantees your exact selected model. If you book a Toyota Fortuner or BMW 3 Series, you drive away in that exact machine.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">05</span>
+              <span class="faq-q-text">What happens if I need to extend my rental period?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Extending your reservation is simple. Contact our 24/7 concierge hotline or request an extension directly via your customer dashboard at least 4 hours prior to scheduled return. Extensions are subject to subsequent booking availability.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">06</span>
+              <span class="faq-q-text">Are there any additional rental charges?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                We operate on a 100% transparent pricing policy. Your quoted daily rate includes standard comprehensive insurance, 24/7 roadside assistance, and standard taxes. Fuel, state toll booth charges (FasTag), and optional damage waivers are itemized clearly.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">07</span>
+              <span class="faq-q-text">Can I cancel or modify my booking?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Yes. Free cancellations and modifications are permitted up to 24 hours prior to your scheduled pickup time with a 100% refund. Cancellations within 24 hours may incur a nominal one-day holding fee.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">08</span>
+              <span class="faq-q-text">Is there a minimum age requirement for renting?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                The minimum age requirement is 21 years old with a minimum of 1 year of valid driving experience for Economy, Hatchback, and Sedan categories. For Luxury categories (BMW, Mercedes-Benz, Fortuner), drivers must be at least 23 years old.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cars-cta-section" id="cars-cta">
+
+      <div class="cars-cta-bg-wrap" aria-hidden="true">
+        <img src="assets/cta-car.jpg" alt="VELOCE Luxury Fleet Experience" class="cars-cta-bg-img">
+        <div class="cars-cta-overlay"></div>
+        <div class="cars-cta-glow"></div>
+      </div>
+
+      <div class="section-container cars-cta-container">
+        <div class="cars-cta-inner text-center">
+
+          <span class="cars-cta-badge">YOUR NEXT ADVENTURE AWAITS</span>
+
+          <h2 class="cars-cta-title">
+            Your Perfect Ride Is Waiting.
+          </h2>
+
+          <p class="cars-cta-lead">
+            Find the vehicle that fits your journey and experience the freedom of self-drive travel with white-glove concierge standards.
+          </p>
+
+          <div class="cars-cta-btn-group">
+            <a href="#fleet-collection" class="btn btn-primary cars-cta-btn-main">
+              <span>Explore Our Fleet</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#footer" class="btn btn-secondary cars-cta-btn-ghost">
+              <span>Contact Our Team</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="cars-cta-features-strip">
+            <div class="cars-feat-item">
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>Guaranteed Model Allocation</span>
+            </div>
+            <div class="cars-feat-sep"></div>
+            <div class="cars-feat-item">
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>Doorstep & Airport Delivery</span>
+            </div>
+            <div class="cars-feat-sep"></div>
+            <div class="cars-feat-item">
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>24/7 Roadside Assistance</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <div class="booking-modal-overlay" id="bookingModalOverlay" aria-hidden="true">
+    <div class="booking-modal-dialog" role="dialog" aria-labelledby="modalVehicleTitle" aria-modal="true">
+
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-sub">RESERVATION ATELIER</span>
+          <h3 class="modal-title" id="modalVehicleTitle">Reserve Vehicle</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close reservation modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form class="modal-body" id="bookingForm" novalidate>
+
+        <div class="modal-vehicle-preview">
+          <img src="" alt="" class="modal-car-img" id="modalCarImg">
+          <div class="modal-car-details">
+            <span class="modal-car-category" id="modalCarCategory">Category</span>
+            <h4 class="modal-car-name" id="modalCarName">Vehicle Name</h4>
+            <div class="modal-car-rate">
+              <strong class="rate-amount" id="modalCarRate">₹0</strong>
+              <span class="rate-period">/ day</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookPickupDate" class="form-label">Pickup Date *</label>
+            <input type="date" id="bookPickupDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="bookReturnDate" class="form-label">Return Date *</label>
+            <input type="date" id="bookReturnDate" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookPickupLocation" class="form-label">Pickup Location *</label>
+            <select id="bookPickupLocation" class="form-control" required>
+              <option value="atelier">Beverly Hills Flagship Atelier</option>
+              <option value="airport">Airport VIP Terminal Handover</option>
+              <option value="doorstep">Doorstep Delivery (Hotel / Residence)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bookCustomerPhone" class="form-label">Mobile Number *</label>
+            <input type="tel" id="bookCustomerPhone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+
+        <div class="modal-fare-estimate">
+          <div class="fare-row">
+            <span>Duration:</span>
+            <strong id="fareDuration">3 Days</strong>
+          </div>
+          <div class="fare-row">
+            <span>Estimated Total (Excl. Fuel):</span>
+            <strong class="text-primary fare-total" id="fareTotalAmount">₹0</strong>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 modal-submit-btn" id="modalSubmitBtn">
+          <span>Lock In Reservation</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="modal-note text-center">
+          <i class="fa-solid fa-shield-halved"></i> 100% Free Cancellation up to 24 hours before pickup.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+  <footer class="site-footer" id="footer">
+    <div class="section-container">
+
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+            <div class="logo-icon-wrap">
+              <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+                <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">VELOCE</span>
+              <span class="brand-sub">LUXURY FLEET</span>
+            </div>
+          </a>
+
+          <p class="footer-brand-desc">
+            Veloce is an international luxury car rental and self-drive platform offering high-performance, prestige, and electric automobiles backed by white-glove concierge standards.
+          </p>
+
+          <div class="social-links-row">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html">Self-Drive Rentals</a></li>
+            <li><a href="cars.html">Luxury Car Rentals</a></li>
+            <li><a href="pricing.html">Daily Rentals</a></li>
+            <li><a href="pricing.html">Weekly Rentals</a></li>
+            <li><a href="pricing.html">Monthly Leases</a></li>
+            <li><a href="cars.html">Airport VIP Handover</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html" class="active">Our Cars</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="dashboard.html" class="footer-dash-link">Customer Dashboard</a></li>
+            <li><a href="#" id="openTermsLink">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact-col">
+          <h4 class="footer-col-title">Contact &amp; Support</h4>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <div>
+                <span class="contact-sub">24/7 Concierge Hotline</span>
+                <a href="tel:+18005893283" class="contact-val">+1 (800) 589-3283</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <div>
+                <span class="contact-sub">VIP Inquiries</span>
+                <a href="mailto:concierge@veloce-drive.com" class="contact-val">concierge@veloce-drive.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <div>
+                <span class="contact-sub">Headquarters</span>
+                <span class="contact-val">742 Ocean Boulevard, Beverly Hills, CA 90210</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="footer-badge-pill">
+            <i class="fa-solid fa-shield-halved text-primary"></i>
+            <span>24/7 Live Roadside Concierge</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> VELOCE Luxury Car Rental Inc. All rights reserved.
+        </p>
+
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Terms of Service</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Rental Agreement</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="cars-data.js"></script>
+  <script src="cars.js"></script>
+</body>
+</html>
+

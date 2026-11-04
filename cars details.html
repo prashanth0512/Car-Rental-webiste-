@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title id="detailPageTitle">Vehicle & Philosophy Details | VELOCE LUXURY FLEET</title>
+  <meta name="description" id="detailMetaDesc" content="Detailed vehicle specifications, rental rates, and driving philosophy from VELOCE Luxury Fleet self-drive service.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="cars.css">
+  <link rel="stylesheet" href="cars details.css">
+</head>
+<body class="cars-detail-page">
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+      <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+        <div class="logo-icon-wrap">
+          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VELOCE</span>
+          <span class="brand-sub">LUXURY FLEET</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link" id="homeDropdownBtn" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu" id="homeDropdownMenu">
+              <li>
+                <a href="index.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 1 - Red Dynamic</span>
+                    <span class="dropdown-desc">Cinematic curves & floating fleet hero</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home2.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 2 - Minimal Luxury</span>
+                    <span class="dropdown-desc">Monochrome elegance & travel stories</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="cars.html" class="nav-link active">Our Cars</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link" id="navDashboardBtn">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <button type="button" class="action-btn dir-toggle" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+          <span class="dir-text" id="dirText">RTL</span>
+        </button>
+
+        <button type="button" class="action-btn theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-primary header-login-btn" id="loginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login</span>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-name">VELOCE</span>
+        <span class="brand-sub">LUXURY FLEET</span>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <div class="mobile-dropdown-header" id="mobileHomeDropdown">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul class="mobile-sub-menu" id="mobileHomeSubmenu">
+            <li><a href="index.html" class="mobile-link">Home 1 - Red Dynamic</a></li>
+            <li><a href="home2.html" class="mobile-link">Home 2 - Minimal Luxury</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="about.html" class="mobile-link">About Us</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="cars.html" class="mobile-link active">Our Cars</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="pricing.html" class="mobile-link">Pricing</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="contact.html" class="mobile-link">Contact</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="dashboard.html" class="mobile-link">Dashboard</a>
+        </li>
+      </ul>
+
+      <div class="mobile-drawer-actions">
+        <div class="mobile-settings-row">
+          <button type="button" class="action-btn mobile-dir-btn" id="mobileDirToggle">
+            <span id="mobileDirText">Switch to RTL</span>
+          </button>
+          <button type="button" class="action-btn mobile-theme-btn" id="mobileThemeToggle">
+            <i class="fa-solid fa-moon"></i>
+            <span id="mobileThemeText">Dark Mode</span>
+          </button>
+        </div>
+        <a href="login.html" class="btn btn-primary w-100 mobile-login-btn" id="mobileLoginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login / Register</span>
+        </a>
+      </div></div>
+  </aside>
+
+  <nav class="detail-breadcrumb-bar" aria-label="Breadcrumb navigation">
+    <div class="section-container">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></li>
+        <li class="breadcrumb-item"><a href="cars.html">Our Cars</a></li>
+        <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></li>
+        <li class="breadcrumb-item active" id="breadcrumbActiveText" aria-current="page">Vehicle Details</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="detail-main-wrapper" id="detailMain">
+
+    <section class="vehicle-detail-section" id="vehicleDetailView" style="display: none;">
+      <div class="section-container">
+
+        <div class="vdetail-header">
+          <div class="vdetail-title-col">
+            <div class="vdetail-badges-row">
+              <span class="vdetail-category-badge" id="vCarCategory">Category</span>
+              <span class="vdetail-tag-badge" id="vCarTag">Featured</span>
+              <div class="vdetail-rating-pill" id="vCarRatingWrap">
+                <i class="fa-solid fa-star"></i>
+                <span id="vCarRating">4.9</span>
+                <span class="vdetail-reviews" id="vCarReviews">(120 reviews)</span>
+              </div>
+            </div>
+            <h1 class="vdetail-title" id="vCarName">Vehicle Name</h1>
+            <p class="vdetail-sub" id="vCarBrand">By Manufacturer</p>
+          </div>
+
+          <div class="vdetail-price-col">
+            <span class="vdetail-price-label">Self-Drive Rental Rate</span>
+            <div class="vdetail-price-display">
+              <span class="vdetail-price-val" id="vCarPrice">₹0</span>
+              <span class="vdetail-price-unit">/ 24 Hours</span>
+            </div>
+            <span class="vdetail-tax-note">Includes Standard Insurance & Taxes</span>
+          </div>
+        </div>
+
+        <div class="vdetail-layout-grid">
+
+          <div class="vdetail-content-col">
+
+            <div class="vdetail-media-showcase">
+              <div class="vdetail-img-box">
+                <img src="" alt="Vehicle Presentation" class="vdetail-main-img" id="vCarMainImg">
+                <div class="vdetail-img-badge">
+                  <i class="fa-solid fa-certificate text-primary"></i>
+                  <span>100% Sanitized & Pre-Inspected</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="vdetail-block specs-block">
+              <h3 class="vdetail-block-title">
+                <i class="fa-solid fa-sliders text-primary"></i>
+                <span>Key Specifications</span>
+              </h3>
+              <div class="vspecs-grid">
+
+                <div class="vspec-card">
+                  <div class="vspec-icon"><i class="fa-solid fa-user-group"></i></div>
+                  <div class="vspec-info">
+                    <span class="vspec-lbl">Seating Capacity</span>
+                    <strong class="vspec-val" id="vSpecSeats">5 Passengers</strong>
+                  </div>
+                </div>
+
+                <div class="vspec-card">
+                  <div class="vspec-icon"><i class="fa-solid fa-gear"></i></div>
+                  <div class="vspec-info">
+                    <span class="vspec-lbl">Transmission</span>
+                    <strong class="vspec-val" id="vSpecTransmission">Automatic</strong>
+                  </div>
+                </div>
+
+                <div class="vspec-card">
+                  <div class="vspec-icon"><i class="fa-solid fa-gas-pump"></i></div>
+                  <div class="vspec-info">
+                    <span class="vspec-lbl">Fuel Engine</span>
+                    <strong class="vspec-val" id="vSpecFuel">Petrol</strong>
+                  </div>
+                </div>
+
+                <div class="vspec-card">
+                  <div class="vspec-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                  <div class="vspec-info">
+                    <span class="vspec-lbl">Efficiency</span>
+                    <strong class="vspec-val" id="vSpecMileage">18.4 kmpl</strong>
+                  </div>
+                </div>
+
+                <div class="vspec-card">
+                  <div class="vspec-icon"><i class="fa-solid fa-car-battery"></i></div>
+                  <div class="vspec-info">
+                    <span class="vspec-lbl">Displacement</span>
+                    <strong class="vspec-val" id="vSpecEngine">1.5L i-VTEC</strong>
+                  </div>
+                </div>
+
+                <div class="vspec-card">
+                  <div class="vspec-icon"><i class="fa-solid fa-bolt"></i></div>
+                  <div class="vspec-info">
+                    <span class="vspec-lbl">Power Output</span>
+                    <strong class="vspec-val" id="vSpecPower">119 bhp</strong>
+                  </div>
+                </div>
+
+                <div class="vspec-card">
+                  <div class="vspec-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
+                  <div class="vspec-info">
+                    <span class="vspec-lbl">Luggage Boot</span>
+                    <strong class="vspec-val" id="vSpecLuggage">3 Medium Bags</strong>
+                  </div>
+                </div>
+
+                <div class="vspec-card">
+                  <div class="vspec-icon"><i class="fa-solid fa-tachograph-digital"></i></div>
+                  <div class="vspec-info">
+                    <span class="vspec-lbl">Top Speed</span>
+                    <strong class="vspec-val" id="vSpecTopSpeed">190 km/h</strong>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="vdetail-block narrative-block">
+              <h3 class="vdetail-block-title">
+                <i class="fa-solid fa-circle-info text-primary"></i>
+                <span>Vehicle Overview & Driving Character</span>
+              </h3>
+              <p class="vdetail-narrative" id="vCarOverview">
+                Detailed editorial description of the vehicle.
+              </p>
+            </div>
+
+            <div class="vdetail-block features-block">
+              <h3 class="vdetail-block-title">
+                <i class="fa-solid fa-shield-halved text-primary"></i>
+                <span>Highlights & Cabin Amenities</span>
+              </h3>
+              <div class="vfeatures-grid" id="vFeaturesList">
+
+              </div>
+            </div>
+
+            <div class="vdetail-block inclusions-block">
+              <h3 class="vdetail-block-title">
+                <i class="fa-solid fa-award text-primary"></i>
+                <span>The VELOCE Standard Inclusions</span>
+              </h3>
+              <div class="inclusions-row">
+                <div class="inclusion-item">
+                  <i class="fa-solid fa-check-circle text-primary"></i>
+                  <span>Zero Kilometre Limits on Daily Rentals</span>
+                </div>
+                <div class="inclusion-item">
+                  <i class="fa-solid fa-check-circle text-primary"></i>
+                  <span>24/7 Priority Emergency Concierge</span>
+                </div>
+                <div class="inclusion-item">
+                  <i class="fa-solid fa-check-circle text-primary"></i>
+                  <span>Hospital-Grade Interior Sanitization</span>
+                </div>
+                <div class="inclusion-item">
+                  <i class="fa-solid fa-check-circle text-primary"></i>
+                  <span>Complimentary Doorstep VIP Handover</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="vdetail-sidebar-col">
+            <div class="vbooking-card sticky-sidebar" id="vBookingCard">
+
+              <div class="vbooking-header">
+                <span class="vbooking-badge">FAST-TRACK RESERVATION</span>
+                <h4 class="vbooking-title">Reserve This Vehicle</h4>
+                <div class="vbooking-rate-row">
+                  <span class="vbooking-rate-num" id="vStickyRate">₹0</span>
+                  <span class="vbooking-rate-period">/ day</span>
+                </div>
+              </div>
+
+              <form class="vbooking-form" id="vStickyBookingForm" novalidate>
+
+                <div class="form-group mb-3">
+                  <label for="stickyPickupDate" class="form-label">Pickup Date *</label>
+                  <input type="date" id="stickyPickupDate" class="form-control" required>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="stickyReturnDate" class="form-label">Return Date *</label>
+                  <input type="date" id="stickyReturnDate" class="form-control" required>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="stickyPickupLoc" class="form-label">Handover Location *</label>
+                  <select id="stickyPickupLoc" class="form-control" required>
+                    <option value="atelier">Beverly Hills Flagship Atelier</option>
+                    <option value="airport">Airport Terminal VIP Curbside Handover</option>
+                    <option value="doorstep">Doorstep Delivery (Hotel or Residence)</option>
+                  </select>
+                </div>
+
+                <div class="form-group mb-4">
+                  <label for="stickyPhone" class="form-label">Contact Number *</label>
+                  <input type="tel" id="stickyPhone" class="form-control" placeholder="+91 98765 43210" required>
+                </div>
+
+                <div class="vfare-breakdown">
+                  <div class="vfare-line">
+                    <span class="vfare-label">Rental Duration:</span>
+                    <strong class="vfare-val" id="stickyDuration">3 Days</strong>
+                  </div>
+                  <div class="vfare-line total-line">
+                    <span class="vfare-label">Estimated Total:</span>
+                    <strong class="vfare-val text-primary" id="stickyTotal">₹0</strong>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 vbooking-submit-btn" id="stickySubmitBtn">
+                  <span>Confirm Reservation</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <ul class="vbooking-trust-list">
+                  <li><i class="fa-solid fa-rotate-left text-primary"></i> 100% Free cancellation up to 24 hrs prior</li>
+                  <li><i class="fa-solid fa-lock text-primary"></i> Guaranteed vehicle model allocation</li>
+                  <li><i class="fa-solid fa-hand-holding-dollar text-primary"></i> Transparent pricing, zero hidden charges</li>
+                </ul>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="vdetail-related-section">
+          <div class="section-header text-center">
+            <span class="section-sub-label">EXPLORE ALTERNATIVES</span>
+            <h2 class="section-heading">More Vehicles You Might Love</h2>
+            <p class="section-subtitle">
+              Browse similar performance, executive, or luxury models curated for matching journeys.
+            </p>
+          </div>
+
+          <div class="vrelated-grid" id="vRelatedGrid">
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="principle-detail-section" id="principleDetailView" style="display: none;">
+
+      <div class="principle-hero">
+        <div class="principle-hero-bg-wrap">
+          <img src="" alt="Driving Principle Philosophy" class="principle-hero-img" id="pDetailHeroImg">
+          <div class="principle-hero-overlay"></div>
+          <div class="principle-hero-glow"></div>
+        </div>
+
+        <div class="section-container principle-hero-container">
+          <div class="principle-hero-content text-center">
+            <span class="principle-hero-badge" id="pDetailBadge">SERVICE PHILOSOPHY // 01</span>
+            <h1 class="principle-hero-title" id="pDetailTitle">Freedom to Explore</h1>
+            <p class="principle-hero-sub" id="pDetailSubtitle">Your Journey, Your Rhythm, Your Route.</p>
+            <p class="principle-hero-lead" id="pDetailLead">
+              We empower drivers with independent mobility without arbitrary barriers.
+            </p>
+            <div class="principle-hero-cta-row">
+              <a href="#principle-fleet" class="btn btn-primary">
+                <span>Explore Matching Vehicles</span>
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+              <a href="cars.html" class="btn btn-secondary">
+                <span>View Full Fleet</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-container principle-body-container">
+
+        <div class="principle-overview-block">
+          <div class="poverview-grid">
+            <div class="poverview-left">
+              <span class="section-sub-label">CORE PHILOSOPHY</span>
+              <h2 class="section-heading" id="pDetailOverviewHeading">
+                Crafting the Blueprint for Modern Self-Drive Mobility
+              </h2>
+            </div>
+            <div class="poverview-right">
+              <p class="poverview-text" id="pDetailOverviewText">
+                Detailed editorial statement of this principle.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="principle-pillars-section">
+          <div class="section-header text-center">
+            <span class="section-sub-label">CORE ADVANTAGES</span>
+            <h2 class="section-heading">How This Transforms Your Driving Experience</h2>
+          </div>
+          <div class="ppillars-grid" id="pDetailBenefitsGrid">
+
+          </div>
+        </div>
+
+        <div class="principle-scenarios-section">
+          <div class="section-header text-center">
+            <span class="section-sub-label">REAL-WORLD EXPERIENCES</span>
+            <h2 class="section-heading">Engineered for Every Travel Scenario</h2>
+            <p class="section-subtitle">
+              See how our service philosophy delivers unwavering dependability across various travel moments.
+            </p>
+          </div>
+          <div class="pscenarios-grid" id="pDetailScenariosGrid">
+
+          </div>
+        </div>
+
+        <div class="principle-fleet-section" id="principle-fleet">
+          <div class="section-header text-center">
+            <span class="section-sub-label">RECOMMENDED FLEET</span>
+            <h2 class="section-heading">Vehicles Best Suited for This Journey</h2>
+            <p class="section-subtitle">
+              Hand-picked machines from our 12-car collection that embody this driving principle.
+            </p>
+          </div>
+          <div class="pfleet-grid" id="pDetailFleetGrid">
+
+          </div>
+        </div>
+
+        <div class="principle-cta-card">
+          <div class="pcta-inner text-center">
+            <span class="pcta-badge">REDEFINING YOUR TRAVEL</span>
+            <h2 class="pcta-title" id="pDetailCtaTitle">Experience True Freedom on the Road.</h2>
+            <p class="pcta-lead">
+              Our reservation concierges are ready to prepare your vehicle with zero wait times and guaranteed model allocation.
+            </p>
+            <div class="pcta-btns">
+              <a href="cars.html" class="btn btn-primary">
+                <span>Browse All 12 Vehicles</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#footer" class="btn btn-secondary">
+                <span>Speak to Concierge</span>
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="detail-fallback-section" id="detailFallbackView" style="display: none;">
+      <div class="section-container text-center">
+        <div class="fallback-icon-wrap">
+          <i class="fa-solid fa-car-side"></i>
+        </div>
+        <h2 class="fallback-title">Explore Our Premium Fleet &amp; Driving Philosophies</h2>
+        <p class="fallback-lead">
+          Select a vehicle from our 12-car curated collection or learn more about the guiding principles behind VELOCE Luxury Fleet.
+        </p>
+        <div class="fallback-actions">
+          <a href="cars.html" class="btn btn-primary">
+            <i class="fa-solid fa-car"></i>
+            <span>Explore All 12 Cars</span>
+          </a>
+          <a href="cars details.html?type=freedom" class="btn btn-secondary">
+            <i class="fa-solid fa-compass"></i>
+            <span>Freedom to Explore</span>
+          </a>
+          <a href="cars details.html?type=safety" class="btn btn-secondary">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Safety &amp; Trust</span>
+          </a>
+          <a href="cars details.html?type=comfort" class="btn btn-secondary">
+            <i class="fa-solid fa-couch"></i>
+            <span>Comfort &amp; Convenience</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="booking-modal-overlay" id="bookingModalOverlay" aria-hidden="true">
+    <div class="booking-modal-dialog" role="dialog" aria-labelledby="modalVehicleTitle" aria-modal="true">
+
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-sub">RESERVATION ATELIER</span>
+          <h3 class="modal-title" id="modalVehicleTitle">Reserve Vehicle</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close reservation modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form class="modal-body" id="bookingForm" novalidate>
+
+        <div class="modal-vehicle-preview">
+          <img src="" alt="" class="modal-car-img" id="modalCarImg">
+          <div class="modal-car-details">
+            <span class="modal-car-category" id="modalCarCategory">Category</span>
+            <h4 class="modal-car-name" id="modalCarName">Vehicle Name</h4>
+            <div class="modal-car-rate">
+              <strong class="rate-amount" id="modalCarRate">₹0</strong>
+              <span class="rate-period">/ day</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookPickupDate" class="form-label">Pickup Date *</label>
+            <input type="date" id="bookPickupDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="bookReturnDate" class="form-label">Return Date *</label>
+            <input type="date" id="bookReturnDate" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookPickupLocation" class="form-label">Pickup Location *</label>
+            <select id="bookPickupLocation" class="form-control" required>
+              <option value="atelier">Beverly Hills Flagship Atelier</option>
+              <option value="airport">Airport VIP Terminal Handover</option>
+              <option value="doorstep">Doorstep Delivery (Hotel / Residence)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bookCustomerPhone" class="form-label">Mobile Number *</label>
+            <input type="tel" id="bookCustomerPhone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+
+        <div class="modal-fare-estimate">
+          <div class="fare-row">
+            <span>Duration:</span>
+            <strong id="fareDuration">3 Days</strong>
+          </div>
+          <div class="fare-row">
+            <span>Estimated Total (Excl. Fuel):</span>
+            <strong class="text-primary fare-total" id="fareTotalAmount">₹0</strong>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 modal-submit-btn" id="modalSubmitBtn">
+          <span>Lock In Reservation</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="modal-note text-center">
+          <i class="fa-solid fa-shield-halved"></i> 100% Free Cancellation up to 24 hours before pickup.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+  <footer class="site-footer" id="footer">
+    <div class="section-container">
+
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+            <div class="logo-icon-wrap">
+              <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+                <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">VELOCE</span>
+              <span class="brand-sub">LUXURY FLEET</span>
+            </div>
+          </a>
+
+          <p class="footer-brand-desc">
+            Veloce is an international luxury car rental and self-drive platform offering high-performance, prestige, and electric automobiles backed by white-glove concierge standards.
+          </p>
+
+          <div class="social-links-row">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html">Self-Drive Rentals</a></li>
+            <li><a href="cars.html">Luxury Car Rentals</a></li>
+            <li><a href="pricing.html">Daily Rentals</a></li>
+            <li><a href="pricing.html">Weekly Rentals</a></li>
+            <li><a href="pricing.html">Monthly Leases</a></li>
+            <li><a href="cars.html">Airport VIP Handover</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html" class="active">Our Cars</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="dashboard.html" class="footer-dash-link">Customer Dashboard</a></li>
+            <li><a href="#" id="openTermsLink">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact-col">
+          <h4 class="footer-col-title">Contact &amp; Support</h4>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <div>
+                <span class="contact-sub">24/7 Concierge Hotline</span>
+                <a href="tel:+18005893283" class="contact-val">+1 (800) 589-3283</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <div>
+                <span class="contact-sub">VIP Inquiries</span>
+                <a href="mailto:concierge@veloce-drive.com" class="contact-val">concierge@veloce-drive.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <div>
+                <span class="contact-sub">Headquarters</span>
+                <span class="contact-val">742 Ocean Boulevard, Beverly Hills, CA 90210</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="footer-badge-pill">
+            <i class="fa-solid fa-shield-halved text-primary"></i>
+            <span>24/7 Live Roadside Concierge</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> VELOCE Luxury Car Rental Inc. All rights reserved.
+        </p>
+
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Terms of Service</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Rental Agreement</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="cars-data.js"></script>
+  <script src="cars details.js"></script>
+</body>
+</html>
+

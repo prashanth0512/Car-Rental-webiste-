@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>About Us | VELOCE LUXURY FLEET — Driven by Passion</title>
+  <meta name="description" content="Discover the story, mission, leadership, and guiding principles behind VELOCE Luxury Fleet — redefining self-drive automotive freedom since 2021.">
+  <meta name="keywords" content="about veloce, luxury car rental company, self-drive rental brand, exotic fleet story, automotive leadership">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="about.css">
+</head>
+<body class="about-page">
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+      <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+        <div class="logo-icon-wrap">
+          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VELOCE</span>
+          <span class="brand-sub">LUXURY FLEET</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link" id="homeDropdownBtn" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu" id="homeDropdownMenu">
+              <li>
+                <a href="index.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 1 - Red Dynamic</span>
+                    <span class="dropdown-desc">Cinematic curves & floating fleet hero</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home2.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 2 - Minimal Luxury</span>
+                    <span class="dropdown-desc">Monochrome elegance & travel stories</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link active">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="cars.html" class="nav-link">Our Cars</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link" id="navDashboardBtn">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <button type="button" class="action-btn dir-toggle" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+          <span class="dir-text" id="dirText">RTL</span>
+        </button>
+
+        <button type="button" class="action-btn theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-primary header-login-btn" id="loginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login</span>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-name">VELOCE</span>
+        <span class="brand-sub">LUXURY FLEET</span>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <div class="mobile-dropdown-header" id="mobileHomeDropdown">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul class="mobile-sub-menu" id="mobileHomeSubmenu">
+            <li><a href="index.html" class="mobile-link">Home 1 - Red Dynamic</a></li>
+            <li><a href="home2.html" class="mobile-link">Home 2 - Minimal Luxury</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item"><a href="about.html" class="mobile-link active">About Us</a></li>
+        <li class="mobile-nav-item"><a href="cars.html" class="mobile-link">Our Cars</a></li>
+        <li class="mobile-nav-item"><a href="pricing.html" class="mobile-link">Pricing &amp; Plans</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-link">Contact</a></li>
+        <li class="mobile-nav-item"><a href="dashboard.html" class="mobile-link" id="mobileDashboardBtn">Customer Dashboard</a></li>
+      </ul>
+
+      <div class="mobile-drawer-actions">
+        <div class="mobile-settings-row">
+          <button type="button" class="action-btn mobile-dir-btn" id="mobileDirToggle">
+            <span id="mobileDirText">Switch to RTL</span>
+          </button>
+          <button type="button" class="action-btn mobile-theme-btn" id="mobileThemeToggle">
+            <i class="fa-solid fa-moon"></i>
+            <span id="mobileThemeText">Dark Mode</span>
+          </button>
+        </div>
+        <a href="login.html" class="btn btn-primary w-100 mobile-login-btn" id="mobileLoginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login / Register</span>
+        </a>
+      </div></div>
+  </aside>
+
+  <main id="mainContent">
+
+    <section class="about-hero-section" id="about-hero">
+
+      <div class="about-hero-bg-texture" aria-hidden="true">
+        <div class="about-hero-ambient-glow"></div>
+        <div class="about-hero-grid-pattern"></div>
+      </div>
+
+      <div class="section-container about-hero-container">
+
+        <div class="about-hero-content">
+
+          <div class="about-hero-tag">
+            <span class="about-tag-pulse"></span>
+            <span class="about-tag-text">ABOUT OUR BRAND</span>
+          </div>
+
+          <h1 class="about-hero-title">
+            Driven by Passion.<br>
+            <span class="about-title-accent">Built Around Your Journey.</span>
+          </h1>
+
+          <p class="about-hero-lead">
+            We believe every journey deserves an exceptional driving experience. Our mission is to make premium self-drive mobility accessible, convenient, and unforgettable.
+          </p>
+
+          <div class="about-hero-ctas">
+            <a href="#mission-vision" class="btn btn-primary about-cta-primary">
+              <span>Explore Our Story</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="cars.html" class="btn btn-secondary about-cta-secondary">
+              <span>Discover Our Fleet</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="about-hero-metrics">
+            <div class="about-metric-item">
+              <span class="about-metric-num">50+</span>
+              <span class="about-metric-lbl">Curated Vehicles</span>
+            </div>
+            <div class="about-metric-sep"></div>
+            <div class="about-metric-item">
+              <span class="about-metric-num">15K+</span>
+              <span class="about-metric-lbl">Journeys Driven</span>
+            </div>
+            <div class="about-metric-sep"></div>
+            <div class="about-metric-item">
+              <span class="about-metric-num">99.8%</span>
+              <span class="about-metric-lbl">Satisfaction Rate</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about-hero-visual-wrap">
+
+          <div class="about-hero-circle-shape" aria-hidden="true">
+            <div class="circle-inner-ring"></div>
+            <div class="circle-radial-shine"></div>
+          </div>
+
+          <div class="about-hero-car-wrapper">
+            <img src="assets/hero2-car-5.png" alt="VELOCE Flagship Luxury Vehicle" class="about-hero-car-img" loading="eager">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="about-mv-section" id="mission-vision">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">PURPOSE &amp; AMBITION</span>
+          <h2 class="section-heading">What Drives Us Forward</h2>
+          <p class="section-subtitle">
+            Everything we do is guided by a clear purpose and a vision for better journeys.
+          </p>
+        </div>
+
+        <div class="about-mv-grid">
+
+          <article class="mv-card mv-card-mission">
+            <div class="mv-card-watermark" aria-hidden="true">MISSION</div>
+
+            <div class="mv-card-header">
+              <div class="mv-icon-wrap">
+                <i class="fa-solid fa-compass"></i>
+              </div>
+              <div class="mv-badge-tag">OUR COMMITMENT</div>
+            </div>
+
+            <h3 class="mv-card-title">Our Mission</h3>
+
+            <p class="mv-card-desc">
+              To simplify car rentals through reliable vehicles, transparent pricing, flexible booking, and exceptional customer service. We aim to make every journey comfortable, convenient, and stress-free.
+            </p>
+
+            <ul class="mv-features-list">
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>100% Transparent, No-Hidden-Fee Pricing</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Rigorous 150-Point Multi-Stage Safety Inspection</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Flexible Pickup, Return &amp; Direct Terminal Handover</span>
+              </li>
+            </ul>
+
+            <div class="mv-card-footer">
+              <span class="mv-stat-pill">01 // CORE PURPOSE</span>
+              <div class="mv-card-glow"></div>
+            </div>
+          </article>
+
+          <article class="mv-card mv-card-vision">
+            <div class="mv-card-watermark" aria-hidden="true">VISION</div>
+
+            <div class="mv-card-header">
+              <div class="mv-icon-wrap">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <div class="mv-badge-tag">OUR HORIZON</div>
+            </div>
+
+            <h3 class="mv-card-title">Our Vision</h3>
+
+            <p class="mv-card-desc">
+              To become a trusted destination for modern self-drive mobility by delivering exceptional driving experiences, expanding accessibility, and continuously improving the way people travel.
+            </p>
+
+            <ul class="mv-features-list">
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Expanding High-Performance Electric &amp; Hybrid Fleet</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Instant Smartphone Keyless Access &amp; Digital Staging</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Global Concierge Hubs in 20+ Metropolitan Centers</span>
+              </li>
+            </ul>
+
+            <div class="mv-card-footer">
+              <span class="mv-stat-pill">02 // STRATEGIC HORIZON</span>
+              <div class="mv-card-glow"></div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about-timeline-section" id="timeline">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">MILESTONES &amp; GROWTH</span>
+          <h2 class="section-heading">Our Journey So Far</h2>
+          <p class="section-subtitle">
+            Every milestone represents our commitment to better mobility and exceptional customer experiences.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+
+          <div class="timeline-track-line" aria-hidden="true">
+            <div class="timeline-progress-bar" id="timelineProgress"></div>
+          </div>
+
+          <div class="timeline-grid">
+
+            <div class="timeline-item" data-milestone="1">
+              <div class="timeline-marker">
+                <div class="timeline-dot">
+                  <i class="fa-solid fa-flag"></i>
+                </div>
+                <span class="timeline-year">2021</span>
+              </div>
+              <div class="timeline-content">
+                <span class="timeline-step-label">PHASE 01</span>
+                <h3 class="timeline-title">The Beginning</h3>
+                <p class="timeline-desc">
+                  We started with a simple idea: make self-drive car rentals more convenient, reliable, and accessible.
+                </p>
+                <div class="timeline-pill">
+                  <i class="fa-solid fa-car-side"></i>
+                  <span>Inaugural Fleet Launch</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-milestone="2">
+              <div class="timeline-marker">
+                <div class="timeline-dot">
+                  <i class="fa-solid fa-shield"></i>
+                </div>
+                <span class="timeline-year">2022</span>
+              </div>
+              <div class="timeline-content">
+                <span class="timeline-step-label">PHASE 02</span>
+                <h3 class="timeline-title">Building Our Fleet</h3>
+                <p class="timeline-desc">
+                  We expanded our vehicle collection to offer more choices for different travel needs and preferences.
+                </p>
+                <div class="timeline-pill">
+                  <i class="fa-solid fa-gem"></i>
+                  <span>Exotics &amp; SUV Expansion</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" data-milestone="3">
+              <div class="timeline-marker">
+                <div class="timeline-dot">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <span class="timeline-year">2024</span>
+              </div>
+              <div class="timeline-content">
+                <span class="timeline-step-label">PHASE 03</span>
+                <h3 class="timeline-title">Growing Our Community</h3>
+                <p class="timeline-desc">
+                  We continued improving our customer experience through flexible booking options and dependable support.
+                </p>
+                <div class="timeline-pill">
+                  <i class="fa-solid fa-heart"></i>
+                  <span>10,000+ Happy Drivers</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item active" data-milestone="4">
+              <div class="timeline-marker">
+                <div class="timeline-dot">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <span class="timeline-year">2026</span>
+              </div>
+              <div class="timeline-content">
+                <span class="timeline-step-label">PHASE 04</span>
+                <h3 class="timeline-title">Driving The Future</h3>
+                <p class="timeline-desc">
+                  We continue moving forward with a focus on innovation, customer satisfaction, and better mobility experiences.
+                </p>
+                <div class="timeline-pill">
+                  <i class="fa-solid fa-satellite-dish"></i>
+                  <span>Digital Telemetry &amp; EV</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about-team-section" id="team">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">LEADERSHIP &amp; TALENT</span>
+          <h2 class="section-heading">The People Behind Every Journey</h2>
+          <p class="section-subtitle">
+            Meet the passionate people working together to deliver a better rental experience.
+          </p>
+        </div>
+
+        <div class="about-team-grid">
+
+          <article class="team-card">
+            <div class="team-media-wrap">
+              <img src="assets/team-1.jpg" alt="Marcus Vance - Founder &amp; CEO" class="team-img" loading="lazy">
+              <div class="team-overlay"></div>
+              <div class="team-social-bar">
+                <a href="#" class="team-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="team-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="team-social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <span class="team-role">Founder &amp; CEO</span>
+              <h3 class="team-name">Marcus Vance</h3>
+              <p class="team-bio">
+                15+ years in luxury mobility. Passionate about engineering frictionless self-drive journeys.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-media-wrap">
+              <img src="assets/team-2.jpg" alt="Elena Rostova - Operations Manager" class="team-img" loading="lazy">
+              <div class="team-overlay"></div>
+              <div class="team-social-bar">
+                <a href="#" class="team-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="team-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="team-social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <span class="team-role">Operations Manager</span>
+              <h3 class="team-name">Elena Rostova</h3>
+              <p class="team-bio">
+                Oversees 24/7 concierge delivery, fleet dispatch logistics, and client airport handovers.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-media-wrap">
+              <img src="assets/team-3.jpg" alt="David Chen - Fleet Manager" class="team-img" loading="lazy">
+              <div class="team-overlay"></div>
+              <div class="team-social-bar">
+                <a href="#" class="team-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="team-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="team-social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <span class="team-role">Fleet Manager</span>
+              <h3 class="team-name">David Chen</h3>
+              <p class="team-bio">
+                Certified automotive engineer maintaining our supercars and SUVs to pristine performance criteria.
+              </p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-media-wrap">
+              <img src="assets/team-4.jpg" alt="Sophia Al-Mansoor - Customer Experience Manager" class="team-img" loading="lazy">
+              <div class="team-overlay"></div>
+              <div class="team-social-bar">
+                <a href="#" class="team-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="team-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="team-social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <span class="team-role">Customer Experience Manager</span>
+              <h3 class="team-name">Sophia Al-Mansoor</h3>
+              <p class="team-bio">
+                Champions our client-first service standard, ensuring every bespoke rental itinerary runs smoothly.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about-principles-section" id="principles">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">CORE VALUES</span>
+          <h2 class="section-heading">What We Stand For</h2>
+          <p class="section-subtitle">
+            Our decisions, services, and experiences are shaped by the principles we believe in.
+          </p>
+        </div>
+
+        <div class="principles-grid">
+
+          <article class="principle-card">
+            <div class="principle-card-top">
+              <span class="principle-number">01</span>
+              <div class="principle-icon-wrap">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+            </div>
+            <h3 class="principle-title">Customer First</h3>
+            <p class="principle-desc">
+              We put customer satisfaction at the center of every decision, tailoring each experience to your journey.
+            </p>
+            <div class="principle-accent-bar"></div>
+          </article>
+
+          <article class="principle-card">
+            <div class="principle-card-top">
+              <span class="principle-number">02</span>
+              <div class="principle-icon-wrap">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+            </div>
+            <h3 class="principle-title">Trust &amp; Transparency</h3>
+            <p class="principle-desc">
+              We believe in clear pricing, honest communication, and dependable service with zero hidden charges.
+            </p>
+            <div class="principle-accent-bar"></div>
+          </article>
+
+          <article class="principle-card">
+            <div class="principle-card-top">
+              <span class="principle-number">03</span>
+              <div class="principle-icon-wrap">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+            </div>
+            <h3 class="principle-title">Safety &amp; Reliability</h3>
+            <p class="principle-desc">
+              We prioritize rigorously maintained vehicles, round-the-clock telemetry, and complete peace of mind.
+            </p>
+            <div class="principle-accent-bar"></div>
+          </article>
+
+          <article class="principle-card">
+            <div class="principle-card-top">
+              <span class="principle-number">04</span>
+              <div class="principle-icon-wrap">
+                <i class="fa-solid fa-award"></i>
+              </div>
+            </div>
+            <h3 class="principle-title">Quality Without Compromise</h3>
+            <p class="principle-desc">
+              We maintain obsessive standards across our curated fleet, interior detailing, and client handovers.
+            </p>
+            <div class="principle-accent-bar"></div>
+          </article>
+
+          <article class="principle-card">
+            <div class="principle-card-top">
+              <span class="principle-number">05</span>
+              <div class="principle-icon-wrap">
+                <i class="fa-solid fa-route"></i>
+              </div>
+            </div>
+            <h3 class="principle-title">Freedom &amp; Flexibility</h3>
+            <p class="principle-desc">
+              We make it effortless for you to travel on your own terms, with unhurried schedules and custom drop-offs.
+            </p>
+            <div class="principle-accent-bar"></div>
+          </article>
+
+          <article class="principle-card">
+            <div class="principle-card-top">
+              <span class="principle-number">06</span>
+              <div class="principle-icon-wrap">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+            </div>
+            <h3 class="principle-title">Continuous Innovation</h3>
+            <p class="principle-desc">
+              We continuously evolve our platform and vehicle lineup to meet changing mobility and lifestyle needs.
+            </p>
+            <div class="principle-accent-bar"></div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about-cta-section" id="about-cta">
+
+      <div class="about-cta-bg-wrap" aria-hidden="true">
+        <img src="assets/travel-experience.jpg" alt="Luxury Automotive Journey" class="about-cta-bg-img">
+        <div class="about-cta-overlay"></div>
+        <div class="about-cta-glow"></div>
+      </div>
+
+      <div class="section-container about-cta-container">
+        <div class="about-cta-inner text-center">
+
+          <span class="about-cta-badge">EXPERIENCE VELOCE FREEDOM</span>
+
+          <h2 class="about-cta-title">
+            Your Journey Deserves More Than Just a Car.
+          </h2>
+
+          <p class="about-cta-lead">
+            Experience the freedom of self-drive travel with vehicles and services designed around you.
+          </p>
+
+          <div class="about-cta-btn-group">
+            <a href="cars.html" class="btn btn-primary about-cta-btn-main">
+              <span>Explore Our Cars</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#footer" class="btn btn-secondary about-cta-btn-ghost">
+              <span>Contact Our Team</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="about-cta-features-strip">
+            <div class="about-feat-item">
+              <i class="fa-solid fa-check text-primary"></i>
+              <span>Guaranteed Model Allocation</span>
+            </div>
+            <div class="about-feat-sep"></div>
+            <div class="about-feat-item">
+              <i class="fa-solid fa-check text-primary"></i>
+              <span>Zero Hidden Security Charges</span>
+            </div>
+            <div class="about-feat-sep"></div>
+            <div class="about-feat-item">
+              <i class="fa-solid fa-check text-primary"></i>
+              <span>Complimentary Airport Meet &amp; Greet</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="section-container">
+
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+            <div class="logo-icon-wrap">
+              <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+                <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">VELOCE</span>
+              <span class="brand-sub">LUXURY FLEET</span>
+            </div>
+          </a>
+
+          <p class="footer-brand-desc">
+            Veloce is an international luxury car rental and self-drive platform offering high-performance, prestige, and electric automobiles backed by white-glove concierge standards.
+          </p>
+
+          <div class="social-links-row">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html">Self-Drive Rentals</a></li>
+            <li><a href="cars.html">Luxury Car Rentals</a></li>
+            <li><a href="pricing.html">Daily Rentals</a></li>
+            <li><a href="pricing.html">Weekly Rentals</a></li>
+            <li><a href="pricing.html">Monthly Leases</a></li>
+            <li><a href="cars.html">Airport VIP Handover</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html">Our Cars</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="dashboard.html" class="footer-dash-link">Customer Dashboard</a></li>
+            <li><a href="#" id="openTermsLink">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact-col">
+          <h4 class="footer-col-title">Contact &amp; Support</h4>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <div>
+                <span class="contact-sub">24/7 Concierge Hotline</span>
+                <a href="tel:+18005893283" class="contact-val">+1 (800) 589-3283</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <div>
+                <span class="contact-sub">VIP Inquiries</span>
+                <a href="mailto:concierge@veloce-drive.com" class="contact-val">concierge@veloce-drive.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <div>
+                <span class="contact-sub">Headquarters</span>
+                <span class="contact-val">742 Ocean Boulevard, Beverly Hills, CA 90210</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="footer-badge-pill">
+            <i class="fa-solid fa-shield-halved text-primary"></i>
+            <span>24/7 Live Roadside Concierge</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> VELOCE Luxury Car Rental Inc. All rights reserved.
+        </p>
+
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Terms of Service</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Rental Agreement</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="about.js"></script>
+</body>
+</html>
+

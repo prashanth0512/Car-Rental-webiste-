@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | VELOCE LUXURY FLEET</title>
+  <meta name="description" content="Sign in to your VELOCE Luxury Fleet account to manage bookings and rentals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body class="auth-page">
+
+  <main class="auth-layout">
+
+    <section class="auth-visual" aria-hidden="false">
+      <div class="auth-visual-overlay"></div>
+      <div class="auth-visual-content">
+        <a href="index.html" class="auth-brand" title="Back to Home">
+          <svg class="auth-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+          </svg>
+          <span class="auth-brand-text">
+            <span class="auth-brand-name">VELOCE</span>
+            <span class="auth-brand-sub">LUXURY FLEET</span>
+          </span>
+        </a>
+
+        <div class="auth-visual-copy">
+          <span class="auth-pill">WELCOME BACK</span>
+          <h1>Your Next Journey Starts Here.</h1>
+          <p>Sign in to manage your reservations, track active rentals and unlock member-only fleet offers.</p>
+          <ul class="auth-points">
+            <li><i class="fa-solid fa-circle-check"></i> Instant booking management</li>
+            <li><i class="fa-solid fa-circle-check"></i> Zero deposit fast-track pickup</li>
+            <li><i class="fa-solid fa-circle-check"></i> 24/7 concierge support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+
+      <div class="auth-topbar">
+        <a href="index.html" class="auth-back"><i class="fa-solid fa-arrow-left"></i><span>Back to Home</span></a>
+        <div class="auth-ctrls">
+          <button type="button" class="auth-ctrl" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction"><span id="dirText">RTL</span></button>
+          <button type="button" class="auth-ctrl auth-ctrl-icon" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <div class="auth-card-head">
+          <h2>Sign In</h2>
+          <p>Enter your credentials to access your account.</p>
+        </div>
+
+        <div class="auth-alert" id="authAlert" role="alert" style="display:none;"></div>
+
+        <form id="loginForm" novalidate>
+          <div class="auth-field" id="fieldEmail">
+            <label for="loginEmail">Email Address</label>
+            <div class="auth-input-wrap">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" id="loginEmail" placeholder="you@example.com" autocomplete="email">
+            </div>
+            <span class="auth-error">Please enter a valid email address.</span>
+          </div>
+
+          <div class="auth-field" id="fieldPassword">
+            <label for="loginPassword">Password</label>
+            <div class="auth-input-wrap">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="loginPassword" placeholder="Enter your password" autocomplete="current-password">
+              <button type="button" class="auth-eye" id="togglePassword" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+            </div>
+            <span class="auth-error">Password must be at least 6 characters.</span>
+          </div>
+
+          <div class="auth-row">
+            <label class="auth-check">
+              <input type="checkbox" id="rememberMe">
+              <span class="auth-box"></span>
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="auth-link" id="forgotLink">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary auth-submit" id="loginSubmit">
+            <span class="btn-label">Sign In</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <div class="auth-divider"><span>or continue with</span></div>
+
+        <div class="auth-social">
+          <button type="button" class="auth-social-btn" data-provider="Google"><i class="fa-brands fa-google"></i><span>Google</span></button>
+          <button type="button" class="auth-social-btn" data-provider="Apple"><i class="fa-brands fa-apple"></i><span>Apple</span></button>
+        </div>
+
+        <p class="auth-switch">Don't have an account? <a href="signup.html" class="auth-link">Create one</a></p>
+      </div>
+
+    </section>
+  </main>
+
+  <div class="auth-toast-wrap" id="toastWrap"></div>
+
+  <script src="login.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>VELOCE LUXURY FLEET | Beyond the Drive - Home 2</title>
+  <meta name="description" content="Discover a smarter way to travel with VELOCE's curated self-drive luxury fleet. Explore journeys, signature driving experiences, and flexible memberships.">
+  <meta name="keywords" content="luxury car rental, self-drive, exotic cars, sports car rental, SUV hire, executive chauffeur">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="home2.css">
+</head>
+<body class="home2-page">
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+      <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+        <div class="logo-icon-wrap">
+          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VELOCE</span>
+          <span class="brand-sub">LUXURY FLEET</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+
+          <li class="nav-item has-dropdown">
+            <a href="#home2-hero" class="nav-link active" id="homeDropdownBtn" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu" id="homeDropdownMenu">
+              <li>
+                <a href="index.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 1 - Red Dynamic</span>
+                    <span class="dropdown-desc">Cinematic curves & floating fleet hero</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home2.html" class="dropdown-link active">
+                  <span class="dropdown-badge">Current</span>
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 2 - Minimal Luxury</span>
+                    <span class="dropdown-desc">Monochrome elegance & travel stories</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="cars.html" class="nav-link">Our Cars</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link" id="navDashboardBtn">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <button type="button" class="action-btn dir-toggle" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+          <span class="dir-text" id="dirText">RTL</span>
+        </button>
+
+        <button type="button" class="action-btn theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-primary header-login-btn" id="loginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login</span>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-name">VELOCE</span>
+        <span class="brand-sub">LUXURY FLEET</span>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <div class="mobile-dropdown-header" id="mobileHomeDropdown">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul class="mobile-sub-menu" id="mobileHomeSubmenu">
+            <li><a href="index.html" class="mobile-link">Home 1 - Red Dynamic</a></li>
+            <li><a href="home2.html" class="mobile-link active">Home 2 - Minimal Luxury</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item"><a href="about.html" class="mobile-link">About Us</a></li>
+        <li class="mobile-nav-item"><a href="cars.html" class="mobile-link">Our Cars</a></li>
+        <li class="mobile-nav-item"><a href="pricing.html" class="mobile-link">Pricing &amp; Memberships</a></li>
+        <li class="mobile-nav-item"><a href="contact.html" class="mobile-link">Contact</a></li>
+        <li class="mobile-nav-item"><a href="dashboard.html" class="mobile-link" id="mobileDashboardBtn">Customer Dashboard</a></li>
+      </ul>
+
+      <div class="mobile-drawer-actions">
+        <div class="mobile-settings-row">
+          <button type="button" class="action-btn mobile-dir-btn" id="mobileDirToggle">
+            <span id="mobileDirText">Switch to RTL</span>
+          </button>
+          <button type="button" class="action-btn mobile-theme-btn" id="mobileThemeToggle">
+            <i class="fa-solid fa-moon"></i>
+            <span id="mobileThemeText">Dark Mode</span>
+          </button>
+        </div>
+        <a href="login.html" class="btn btn-primary w-100 mobile-login-btn" id="mobileLoginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login / Register</span>
+        </a>
+      </div></div>
+  </aside>
+
+  <main id="mainContent">
+
+    <section class="h2-hero-section" id="home2-hero">
+
+      <div class="h2-hero-bg-dark" aria-hidden="true">
+        <div class="h2-hero-bg-glow"></div>
+        <div class="h2-hero-bg-grid"></div>
+      </div>
+
+      <div class="section-container h2-hero-container">
+
+        <div class="h2-hero-content">
+
+          <div class="h2-hero-tag">
+            <span class="h2-tag-pulse"></span>
+            <span class="h2-tag-text">VELOCE LUXURY FLEET // 2026</span>
+          </div>
+
+          <h1 class="h2-hero-title">
+            Beyond the Drive.<br>
+            <span class="h2-title-accent">Experience the Freedom.</span>
+          </h1>
+
+          <p class="h2-hero-lead">
+            Discover a smarter way to travel with premium self-drive vehicles designed for every journey, every destination, and every moment.
+          </p>
+
+          <div class="h2-hero-ctas">
+            <a href="#spotlight" class="btn btn-primary h2-cta-primary">
+              <span>Discover Our Collection</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#memberships" class="btn btn-secondary h2-cta-secondary">
+              <span>Explore Rental Plans</span>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+
+          <div class="h2-hero-stats">
+            <div class="h2-stat-item">
+              <span class="h2-stat-number">50+</span>
+              <span class="h2-stat-label">Premium Vehicles</span>
+            </div>
+            <div class="h2-stat-divider"></div>
+            <div class="h2-stat-item">
+              <span class="h2-stat-number">10K+</span>
+              <span class="h2-stat-label">Happy Customers</span>
+            </div>
+            <div class="h2-stat-divider"></div>
+            <div class="h2-stat-item">
+              <span class="h2-stat-number">24/7</span>
+              <span class="h2-stat-label">Customer Assistance</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="h2-car-showcase">
+
+          <div class="h2-car-ambient-glow" aria-hidden="true"></div>
+
+          <div class="h2-car-slider" id="carSlider">
+
+            <div class="h2-car-slide active" data-car="Lamborghini Huracán" data-size="large">
+              <img src="assets/h2-car-1.png" alt="Lamborghini Huracán" class="h2-car-img">
+            </div>
+
+            <div class="h2-car-slide" data-car="Ferrari 458 Italia" data-size="large">
+              <img src="assets/hero2-car-3.png" alt="Ferrari 458 Italia" class="h2-car-img">
+            </div>
+
+            <div class="h2-car-slide" data-car="Porsche 911 GT3 RS">
+              <img src="assets/hero2-car-b.png" alt="Porsche 911 GT3 RS" class="h2-car-img">
+            </div>
+
+            <div class="h2-car-slide" data-car="BMW M4 Competition">
+              <img src="assets/hero2-car-5.png" alt="BMW M4 Competition" class="h2-car-img">
+            </div>
+
+            <div class="h2-car-slide" data-car="Audi TT Coupé">
+              <img src="assets/hero-red-audi.png" alt="Audi TT Red Coupé" class="h2-car-img">
+            </div>
+
+          </div>
+
+          <div class="h2-car-label" id="carLabel">Lamborghini Huracán</div>
+
+          <div class="h2-car-dots" id="carDots" role="tablist" aria-label="Car selection">
+            <button class="h2-dot active" data-idx="0" aria-label="Lamborghini Huracán" role="tab" aria-selected="true"></button>
+            <button class="h2-dot" data-idx="1" aria-label="Ferrari 458 Italia" role="tab" aria-selected="false"></button>
+            <button class="h2-dot" data-idx="2" aria-label="Porsche 911 GT3 RS" role="tab" aria-selected="false"></button>
+            <button class="h2-dot" data-idx="3" aria-label="BMW M4 Competition" role="tab" aria-selected="false"></button>
+            <button class="h2-dot" data-idx="4" aria-label="Audi TT Coupé" role="tab" aria-selected="false"></button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <a href="#journeys" class="h2-scroll-indicator" aria-label="Scroll down to Explore by Journey">
+        <span class="h2-scroll-text">DISCOVER MORE</span>
+        <div class="h2-scroll-mouse">
+          <div class="h2-scroll-wheel"></div>
+        </div>
+      </a>
+
+    </section>
+
+    <section class="h2-journeys-section" id="journeys">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">CURATED DRIVING CATEGORIES</span>
+          <h2 class="section-heading">Find the Perfect Car for Every Journey</h2>
+          <p class="section-subtitle">
+            Every route demands a tailored spirit. Discover our distinct collections curated by purpose, comfort, and driving exhilaration.
+          </p>
+        </div>
+
+        <div class="h2-journey-row">
+
+          <article class="jcard" tabindex="0">
+            <img src="assets/journey-city.jpg" alt="City Drives" class="jcard-img" loading="lazy">
+            <div class="jcard-overlay"></div>
+            <div class="jcard-content">
+              <span class="jcard-tag">CITY DRIVES</span>
+              <h3 class="jcard-title">Compact &amp; Economy Precision</h3>
+              <p class="jcard-desc">Effortless metropolitan agility, zero-emission corridors, and seamless urban valet.</p>
+              <a href="#spotlight" class="jcard-link">
+                Explore City Fleet <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="jcard-index">01</div>
+          </article>
+
+          <article class="jcard" tabindex="0">
+            <img src="assets/journey-family.jpg" alt="Family Adventures" class="jcard-img" loading="lazy">
+            <div class="jcard-overlay"></div>
+            <div class="jcard-content">
+              <span class="jcard-tag">FAMILY ADVENTURES</span>
+              <h3 class="jcard-title">Spacious SUVs &amp; Grand Tourers</h3>
+              <p class="jcard-desc">Panoramic glass canopies, seven-seat capability, and sovereign all-wheel traction.</p>
+              <a href="#spotlight" class="jcard-link">
+                Explore SUV Fleet <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="jcard-index">02</div>
+          </article>
+
+          <article class="jcard" tabindex="0">
+            <img src="assets/journey-business.jpg" alt="Business Travel" class="jcard-img" loading="lazy">
+            <div class="jcard-overlay"></div>
+            <div class="jcard-content">
+              <span class="jcard-tag">BUSINESS TRAVEL</span>
+              <h3 class="jcard-title">Executive Saloons &amp; Limousines</h3>
+              <p class="jcard-desc">Mobile office integration, acoustic refinement, and understated corporate prestige.</p>
+              <a href="#spotlight" class="jcard-link">
+                Explore Executive Fleet <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="jcard-index">03</div>
+          </article>
+
+          <article class="jcard" tabindex="0">
+            <img src="assets/journey-luxury.jpg" alt="Luxury Escapes" class="jcard-img" loading="lazy">
+            <div class="jcard-overlay"></div>
+            <div class="jcard-content">
+              <span class="jcard-tag">LUXURY ESCAPES</span>
+              <h3 class="jcard-title">Prestige Supercars &amp; Open-Top Icons</h3>
+              <p class="jcard-desc">Handcrafted interiors, quad-exhaust sonics, and unfiltered horsepower for special moments.</p>
+              <a href="#spotlight" class="jcard-link">
+                Explore Prestige Fleet <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="jcard-index">04</div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="h2-experiences-section" id="experiences">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">SIGNATURE ITINERARIES</span>
+          <h2 class="section-heading">Make Every Drive an Experience</h2>
+          <p class="section-subtitle">
+            We pair elite automotive machinery with carefully surveyed horizons, bespoke routes, and unhurried freedom.
+          </p>
+        </div>
+
+        <div class="h2-editorial-stack">
+
+          <article class="editorial-row">
+            <div class="editorial-media">
+              <div class="editorial-media-inner">
+                <img src="assets/exp-weekend.jpg" alt="Weekend Getaways by Veloce" class="editorial-img" loading="lazy">
+                <div class="editorial-ambient-glow"></div>
+                <div class="editorial-meta-pill">
+                  <i class="fa-solid fa-compass"></i>
+                  <span>ROUTE NO. 01 • COASTAL ESCAPES</span>
+                </div>
+              </div>
+            </div>
+            <div class="editorial-info">
+              <span class="editorial-cat-label">01 // WEEKEND GETAWAYS</span>
+              <h3 class="editorial-title">The Coastal Vista & Vineyard Retreat</h3>
+              <p class="editorial-text">
+                Escape metropolitan demands for 72 hours of sweeping ocean switchbacks and sun-drenched hill climbs. Every reservation arrives with fitted luxury luggage sets, pre-programmed satellite waypoints, and priority concierge check-in at partnered boutique estates.
+              </p>
+              <div class="editorial-highlights-list">
+                <span class="editorial-tag"><i class="fa-solid fa-check text-primary"></i> 48-72h Curated Passes</span>
+                <span class="editorial-tag"><i class="fa-solid fa-check text-primary"></i> Convertible & GT Line</span>
+                <span class="editorial-tag"><i class="fa-solid fa-check text-primary"></i> GPS Waypoint Curation</span>
+              </div>
+              <div class="editorial-cta-wrap">
+                <a href="#memberships" class="btn btn-primary">
+                  <span>Discover Weekend Pass</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="editorial-row editorial-row-reversed">
+            <div class="editorial-media">
+              <div class="editorial-media-inner">
+                <img src="assets/exp-city.jpg" alt="Luxury City Drives by Veloce" class="editorial-img" loading="lazy">
+                <div class="editorial-ambient-glow"></div>
+                <div class="editorial-meta-pill">
+                  <i class="fa-solid fa-bolt"></i>
+                  <span>ROUTE NO. 02 • URBAN NOCTURNE</span>
+                </div>
+              </div>
+            </div>
+            <div class="editorial-info">
+              <span class="editorial-cat-label">02 // LUXURY CITY DRIVES</span>
+              <h3 class="editorial-title">Metropolitan Twilight & Private Venue Valet</h3>
+              <p class="editorial-text">
+                Navigate glittering architectural skylines behind the wheel of whisper-quiet high-performance electric super-saloons. Enjoy designated VIP valet staging directly outside partner Michelin-starred dining rooms and private club entrances.
+              </p>
+              <div class="editorial-highlights-list">
+                <span class="editorial-tag"><i class="fa-solid fa-check text-primary"></i> Twilight Delivery Window</span>
+                <span class="editorial-tag"><i class="fa-solid fa-check text-primary"></i> Pre-Reserved Venue Valet</span>
+                <span class="editorial-tag"><i class="fa-solid fa-check text-primary"></i> Electric & Hybrid Supercars</span>
+              </div>
+              <div class="editorial-cta-wrap">
+                <a href="#memberships" class="btn btn-primary">
+                  <span>Discover City Pass</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="editorial-row">
+            <div class="editorial-media">
+              <div class="editorial-media-inner">
+                <img src="assets/exp-roadtrip.jpg" alt="Long-Distance Road Trips by Veloce" class="editorial-img" loading="lazy">
+                <div class="editorial-ambient-glow"></div>
+                <div class="editorial-meta-pill">
+                  <i class="fa-solid fa-road"></i>
+                  <span>ROUTE NO. 03 • GRAND EXPEDITION</span>
+                </div>
+              </div>
+            </div>
+            <div class="editorial-info">
+              <span class="editorial-cat-label">03 // LONG-DISTANCE ROAD TRIPS</span>
+              <h3 class="editorial-title">Alpine Passes & Interstate Crossings</h3>
+              <p class="editorial-text">
+                For discerning voyagers who refuse compromise when spanning continents. Flagship grand tourers and long-wheelbase SUVs equipped with active pneumatic massage, high-fidelity sound, and unlimited mileage so your horizon never has a boundary.
+              </p>
+              <div class="editorial-highlights-list">
+                <span class="editorial-tag"><i class="fa-solid fa-check text-primary"></i> Unlimited Interstate Miles</span>
+                <span class="editorial-tag"><i class="fa-solid fa-check text-primary"></i> Zero-Deductible Insurance</span>
+                <span class="editorial-tag"><i class="fa-solid fa-check text-primary"></i> 24/7 Satellite Road Support</span>
+              </div>
+              <div class="editorial-cta-wrap">
+                <a href="#memberships" class="btn btn-primary">
+                  <span>Discover Road Expedition</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="h2-memberships-section" id="memberships">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">MEMBERSHIPS & SUBSCRIPTIONS</span>
+          <h2 class="section-heading">Drive More. Worry Less.</h2>
+          <p class="section-subtitle">
+            Flexible rental options designed around the way you travel. From spontaneous day drives to comprehensive monthly multi-vehicle rotations.
+          </p>
+        </div>
+
+        <div class="h2-pricing-grid">
+
+          <div class="membership-card">
+            <div class="membership-header">
+              <span class="membership-plan-badge">SHORT-TERM LEASE</span>
+              <h3 class="membership-title">Daily Freedom</h3>
+              <p class="membership-desc">
+                Ideal for quick spontaneous escapes, key client meetings, or weekend test drives with no commitment.
+              </p>
+            </div>
+
+            <div class="membership-price-box">
+              <span class="membership-currency">$</span>
+              <span class="membership-amount">189</span>
+              <span class="membership-cycle">/ day</span>
+            </div>
+
+            <div class="membership-duration">Flexible 1 to 6 Days Rental</div>
+
+            <ul class="membership-benefits-list">
+              <li><i class="fa-solid fa-check text-primary"></i> Select from 25+ Premium Models</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Flexible 1-Hour Pickup Window</li>
+              <li><i class="fa-solid fa-check text-primary"></i> 250 Free Kilometers Included</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Comprehensive Basic Coverage</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Instant App Digital Key Access</li>
+            </ul>
+
+            <div class="membership-cta-wrap">
+              <button type="button" class="btn btn-secondary w-100 select-membership-btn" data-plan="Daily Freedom">
+                <span>Choose Daily Freedom</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="membership-card membership-featured">
+            <div class="featured-glow" aria-hidden="true"></div>
+            <div class="featured-ribbon">MOST POPULAR • SAVE 25%</div>
+
+            <div class="membership-header">
+              <span class="membership-plan-badge badge-accent">EXTENDED ESCAPE</span>
+              <h3 class="membership-title">Weekly Explorer</h3>
+              <p class="membership-desc">
+                Better value for longer journeys, cross-state holidays, and complete vacation flexibility.
+              </p>
+            </div>
+
+            <div class="membership-price-box">
+              <span class="membership-currency">$</span>
+              <span class="membership-amount">990</span>
+              <span class="membership-cycle">/ week</span>
+            </div>
+
+            <div class="membership-duration">7 to 28 Days Extended Flexibility</div>
+
+            <ul class="membership-benefits-list">
+              <li><i class="fa-solid fa-check text-primary"></i> Full Access to GT & Luxury SUVs</li>
+              <li><i class="fa-solid fa-check text-primary"></i> <strong>Unlimited Mileage</strong> on All Routes</li>
+              <li><i class="fa-solid fa-check text-primary"></i> White-Glove Doorstep Delivery</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Complimentary Secondary Driver</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Zero Security Deposit on Approval</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Priority 24/7 Dedicated Concierge</li>
+            </ul>
+
+            <div class="membership-cta-wrap">
+
+              <button type="button" class="btn btn-primary w-100 select-membership-btn" data-plan="Weekly Explorer">
+                <span>Choose Weekly Explorer</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="membership-card">
+            <div class="membership-header">
+              <span class="membership-plan-badge">PRESTIGE SUBSCRIPTION</span>
+              <h3 class="membership-title">Monthly Executive</h3>
+              <p class="membership-desc">
+                Long-term corporate luxury with vehicle swaps, tailored for seasonal stays and executive mobility.
+              </p>
+            </div>
+
+            <div class="membership-price-box">
+              <span class="membership-currency">$</span>
+              <span class="membership-amount">3,450</span>
+              <span class="membership-cycle">/ month</span>
+            </div>
+
+            <div class="membership-duration">30+ Days Renewable On-Demand</div>
+
+            <ul class="membership-benefits-list">
+              <li><i class="fa-solid fa-check text-primary"></i> Free Monthly Vehicle Swap Privilege</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Dedicated VIP Account Director</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Unlimited Kilometers & Airport Valet</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Zero-Liability Umbrella Protection</li>
+              <li><i class="fa-solid fa-check text-primary"></i> Chauffeur Standby Credits Included</li>
+            </ul>
+
+            <div class="membership-cta-wrap">
+              <button type="button" class="btn btn-secondary w-100 select-membership-btn" data-plan="Monthly Executive">
+                <span>Choose Monthly Executive</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="h2-spotlight-section" id="spotlight">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">MECHANICAL MASTERPIECES</span>
+          <h2 class="section-heading">Meet the Machines Behind Every Journey</h2>
+          <p class="section-subtitle">
+            An exclusive spotlight on the pinnacle of modern automotive engineering. Maintained to racetrack tolerances.
+          </p>
+        </div>
+
+        <div class="spotlight-flagship-card">
+          <div class="spotlight-flagship-grid">
+
+            <div class="spotlight-visual">
+              <div class="spotlight-img-wrap">
+                <img src="assets/spotlight-main.jpg" alt="Porsche 911 GT3 RS Flagship" class="spotlight-main-img" loading="lazy">
+                <div class="spotlight-img-gradient"></div>
+                <div class="spotlight-flagship-pill">
+                  <span class="spotlight-dot"></span>
+                  <span>FLAGSHIP OF THE MONTH</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="spotlight-details">
+              <div class="spotlight-cat-tag">TRACK-BRED SUPERCAR</div>
+              <h3 class="spotlight-vehicle-title">Porsche 911 GT3 RS</h3>
+
+              <p class="spotlight-lead">
+                Naturally aspirated 4.0-liter flat-six engine generating 518 horsepower and an intoxicating 9,000 RPM redline. Engineered with motorsport-grade swan-neck active aerodynamics and dual-wishbone front axle precision.
+              </p>
+
+              <div class="spotlight-specs-grid">
+                <div class="spec-tile">
+                  <div class="spec-tile-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                  <div class="spec-tile-data">
+                    <span class="spec-tile-val">3.0 s</span>
+                    <span class="spec-tile-lbl">0 - 100 km/h</span>
+                  </div>
+                </div>
+
+                <div class="spec-tile">
+                  <div class="spec-tile-icon"><i class="fa-solid fa-bolt"></i></div>
+                  <div class="spec-tile-data">
+                    <span class="spec-tile-val">518 HP</span>
+                    <span class="spec-tile-lbl">Naturally Aspirated</span>
+                  </div>
+                </div>
+
+                <div class="spec-tile">
+                  <div class="spec-tile-icon"><i class="fa-solid fa-gears"></i></div>
+                  <div class="spec-tile-data">
+                    <span class="spec-tile-val">7-Speed PDK</span>
+                    <span class="spec-tile-lbl">Dual-Clutch</span>
+                  </div>
+                </div>
+
+                <div class="spec-tile">
+                  <div class="spec-tile-icon"><i class="fa-solid fa-user-group"></i></div>
+                  <div class="spec-tile-data">
+                    <span class="spec-tile-val">2 Seats</span>
+                    <span class="spec-tile-lbl">Carbon Full Buckets</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="spotlight-action-bar">
+                <div class="spotlight-pricing">
+                  <span class="spotlight-rate">$650</span>
+                  <span class="spotlight-unit">/ 24 hours</span>
+                </div>
+
+                <div class="spotlight-btns">
+                  <button type="button" class="btn btn-primary open-spotlight-modal"
+                          data-car="Porsche 911 GT3 RS"
+                          data-rate="$650 / day"
+                          data-img="assets/spotlight-main.jpg">
+                    <span>Reserve This Machine</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="supporting-vehicles-grid">
+
+          <article class="supporting-card">
+            <div class="supporting-img-box">
+              <img src="assets/spotlight-g63.jpg" alt="Mercedes-AMG G63" class="supporting-img" loading="lazy">
+              <div class="supporting-badge">PRESTIGE LUXURY SUV</div>
+            </div>
+            <div class="supporting-info">
+              <div class="supporting-meta-top">
+                <h4 class="supporting-name">Mercedes-AMG G63</h4>
+                <span class="supporting-price">$550 <small>/ day</small></span>
+              </div>
+              <p class="supporting-desc">
+                Handcrafted 4.0L V8 Biturbo delivering 577 horsepower, triple-locking differentials, and burly side-exit exhaust roar.
+              </p>
+              <div class="supporting-mini-specs">
+                <span><i class="fa-solid fa-users"></i> 5 Seats</span>
+                <span><i class="fa-solid fa-bolt"></i> 577 HP</span>
+                <span><i class="fa-solid fa-gauge"></i> 4.5s (0-100)</span>
+              </div>
+              <div class="supporting-btn-wrap">
+                <button type="button" class="btn btn-secondary w-100 open-spotlight-modal"
+                        data-car="Mercedes-AMG G63"
+                        data-rate="$550 / day"
+                        data-img="assets/spotlight-g63.jpg">
+                  <span>Explore G63</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="supporting-card">
+            <div class="supporting-img-box">
+              <img src="assets/spotlight-etron.jpg" alt="Audi RS e-tron GT" class="supporting-img" loading="lazy">
+              <div class="supporting-badge">HIGH-PERFORMANCE ELECTRIC GT</div>
+            </div>
+            <div class="supporting-info">
+              <div class="supporting-meta-top">
+                <h4 class="supporting-name">Audi RS e-tron GT</h4>
+                <span class="supporting-price">$480 <small>/ day</small></span>
+              </div>
+              <p class="supporting-desc">
+                Electric dual-motor Quattro powertrain with 637 HP boost mode, 800-volt high-speed charging, and aerodynamic carbon roof.
+              </p>
+              <div class="supporting-mini-specs">
+                <span><i class="fa-solid fa-users"></i> 4 Seats</span>
+                <span><i class="fa-solid fa-bolt"></i> 637 HP</span>
+                <span><i class="fa-solid fa-gauge"></i> 3.1s (0-100)</span>
+              </div>
+              <div class="supporting-btn-wrap">
+                <button type="button" class="btn btn-secondary w-100 open-spotlight-modal"
+                        data-car="Audi RS e-tron GT"
+                        data-rate="$480 / day"
+                        data-img="assets/spotlight-etron.jpg">
+                  <span>Explore RS e-tron GT</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="h2-cta-promise-section" id="cta-promise">
+      <div class="h2-cta-bg-container" aria-hidden="true">
+        <img src="assets/cta-car.jpg" alt="Freedom of Driving" class="h2-cta-bg-img">
+        <div class="h2-cta-bg-overlay"></div>
+        <div class="h2-cta-radial-glow"></div>
+      </div>
+
+      <div class="section-container h2-cta-container">
+
+        <div class="h2-cta-content text-center">
+          <div class="h2-cta-pill">
+            <span class="h2-cta-pill-dot"></span>
+            <span>COMMENCE YOUR JOURNEY</span>
+          </div>
+
+          <h2 class="h2-cta-heading">
+            Your Next Journey Starts <br>
+            <span class="h2-cta-highlight">With One Decision.</span>
+          </h2>
+
+          <p class="h2-cta-lead">
+            Choose your destination, select your perfect ride, and enjoy the freedom of driving on your own terms.
+          </p>
+
+          <div class="h2-cta-actions">
+
+            <a href="#spotlight" class="btn btn-primary h2-final-btn">
+              <span>Browse Our Cars</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#footer" class="btn btn-secondary h2-final-btn-alt">
+              <span>Contact Support</span>
+              <i class="fa-solid fa-headset"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="service-promise-strip">
+          <div class="promise-item">
+            <div class="promise-icon">
+              <i class="fa-solid fa-file-contract"></i>
+            </div>
+            <div class="promise-body">
+              <h4 class="promise-title">Transparent Rental Process</h4>
+              <p class="promise-desc">Zero hidden charges, upfront deposits, and instant digital agreements.</p>
+            </div>
+          </div>
+
+          <div class="promise-item">
+            <div class="promise-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="promise-body">
+              <h4 class="promise-title">Well-Maintained Vehicles</h4>
+              <p class="promise-desc">120-point mechanical check and pristine showroom sanitization.</p>
+            </div>
+          </div>
+
+          <div class="promise-item">
+            <div class="promise-icon">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <div class="promise-body">
+              <h4 class="promise-title">Flexible Booking Options</h4>
+              <p class="promise-desc">Free 24h cancellations, seamless extensions, and multi-hub returns.</p>
+            </div>
+          </div>
+
+          <div class="promise-item">
+            <div class="promise-icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <div class="promise-body">
+              <h4 class="promise-title">Dedicated Customer Support</h4>
+              <p class="promise-desc">24/7 direct VIP concierge hotline and immediate roadside assistance.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="section-container">
+
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+            <div class="logo-icon-wrap">
+              <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+                <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">VELOCE</span>
+              <span class="brand-sub">LUXURY FLEET</span>
+            </div>
+          </a>
+
+          <p class="footer-brand-desc">
+            Veloce is an international luxury car rental and self-drive platform offering high-performance, prestige, and electric automobiles backed by white-glove concierge standards.
+          </p>
+
+          <div class="social-links-row">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html">Self-Drive Rentals</a></li>
+            <li><a href="cars.html">Luxury Car Rentals</a></li>
+            <li><a href="pricing.html">Daily Rentals</a></li>
+            <li><a href="pricing.html">Weekly Rentals</a></li>
+            <li><a href="pricing.html">Monthly Leases</a></li>
+            <li><a href="cars.html">Airport VIP Handover</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html">Our Cars</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pricing.html">Pricing & Plans</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="dashboard.html" class="footer-dash-link">Customer Dashboard</a></li>
+            <li><a href="#" id="openTermsLink">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact-col">
+          <h4 class="footer-col-title">Contact & Support</h4>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <div>
+                <span class="contact-sub">24/7 Concierge Hotline</span>
+                <a href="tel:+18005893283" class="contact-val">+1 (800) 589-3283</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <div>
+                <span class="contact-sub">VIP Inquiries</span>
+                <a href="mailto:concierge@veloce-drive.com" class="contact-val">concierge@veloce-drive.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <div>
+                <span class="contact-sub">Headquarters</span>
+                <span class="contact-val">742 Ocean Boulevard, Beverly Hills, CA 90210</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="footer-badge-pill">
+            <i class="fa-solid fa-shield-halved text-primary"></i>
+            <span>24/7 Live Roadside Concierge</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> VELOCE Luxury Car Rental Inc. All rights reserved.
+        </p>
+
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Terms of Service</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Rental Agreement</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="detailsModal">
+    <div class="modal-dialog details-modal-dialog">
+      <button class="modal-close-btn" id="closeDetailsModal" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="details-modal-grid">
+        <div class="details-media-col">
+          <img src="" alt="Car Preview" class="details-large-img" id="modalCarImg">
+          <div class="details-guarantee-box">
+            <i class="fa-solid fa-circle-check text-primary"></i>
+            <span>Guaranteed Model & Color Match • Direct Handover</span>
+          </div>
+        </div>
+
+        <div class="details-info-col">
+          <div class="details-header">
+            <span class="category-badge" id="modalCarCategory">Supercar</span>
+            <h3 class="details-car-title" id="modalCarTitle">Porsche 911 GT3 RS</h3>
+            <div class="details-rating-row">
+              <div class="client-stars" id="modalStars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span id="modalRatingText">5.0 (98 verified drives)</span>
+            </div>
+          </div>
+
+          <div class="details-price-row">
+            <span class="details-price" id="modalCarPrice">$650</span>
+            <span class="price-period">/ 24 hours</span>
+          </div>
+
+          <p class="details-desc" id="modalCarDesc">
+            Naturally aspirated 4.0-liter flat-six engine generating 518 horsepower and an astronomical 9,000 RPM redline. Equipped with swan-neck active aerodynamics and Weissach package carbon fiber finishes.
+          </p>
+
+          <h5 class="specs-heading">Technical Specifications</h5>
+          <div class="modal-specs-grid">
+            <div class="modal-spec-item">
+              <span class="spec-label">Capacity</span>
+              <strong id="modalSpecSeats">2 Passengers</strong>
+            </div>
+            <div class="modal-spec-item">
+              <span class="spec-label">Transmission</span>
+              <strong id="modalSpecTrans">7-Speed PDK</strong>
+            </div>
+            <div class="modal-spec-item">
+              <span class="spec-label">Powertrain</span>
+              <strong id="modalSpecPower">4.0L Flat-6 (518 HP)</strong>
+            </div>
+            <div class="modal-spec-item">
+              <span class="spec-label">Top Speed</span>
+              <strong id="modalSpecSpeed">296 km/h</strong>
+            </div>
+          </div>
+
+          <h5 class="specs-heading mt-3">Included Benefits</h5>
+          <ul class="modal-perks-list">
+            <li><i class="fa-solid fa-check text-primary"></i> Unlimited Kilometers Included</li>
+            <li><i class="fa-solid fa-check text-primary"></i> Zero-Deductible Comprehensive Coverage</li>
+            <li><i class="fa-solid fa-check text-primary"></i> White-Glove Direct Hotel or Terminal Delivery</li>
+            <li><i class="fa-solid fa-check text-primary"></i> 24-Hour Roadside Concierge Support</li>
+          </ul>
+
+          <div class="modal-actions-row">
+            <button type="button" class="btn btn-primary w-100 modal-book-now-btn" id="modalBookNowBtn">
+              <span>Reserve This Car Now</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-dialog booking-modal-dialog">
+      <button class="modal-close-btn" id="closeBookingModal" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="booking-modal-header">
+        <h3 class="modal-title">Complete Your Reservation</h3>
+        <p class="modal-subtitle">Instant booking with guaranteed vehicle allocation</p>
+      </div>
+
+      <div class="selected-car-strip">
+        <img src="assets/spotlight-main.jpg" alt="Selected Car" class="strip-thumb" id="bookingThumb">
+        <div class="strip-details">
+          <h4 class="strip-title" id="bookingCarTitle">Porsche 911 GT3 RS</h4>
+          <span class="strip-rate" id="bookingCarRate">$650 / day</span>
+        </div>
+        <div class="strip-status-badge">Available</div>
+      </div>
+
+      <form class="reservation-form" id="reservationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resName" class="form-label">Full Legal Name</label>
+            <input type="text" id="resName" class="form-control" placeholder="e.g. Alexander Vance" required>
+          </div>
+          <div class="form-group">
+            <label for="resEmail" class="form-label">Email Address</label>
+            <input type="email" id="resEmail" class="form-control" placeholder="alexander@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resPhone" class="form-label">Phone Number</label>
+            <input type="tel" id="resPhone" class="form-control" placeholder="+1 (555) 019-2834" required>
+          </div>
+          <div class="form-group">
+            <label for="resLicense" class="form-label">Driver's License / Country</label>
+            <input type="text" id="resLicense" class="form-control" placeholder="License No. & Country" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resPickupLoc" class="form-label">Pickup Location</label>
+            <select id="resPickupLoc" class="form-control" required>
+              <option value="beverly-hills">Beverly Hills Flagship Atelier</option>
+              <option value="lax-vip">LAX Private Terminal Ramp</option>
+              <option value="doorstep">Doorstep White-Glove Handover</option>
+              <option value="dubai-marina">Dubai Marina Showroom</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="resReturnLoc" class="form-label">Return Location</label>
+            <select id="resReturnLoc" class="form-control" required>
+              <option value="beverly-hills">Beverly Hills Flagship Atelier</option>
+              <option value="lax-vip">LAX Private Terminal Ramp</option>
+              <option value="doorstep">Doorstep Collection</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resStartDate" class="form-label">Pickup Date</label>
+            <input type="date" id="resStartDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="resEndDate" class="form-label">Return Date</label>
+            <input type="date" id="resEndDate" class="form-control" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 modal-confirm-btn" id="confirmReservationBtn">
+          <span>Confirm & Lock Allocation</span>
+          <i class="fa-solid fa-lock"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="home2.js"></script>
+</body>
+</html>

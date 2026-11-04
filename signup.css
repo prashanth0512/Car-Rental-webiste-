@@ -1,0 +1,136 @@
+.signup-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 14px;
+}
+
+.signup-page .auth-card {
+  max-width: 540px;
+}
+
+.auth-field-check {
+  margin-bottom: 22px;
+}
+
+.strength-meter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.strength-meter span {
+  height: 5px;
+  border-radius: 4px;
+  background: var(--border-color, #33353A);
+  transition: background-color 0.25s ease;
+}
+
+.strength-meter em {
+  grid-column: 1 / -1;
+  font-style: normal;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-muted, #9A9BA0);
+}
+
+.strength-meter[data-level="1"] span:nth-child(-n+1) { background: #FF5A68; }
+.strength-meter[data-level="2"] span:nth-child(-n+2) { background: #F59E0B; }
+.strength-meter[data-level="3"] span:nth-child(-n+3) { background: #3B82F6; }
+.strength-meter[data-level="4"] span:nth-child(-n+4) { background: #10B981; }
+
+.strength-meter[data-level="1"] em { color: #FF5A68; }
+.strength-meter[data-level="2"] em { color: #F59E0B; }
+.strength-meter[data-level="3"] em { color: #3B82F6; }
+.strength-meter[data-level="4"] em { color: #10B981; }
+
+@media (max-width: 640px) {
+  .signup-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+}
+
+
+/* Centered heading + fit-to-screen signup */
+.signup-page .auth-card-head {
+  text-align: center;
+}
+
+.signup-page .auth-card-head p {
+  margin-bottom: clamp(10px, 2vh, 20px);
+}
+
+#signupForm {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 14px;
+}
+
+#signupForm > .signup-grid,
+#signupForm > #fieldName,
+#signupForm > #fieldTerms,
+#signupForm > .auth-submit {
+  grid-column: 1 / -1;
+}
+
+#signupForm .signup-grid {
+  margin: 0;
+}
+
+.signup-page .auth-field {
+  margin-bottom: clamp(8px, 1.6vh, 16px);
+}
+
+.signup-page .auth-field label {
+  margin-bottom: 6px;
+}
+
+.signup-page .auth-input-wrap input {
+  height: clamp(40px, 6vh, 48px);
+}
+
+.signup-page .auth-submit {
+  height: clamp(42px, 6vh, 48px);
+}
+
+.signup-page .strength-meter {
+  margin-top: 8px;
+  gap: 4px;
+}
+
+.signup-page .strength-meter em {
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
+.signup-page .auth-field-check {
+  margin-bottom: clamp(10px, 2vh, 18px);
+}
+
+.signup-page .auth-switch {
+  margin-top: clamp(10px, 2vh, 18px);
+}
+
+@media (min-width: 993px) {
+  .signup-page .auth-panel {
+    height: 100vh;
+    padding: 16px 48px 20px;
+    box-sizing: border-box;
+  }
+
+  .signup-page .auth-topbar {
+    margin-bottom: 8px;
+  }
+
+  .signup-page .auth-card {
+    max-width: 580px;
+    padding: clamp(16px, 3vh, 30px) 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  #signupForm {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Contact Us | VELOCE LUXURY FLEET — 24/7 Concierge & Customer Support</title>
+  <meta name="description" content="Get in touch with VELOCE Luxury Fleet. 24/7 concierge support, vehicle reservation inquiries, location map, and direct customer assistance.">
+  <meta name="keywords" content="contact car rental, luxury fleet support, car rental customer care, self-drive help, Veloce Beverly Hills location">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body class="contact-page">
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+      <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+        <div class="logo-icon-wrap">
+          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VELOCE</span>
+          <span class="brand-sub">LUXURY FLEET</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link" id="homeDropdownBtn" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu" id="homeDropdownMenu">
+              <li>
+                <a href="index.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 1 - Red Dynamic</span>
+                    <span class="dropdown-desc">Cinematic curves & floating fleet hero</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home2.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 2 - Minimal Luxury</span>
+                    <span class="dropdown-desc">Monochrome elegance & travel stories</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="cars.html" class="nav-link">Our Cars</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link" id="navDashboardBtn">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <button type="button" class="action-btn dir-toggle" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+          <span class="dir-text" id="dirText">RTL</span>
+        </button>
+
+        <button type="button" class="action-btn theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-primary header-login-btn" id="loginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login</span>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-name">VELOCE</span>
+        <span class="brand-sub">LUXURY FLEET</span>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <div class="mobile-dropdown-header" id="mobileHomeDropdown">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul class="mobile-sub-menu" id="mobileHomeSubmenu">
+            <li><a href="index.html" class="mobile-link">Home 1 - Red Dynamic</a></li>
+            <li><a href="home2.html" class="mobile-link">Home 2 - Minimal Luxury</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="about.html" class="mobile-link">About Us</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="cars.html" class="mobile-link">Our Cars</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="pricing.html" class="mobile-link">Pricing</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="contact.html" class="mobile-link active">Contact</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="dashboard.html" class="mobile-link">Dashboard</a>
+        </li>
+      </ul>
+
+      <div class="mobile-drawer-actions">
+        <div class="mobile-settings-row">
+          <button type="button" class="action-btn mobile-dir-btn" id="mobileDirToggle">
+            <span id="mobileDirText">Switch to RTL</span>
+          </button>
+          <button type="button" class="action-btn mobile-theme-btn" id="mobileThemeToggle">
+            <i class="fa-solid fa-moon"></i>
+            <span id="mobileThemeText">Dark Mode</span>
+          </button>
+        </div>
+        <a href="login.html" class="btn btn-primary w-100 mobile-login-btn" id="mobileLoginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login / Register</span>
+        </a>
+      </div></div>
+  </aside>
+
+  <main class="contact-main-wrapper" id="mainContent">
+
+    <section class="contact-hero-section" id="contact-hero">
+
+      <div class="contact-hero-bg-wrap" aria-hidden="true">
+        <img src="assets/journey-luxury.jpg" alt="VELOCE Concierge Service" class="contact-hero-bg-img">
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-ambient-glow"></div>
+        <div class="contact-hero-grid-pattern"></div>
+      </div>
+
+      <div class="section-container contact-hero-container">
+        <div class="contact-hero-content">
+
+          <nav class="contact-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html" class="breadcrumb-item">Home</a>
+            <i class="fa-solid fa-chevron-right breadcrumb-sep"></i>
+            <span class="breadcrumb-item current" aria-current="page">Contact</span>
+          </nav>
+
+          <div class="contact-hero-tag">
+            <span class="contact-tag-pulse"></span>
+            <span class="contact-tag-text">WE'RE HERE TO HELP</span>
+          </div>
+
+          <h1 class="contact-hero-title">
+            Let's Make Your <br>
+            <span class="contact-title-accent">Next Journey Happen.</span>
+          </h1>
+
+          <p class="contact-hero-lead">
+            Have a question about our vehicles, rental plans, or bookings? Our team is here to help you find the right solution for every journey with white-glove concierge attention.
+          </p>
+
+          <div class="contact-hero-ctas">
+            <a href="#contact-form-section" class="btn btn-primary contact-cta-main">
+              <span>Send Us a Message</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#contact-faq" class="btn btn-secondary contact-cta-secondary">
+              <span>View FAQs</span>
+              <i class="fa-solid fa-circle-question"></i>
+            </a>
+          </div>
+
+          <div class="contact-hero-trust-badge">
+            <i class="fa-solid fa-shield-halved text-primary"></i>
+            <span>Your Journey. Our Support.</span>
+            <span class="trust-dot">•</span>
+            <span class="trust-highlight">24/7 Live Assistance</span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="contact-info-section" id="contact-info">
+      <div class="section-container">
+        <div class="contact-info-layout">
+
+          <div class="contact-info-left">
+
+            <div class="contact-section-intro">
+              <span class="section-sub-label">GET IN TOUCH</span>
+              <h2 class="section-heading">We'd Love to Hear From You.</h2>
+              <p class="section-subtitle">
+                Whether you need help choosing a vehicle, understanding our rental plans, or managing an existing reservation, our team is ready to assist.
+              </p>
+            </div>
+
+            <div class="contact-cards-stack">
+
+              <article class="contact-card">
+                <div class="contact-card-icon-wrap">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h3 class="contact-card-title">Email Us</h3>
+                  <p class="contact-card-desc">Send us your questions and we'll get back to you promptly.</p>
+                  <a href="mailto:concierge@veloce-drive.com" class="contact-card-link" id="cfgEmail">
+                    <span>concierge@veloce-drive.com</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <span class="contact-card-sub">VIP Inquiries: support@veloce-drive.com</span>
+                </div>
+              </article>
+
+              <article class="contact-card">
+                <div class="contact-card-icon-wrap">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h3 class="contact-card-title">Call Us</h3>
+                  <p class="contact-card-desc">Speak directly with our dedicated customer concierge team.</p>
+                  <a href="tel:+18005893283" class="contact-card-link" id="cfgPhone">
+                    <span>+1 (800) 589-3283</span>
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </a>
+                  <span class="contact-card-sub">Toll-Free &bull; Available 24 Hours, 7 Days a Week</span>
+                </div>
+              </article>
+
+              <article class="contact-card">
+                <div class="contact-card-icon-wrap">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-card-content">
+                  <h3 class="contact-card-title">Visit Us</h3>
+                  <p class="contact-card-desc">Find our flagship atelier and connect with our fleet specialists.</p>
+                  <address class="contact-card-address" id="cfgAddress">
+                    742 Ocean Boulevard, Beverly Hills, CA 90210
+                  </address>
+                  <span class="contact-card-sub">Mon &ndash; Sat: 8:00 AM &ndash; 9:00 PM &bull; Sun: 9:00 AM &ndash; 6:00 PM</span>
+                </div>
+              </article>
+
+            </div>
+
+          </div>
+
+          <div class="contact-info-right">
+            <div class="contact-image-frame">
+              <img src="assets/about-car-new.jpg" alt="VELOCE Flagship Automotive Atelier" class="contact-showcase-img" loading="lazy">
+              <div class="contact-img-overlay-glow"></div>
+
+              <div class="contact-floating-pill">
+                <div class="pill-icon">
+                  <i class="fa-solid fa-bolt-lightning text-primary"></i>
+                </div>
+                <div class="pill-text">
+                  <strong>Rapid Concierge Dispatch</strong>
+                  <span>Average inquiry response under 15 minutes</span>
+                </div>
+              </div>
+
+              <div class="contact-floating-pill bottom-pill">
+                <div class="pill-icon">
+                  <i class="fa-solid fa-shield-halved text-primary"></i>
+                </div>
+                <div class="pill-text">
+                  <strong>24/7 Roadside Hotline</strong>
+                  <span>Nationwide GPS emergency assistance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-map-section" id="contact-form-section">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">GET ASSISTANCE</span>
+          <h2 class="section-heading">How Can We Help You?</h2>
+          <p class="section-subtitle">
+            Share your details and tell us what you need. Our team will be happy to assist with any journey request.
+          </p>
+        </div>
+
+        <div class="contact-form-map-grid">
+
+          <div class="contact-form-card" id="contactFormCard">
+
+            <div class="form-card-header">
+              <h3 class="form-card-title">Send Us a Message</h3>
+              <p class="form-card-subtitle">Fill in the details below and our team will get in touch.</p>
+            </div>
+
+            <div class="form-alert" id="formAlertBanner" style="display: none;" role="alert">
+              <i class="fa-solid fa-circle-check form-alert-icon"></i>
+              <div class="form-alert-content" id="formAlertContent"></div>
+            </div>
+
+            <form class="contact-form" id="contactUsForm" novalidate>
+
+              <div class="form-group mb-3">
+                <label for="contactFullName" class="form-label">
+                  Full Name <span class="required-star">*</span>
+                </label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="contactFullName" name="fullName" class="form-control" placeholder="e.g. Alexander Wright" required autocomplete="name">
+                </div>
+                <span class="field-error-msg" id="nameError">Please enter your full name.</span>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="contactEmailAddr" class="form-label">
+                  Email Address <span class="required-star">*</span>
+                </label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="contactEmailAddr" name="email" class="form-control" placeholder="e.g. alexander@example.com" required autocomplete="email">
+                </div>
+                <span class="field-error-msg" id="emailError">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="contactPhoneNumber" class="form-label">
+                  Phone Number <span class="text-muted">(Optional)</span>
+                </label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-phone input-icon"></i>
+                  <input type="tel" id="contactPhoneNumber" name="phone" class="form-control" placeholder="e.g. +1 (800) 589-3283" autocomplete="tel">
+                </div>
+                <span class="field-error-msg" id="phoneError">Please provide a valid phone number.</span>
+              </div>
+
+              <div class="form-group mb-3">
+                <label for="contactSubject" class="form-label">
+                  Subject <span class="required-star">*</span>
+                </label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-list-check input-icon"></i>
+                  <select id="contactSubject" name="subject" class="form-control" required>
+                    <option value="" disabled selected>Select a subject...</option>
+                    <option value="General Enquiry">General Enquiry</option>
+                    <option value="Car Rental Enquiry">Car Rental Enquiry</option>
+                    <option value="Booking Assistance">Booking Assistance</option>
+                    <option value="Pricing Information">Pricing Information</option>
+                    <option value="Vehicle Availability">Vehicle Availability</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <span class="field-error-msg" id="subjectError">Please select a subject for your enquiry.</span>
+              </div>
+
+              <div class="form-group mb-3">
+                <label class="form-label">Preferred Contact Method</label>
+                <div class="contact-method-radios">
+                  <label class="custom-radio-pill">
+                    <input type="radio" name="preferredMethod" value="Email" checked>
+                    <span class="radio-pill-btn">
+                      <i class="fa-regular fa-envelope"></i>
+                      <span>Email</span>
+                    </span>
+                  </label>
+                  <label class="custom-radio-pill">
+                    <input type="radio" name="preferredMethod" value="Phone">
+                    <span class="radio-pill-btn">
+                      <i class="fa-solid fa-phone"></i>
+                      <span>Phone</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group mb-3">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                  <label for="contactMessage" class="form-label mb-0">
+                    Your Message <span class="required-star">*</span>
+                  </label>
+                  <span class="char-counter" id="charCounter">0 / 1000</span>
+                </div>
+                <textarea id="contactMessage" name="message" class="form-control form-textarea" rows="4" maxlength="1000" placeholder="Please tell us about your rental schedule, vehicle preference, or specific inquiries..." required></textarea>
+                <span class="field-error-msg" id="messageError">Please enter your message (at least 10 characters).</span>
+              </div>
+
+              <div class="form-group mb-4">
+                <label class="custom-consent-box">
+                  <input type="checkbox" id="contactConsent" name="consent" required>
+                  <span class="consent-checkbox-mark"></span>
+                  <span class="consent-text">
+                    I agree to be contacted regarding my enquiry in accordance with VELOCE's <a href="#" class="privacy-link">Privacy Policy</a>.
+                  </span>
+                </label>
+                <span class="field-error-msg" id="consentError">You must agree before submitting.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 contact-submit-btn" id="contactSubmitBtn">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-solid fa-paper-plane btn-icon"></i>
+                <span class="btn-spinner" style="display: none;"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+              </button>
+
+              <p class="form-footnote text-center">
+                <i class="fa-solid fa-lock text-primary"></i>
+                <span>Your contact data is securely handled and never shared with third parties.</span>
+              </p>
+
+            </form>
+
+          </div>
+
+          <div class="contact-map-card" id="locationMapCard">
+
+            <div class="map-card-header">
+              <h3 class="map-card-title">Find Our Location</h3>
+              <p class="map-card-subtitle">Visit our flagship atelier and connect with our fleet concierge team.</p>
+            </div>
+
+            <div class="map-embed-frame">
+              <iframe
+                title="VELOCE Luxury Fleet Beverly Hills Location Map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-118.4200%2C34.0600%2C-118.3900%2C34.0800&amp;layer=mapnik&amp;marker=34.0700%2C-118.4050"
+                class="map-iframe"
+                loading="lazy">
+              </iframe>
+              <div class="map-marker-pin">
+                <div class="pin-pulse"></div>
+                <div class="pin-icon"><i class="fa-solid fa-car"></i></div>
+              </div>
+            </div>
+
+            <div class="map-details-body">
+
+              <div class="map-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="detail-text">
+                  <span class="detail-label">Flagship Atelier</span>
+                  <strong class="detail-val">742 Ocean Boulevard, Beverly Hills, CA 90210</strong>
+                </div>
+              </div>
+
+              <div class="map-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-plane-departure"></i></div>
+                <div class="detail-text">
+                  <span class="detail-label">VIP Airport Terminal</span>
+                  <strong class="detail-val">Curbside Handover at Terminal 2 &amp; Private Jet Hangar</strong>
+                </div>
+              </div>
+
+              <div class="map-detail-item">
+                <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="detail-text">
+                  <span class="detail-label">Concierge Hours</span>
+                  <strong class="detail-val">Mon &ndash; Sat: 8:00 AM &ndash; 9:00 PM | Sun: 9:00 AM &ndash; 6:00 PM</strong>
+                </div>
+              </div>
+
+              <a href="https://maps.google.com/?q=Beverly+Hills+CA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-100 map-directions-btn">
+                <i class="fa-solid fa-diamond-turn-right"></i>
+                <span>Get Driving Directions</span>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact-faq-section" id="contact-faq">
+      <div class="section-container">
+
+        <div class="contact-faq-grid">
+
+          <div class="contact-faq-intro-col">
+            <div class="faq-sticky-panel">
+              <span class="section-sub-label">NEED HELP?</span>
+              <h2 class="faq-panel-title">Questions? We've Got Answers.</h2>
+              <p class="faq-panel-desc">
+                Find helpful information about contacting us, booking procedures, vehicle support, and rental assistance.
+              </p>
+
+              <div class="faq-support-box">
+                <div class="faq-support-icon">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <h4 class="faq-support-title">Prefer to talk directly?</h4>
+                <p class="faq-support-desc">
+                  Our concierge specialists are on standby 24 hours a day to guide your reservation.
+                </p>
+                <div class="faq-support-actions">
+                  <a href="tel:+18005893283" class="btn btn-primary w-100">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+1 (800) 589-3283</span>
+                  </a>
+                  <a href="#contact-form-section" class="btn btn-secondary w-100 mt-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Send Message</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-faq-accordion-col">
+            <div class="faq-accordion-stack" id="contactFaqAccordion">
+
+              <div class="faq-item active">
+                <button type="button" class="faq-question-btn" aria-expanded="true">
+                  <span class="faq-q-num">01</span>
+                  <span class="faq-q-text">How can I contact customer support?</span>
+                  <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-answer-panel">
+                  <div class="faq-answer-inner">
+                    You can contact our support team 24/7 via phone at +1 (800) 589-3283, send an email to concierge@veloce-drive.com, or fill out the contact form on this page. For immediate emergency roadside assistance, our dedicated dispatcher line is active 24/7.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question-btn" aria-expanded="false">
+                  <span class="faq-q-num">02</span>
+                  <span class="faq-q-text">How long does it take to receive a response?</span>
+                  <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-answer-panel">
+                  <div class="faq-answer-inner">
+                    Our concierge desk reviews all digital inquiries as they arrive. Standard email and form messages typically receive an initial response within 15 to 30 minutes during operating hours, and within 2 hours outside peak periods. Phone assistance is immediate.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question-btn" aria-expanded="false">
+                  <span class="faq-q-num">03</span>
+                  <span class="faq-q-text">Can I ask about vehicle availability before booking?</span>
+                  <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-answer-panel">
+                  <div class="faq-answer-inner">
+                    Yes, absolutely. You can check real-time availability on our <a href="cars.html" class="inline-link">Our Cars</a> fleet marketplace, or contact our concierge directly with your target travel dates and vehicle model preferences.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question-btn" aria-expanded="false">
+                  <span class="faq-q-num">04</span>
+                  <span class="faq-q-text">How can I get assistance with an existing booking?</span>
+                  <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-answer-panel">
+                  <div class="faq-answer-inner">
+                    To modify, extend, or review an existing reservation, have your Booking Reference ID ready and quote it via phone or email. You may also access your reservation directly within your online Customer Dashboard.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question-btn" aria-expanded="false">
+                  <span class="faq-q-num">05</span>
+                  <span class="faq-q-text">Can I modify my pickup or return details?</span>
+                  <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-answer-panel">
+                  <div class="faq-answer-inner">
+                    Yes. Changes to pickup or return time and locations can be requested without modification penalty up to 4 hours prior to scheduled handover, subject to vehicle scheduling and route availability.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question-btn" aria-expanded="false">
+                  <span class="faq-q-num">06</span>
+                  <span class="faq-q-text">What should I do if I face an issue during my rental?</span>
+                  <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-answer-panel">
+                  <div class="faq-answer-inner">
+                    In the rare event of mechanical difficulty, a flat tire, or warning light, call our 24/7 emergency dispatch immediately at +1 (800) 589-3283. All rentals include complimentary nationwide roadside recovery and replacement vehicle coverage.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question-btn" aria-expanded="false">
+                  <span class="faq-q-num">07</span>
+                  <span class="faq-q-text">Can I request information about rental pricing?</span>
+                  <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-answer-panel">
+                  <div class="faq-answer-inner">
+                    Yes. We practice 100% transparent pricing with zero surprise charges. You can explore standard rates on our <a href="pricing.html" class="inline-link">Pricing Plans</a> page, or request a bespoke quote for extended multi-month corporate hires.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question-btn" aria-expanded="false">
+                  <span class="faq-q-num">08</span>
+                  <span class="faq-q-text">How can I share feedback about my experience?</span>
+                  <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+                </button>
+                <div class="faq-answer-panel">
+                  <div class="faq-answer-inner">
+                    We value client feedback immensely. You can submit reviews directly via the contact form with the subject "Other" or email management directly at feedback@veloce-drive.com following completion of your trip.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact-cta-section" id="contact-cta">
+
+      <div class="contact-cta-bg-wrap" aria-hidden="true">
+        <img src="assets/cta-car.jpg" alt="VELOCE Luxury Fleet Experience" class="contact-cta-bg-img">
+        <div class="contact-cta-overlay"></div>
+        <div class="contact-cta-glow"></div>
+      </div>
+
+      <div class="section-container contact-cta-container">
+        <div class="contact-cta-inner text-center">
+
+          <span class="contact-cta-badge">START A CONVERSATION</span>
+
+          <h2 class="contact-cta-title">
+            Every Great Journey Starts With a Conversation.
+          </h2>
+
+          <p class="contact-cta-lead">
+            Have a question or need assistance? Connect with our team and let us help you find the perfect driving experience.
+          </p>
+
+          <div class="contact-cta-btn-group">
+            <a href="cars.html" class="btn btn-primary contact-cta-btn-main">
+              <span>Explore Our Cars</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="pricing.html" class="btn btn-secondary contact-cta-btn-ghost">
+              <span>View Pricing Plans</span>
+              <i class="fa-solid fa-tags"></i>
+            </a>
+          </div>
+
+          <div class="contact-cta-features-strip">
+            <div class="contact-feat-item">
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>Guaranteed Model Allocation</span>
+            </div>
+            <div class="contact-feat-sep"></div>
+            <div class="contact-feat-item">
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>Doorstep &amp; Airport Delivery</span>
+            </div>
+            <div class="contact-feat-sep"></div>
+            <div class="contact-feat-item">
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>24/7 Roadside Assistance</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="section-container">
+
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+            <div class="logo-icon-wrap">
+              <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+                <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">VELOCE</span>
+              <span class="brand-sub">LUXURY FLEET</span>
+            </div>
+          </a>
+
+          <p class="footer-brand-desc">
+            Veloce is an international luxury car rental and self-drive platform offering high-performance, prestige, and electric automobiles backed by white-glove concierge standards.
+          </p>
+
+          <div class="social-links-row">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html">Self-Drive Rentals</a></li>
+            <li><a href="cars.html">Luxury Car Rentals</a></li>
+            <li><a href="pricing.html">Daily Rentals</a></li>
+            <li><a href="pricing.html">Weekly Rentals</a></li>
+            <li><a href="pricing.html">Monthly Leases</a></li>
+            <li><a href="cars.html">Airport VIP Handover</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="pricing.html">Pricing &amp; Plans</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cars.html">Our Cars</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="dashboard.html" class="footer-dash-link">Customer Dashboard</a></li>
+            <li><a href="#" id="openTermsLink">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact-col">
+          <h4 class="footer-col-title">Contact &amp; Support</h4>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <div>
+                <span class="contact-sub">24/7 Concierge Hotline</span>
+                <a href="tel:+18005893283" class="contact-val">+1 (800) 589-3283</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <div>
+                <span class="contact-sub">VIP Inquiries</span>
+                <a href="mailto:concierge@veloce-drive.com" class="contact-val">concierge@veloce-drive.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <div>
+                <span class="contact-sub">Headquarters</span>
+                <span class="contact-val">742 Ocean Boulevard, Beverly Hills, CA 90210</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="footer-badge-pill">
+            <i class="fa-solid fa-shield-halved text-primary"></i>
+            <span>24/7 Live Roadside Concierge</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> VELOCE Luxury Car Rental Inc. All rights reserved.
+        </p>
+
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Terms of Service</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Rental Agreement</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="contact.js"></script>
+</body>
+</html>
+

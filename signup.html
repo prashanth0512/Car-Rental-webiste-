@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | VELOCE LUXURY FLEET</title>
+  <meta name="description" content="Create your VELOCE Luxury Fleet account to book premium self-drive vehicles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body class="auth-page signup-page">
+
+  <main class="auth-layout">
+
+    <section class="auth-visual">
+      <div class="auth-visual-overlay"></div>
+      <div class="auth-visual-content">
+        <a href="index.html" class="auth-brand" title="Back to Home">
+          <svg class="auth-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+          </svg>
+          <span class="auth-brand-text">
+            <span class="auth-brand-name">VELOCE</span>
+            <span class="auth-brand-sub">LUXURY FLEET</span>
+          </span>
+        </a>
+
+        <div class="auth-visual-copy">
+          <span class="auth-pill">JOIN VELOCE</span>
+          <h1>Drive Premium. Start Today.</h1>
+          <p>Create your free account and get access to the full luxury fleet, transparent pricing and priority concierge service.</p>
+          <ul class="auth-points">
+            <li><i class="fa-solid fa-circle-check"></i> Free membership, no hidden fees</li>
+            <li><i class="fa-solid fa-circle-check"></i> Save favourite vehicles &amp; trips</li>
+            <li><i class="fa-solid fa-circle-check"></i> Exclusive member-only offers</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+
+      <div class="auth-topbar">
+        <a href="index.html" class="auth-back"><i class="fa-solid fa-arrow-left"></i><span>Back to Home</span></a>
+        <div class="auth-ctrls">
+          <button type="button" class="auth-ctrl" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction"><span id="dirText">RTL</span></button>
+          <button type="button" class="auth-ctrl auth-ctrl-icon" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="auth-card">
+        <div class="auth-card-head">
+          <h2>Create Account</h2>
+          <p>Fill in your details to get started in under a minute.</p>
+        </div>
+
+        <div class="auth-alert" id="authAlert" role="alert" style="display:none;"></div>
+
+        <form id="signupForm" novalidate>
+
+          <div class="auth-field" id="fieldName">
+            <label for="signupName">Full Name</label>
+            <div class="auth-input-wrap">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" id="signupName" placeholder="Your full name" autocomplete="name">
+            </div>
+            <span class="auth-error">Please enter your full name (min 2 characters).</span>
+          </div>
+
+          <div class="signup-grid">
+            <div class="auth-field" id="fieldEmail">
+              <label for="signupEmail">Email Address</label>
+              <div class="auth-input-wrap">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" id="signupEmail" placeholder="you@example.com" autocomplete="email">
+              </div>
+              <span class="auth-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="auth-field" id="fieldPhone">
+              <label for="signupPhone">Phone <small>(optional)</small></label>
+              <div class="auth-input-wrap">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel" id="signupPhone" placeholder="+91 98765 43210" autocomplete="tel">
+              </div>
+              <span class="auth-error">Please enter a valid phone number.</span>
+            </div>
+          </div>
+
+          <div class="auth-field" id="fieldPassword">
+            <label for="signupPassword">Password</label>
+            <div class="auth-input-wrap">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="signupPassword" placeholder="Create a strong password" autocomplete="new-password">
+              <button type="button" class="auth-eye" data-target="signupPassword" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+            </div>
+            <div class="strength-meter" id="strengthMeter" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+              <em id="strengthText">Use 8+ characters with letters, numbers &amp; symbols</em>
+            </div>
+            <span class="auth-error">Password must be at least 8 characters.</span>
+          </div>
+
+          <div class="auth-field" id="fieldConfirm">
+            <label for="signupConfirm">Confirm Password</label>
+            <div class="auth-input-wrap">
+              <i class="fa-solid fa-shield-halved"></i>
+              <input type="password" id="signupConfirm" placeholder="Re-enter your password" autocomplete="new-password">
+              <button type="button" class="auth-eye" data-target="signupConfirm" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+            </div>
+            <span class="auth-error">Passwords do not match.</span>
+          </div>
+
+          <div class="auth-field auth-field-check" id="fieldTerms">
+            <label class="auth-check">
+              <input type="checkbox" id="signupTerms">
+              <span class="auth-box"></span>
+              <span>I agree to the <a href="#" class="auth-link">Terms of Service</a> and <a href="#" class="auth-link">Privacy Policy</a></span>
+            </label>
+            <span class="auth-error">You must accept the terms to continue.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary auth-submit" id="signupSubmit">
+            <span class="btn-label">Create Account</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <p class="auth-switch">Already have an account? <a href="login.html" class="auth-link">Sign in</a></p>
+      </div>
+
+    </section>
+  </main>
+
+  <div class="auth-toast-wrap" id="toastWrap"></div>
+
+  <script src="signup.js"></script>
+</body>
+</html>
+

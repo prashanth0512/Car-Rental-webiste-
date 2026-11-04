@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Rental Plans & Transparent Pricing | VELOCE LUXURY FLEET — Self-Drive Mobility</title>
+  <meta name="description" content="Discover transparent, flexible self-drive rental plans from VELOCE Luxury Fleet. Daily Drive, Weekly Explorer, and Monthly Freedom packages with zero hidden fees.">
+  <meta name="keywords" content="car rental pricing, self-drive rates, weekly car rental, monthly car subscription, luxury car hire rates, Veloce pricing plans">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="stylesheet" href="pricing.css">
+</head>
+<body class="pricing-page">
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+
+      <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+        <div class="logo-icon-wrap">
+          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VELOCE</span>
+          <span class="brand-sub">LUXURY FLEET</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link" id="homeDropdownBtn" aria-expanded="false">
+              <span>Home</span>
+              <i class="fa-solid fa-chevron-down nav-arrow"></i>
+            </a>
+            <ul class="dropdown-menu" id="homeDropdownMenu">
+              <li>
+                <a href="index.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 1 - Red Dynamic</span>
+                    <span class="dropdown-desc">Cinematic curves & floating fleet hero</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home2.html" class="dropdown-link">
+                  <div class="dropdown-item-content">
+                    <span class="dropdown-title">Home 2 - Minimal Luxury</span>
+                    <span class="dropdown-desc">Monochrome elegance & travel stories</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="cars.html" class="nav-link">Our Cars</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link active">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link" id="navDashboardBtn">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <button type="button" class="action-btn dir-toggle" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+          <span class="dir-text" id="dirText">RTL</span>
+        </button>
+
+        <button type="button" class="action-btn theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+
+        <a href="login.html" class="btn btn-primary header-login-btn" id="loginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login</span>
+        </a>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <aside class="mobile-menu-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text">
+        <span class="brand-name">VELOCE</span>
+        <span class="brand-sub">LUXURY FLEET</span>
+      </div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-body">
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <div class="mobile-dropdown-header" id="mobileHomeDropdown">
+            <span>Home</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul class="mobile-sub-menu" id="mobileHomeSubmenu">
+            <li><a href="index.html" class="mobile-link">Home 1 - Red Dynamic</a></li>
+            <li><a href="home2.html" class="mobile-link">Home 2 - Minimal Luxury</a></li>
+          </ul>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="about.html" class="mobile-link">About Us</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="cars.html" class="mobile-link">Our Cars</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="pricing.html" class="mobile-link active">Pricing</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="contact.html" class="mobile-link">Contact</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="dashboard.html" class="mobile-link">Dashboard</a>
+        </li>
+      </ul>
+
+      <div class="mobile-drawer-actions">
+        <div class="mobile-settings-row">
+          <button type="button" class="action-btn mobile-dir-btn" id="mobileDirToggle">
+            <span id="mobileDirText">Switch to RTL</span>
+          </button>
+          <button type="button" class="action-btn mobile-theme-btn" id="mobileThemeToggle">
+            <i class="fa-solid fa-moon"></i>
+            <span id="mobileThemeText">Dark Mode</span>
+          </button>
+        </div>
+        <a href="login.html" class="btn btn-primary w-100 mobile-login-btn" id="mobileLoginBtn">
+          <i class="fa-regular fa-user"></i>
+          <span>Login / Register</span>
+        </a>
+      </div></div>
+  </aside>
+
+  <main class="pricing-main-wrapper" id="mainContent">
+
+    <section class="pricing-hero-section" id="pricing-hero">
+
+      <div class="pricing-hero-bg-wrap" aria-hidden="true">
+        <img src="assets/car-suv.jpg" alt="VELOCE Premium Rental Plans" class="pricing-hero-bg-img">
+        <div class="pricing-hero-overlay"></div>
+        <div class="pricing-hero-ambient-glow"></div>
+        <div class="pricing-hero-grid-pattern"></div>
+      </div>
+
+      <div class="section-container pricing-hero-container">
+        <div class="pricing-hero-content">
+
+          <nav class="pricing-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html" class="breadcrumb-item">Home</a>
+            <i class="fa-solid fa-chevron-right breadcrumb-sep"></i>
+            <span class="breadcrumb-item current" aria-current="page">Pricing</span>
+          </nav>
+
+          <div class="pricing-hero-tag">
+            <span class="pricing-tag-pulse"></span>
+            <span class="pricing-tag-text">FLEXIBLE RENTAL PLANS</span>
+          </div>
+
+          <h1 class="pricing-hero-title">
+            The Right Ride. <br>
+            <span class="pricing-title-accent">The Right Price.</span>
+          </h1>
+
+          <p class="pricing-hero-lead">
+            Discover flexible self-drive rental plans designed for every journey. Choose the duration that suits you and enjoy a seamless driving experience with complete pricing transparency.
+          </p>
+
+          <div class="pricing-hero-ctas">
+            <a href="#pricing-plans" class="btn btn-primary pricing-cta-main">
+              <span>Explore Pricing Plans</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="cars.html" class="btn btn-secondary pricing-cta-secondary">
+              <span>View Our Cars</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="pricing-hero-info-strip">
+
+            <div class="pricing-info-item">
+              <i class="fa-solid fa-shield-halved text-primary"></i>
+              <div class="pricing-info-text">
+                <span class="pricing-info-value">100% Transparent</span>
+                <span class="pricing-info-label">No hidden charges</span>
+              </div>
+            </div>
+
+            <div class="pricing-info-divider"></div>
+
+            <div class="pricing-info-item">
+              <i class="fa-solid fa-clock-rotate-left text-primary"></i>
+              <div class="pricing-info-text">
+                <span class="pricing-info-value">Flexible Durations</span>
+                <span class="pricing-info-label">Daily, weekly &amp; monthly</span>
+              </div>
+            </div>
+
+            <div class="pricing-info-divider"></div>
+
+            <div class="pricing-info-item">
+              <i class="fa-solid fa-car text-primary"></i>
+              <div class="pricing-info-text">
+                <span class="pricing-info-value">12+ Fleet Models</span>
+                <span class="pricing-info-label">Guaranteed vehicle allocation</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="pricing-plans-section" id="pricing-plans">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">RENTAL PACKAGES</span>
+          <h2 class="section-heading">Choose Your Perfect Rental Plan</h2>
+          <p class="section-subtitle">
+            Whether you need a car for a day, a week, or a month, we have a plan that fits your journey.
+          </p>
+        </div>
+
+        <div class="pricing-cards-grid">
+
+          <article class="pricing-card" data-plan="daily">
+            <div class="pricing-card-header">
+              <span class="plan-badge">SHORT-TERM AGILITY</span>
+              <h3 class="plan-title">Daily Drive</h3>
+              <p class="plan-desc">Perfect for short trips, everyday travel, and quick getaways.</p>
+
+              <div class="plan-price-wrap">
+                <span class="plan-currency">₹</span>
+                <span class="plan-amount" id="priceDaily">1,999</span>
+                <span class="plan-period">/ day</span>
+              </div>
+              <span class="plan-billing-note">Billed per 24-hour cycle</span>
+            </div>
+
+            <div class="pricing-card-divider"></div>
+
+            <div class="pricing-card-body">
+              <span class="plan-features-label">PLAN HIGHLIGHTS</span>
+              <ul class="plan-features-list">
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>24-hour rental duration</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Flexible vehicle selection</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Standard pickup options</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Basic customer assistance</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Transparent rental charges</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pricing-card-footer">
+              <button type="button" class="btn btn-secondary w-100 plan-cta-btn" data-plan-id="daily" data-plan-name="Daily Drive" data-plan-price="1999">
+                <span>Choose Daily Plan</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="pricing-card featured-plan" data-plan="weekly">
+            <div class="featured-ribbon">
+              <i class="fa-solid fa-fire"></i>
+              <span>MOST POPULAR</span>
+            </div>
+
+            <div class="pricing-card-header">
+              <span class="plan-badge featured-badge">EXTENDED JOURNEY</span>
+              <h3 class="plan-title">Weekly Explorer</h3>
+              <p class="plan-desc">More flexibility and better value for vacations and extended journeys.</p>
+
+              <div class="plan-price-wrap">
+                <span class="plan-currency">₹</span>
+                <span class="plan-amount" id="priceWeekly">10,999</span>
+                <span class="plan-period">/ week</span>
+              </div>
+              <span class="plan-savings-pill">Save ~22% vs. daily rate</span>
+            </div>
+
+            <div class="pricing-card-divider"></div>
+
+            <div class="pricing-card-body">
+              <span class="plan-features-label">ALL DAILY FEATURES PLUS</span>
+              <ul class="plan-features-list">
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span><strong>7-day rental duration</strong></span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Flexible vehicle selection</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Convenient pickup options</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Extended rental flexibility</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Dedicated customer assistance</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pricing-card-footer">
+              <button type="button" class="btn btn-primary w-100 plan-cta-btn" data-plan-id="weekly" data-plan-name="Weekly Explorer" data-plan-price="10999">
+                <span>Choose Weekly Plan</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="pricing-card" data-plan="monthly">
+            <div class="pricing-card-header">
+              <span class="plan-badge">LONG-TERM MOBILITY</span>
+              <h3 class="plan-title">Monthly Freedom</h3>
+              <p class="plan-desc">An ideal option for longer stays, business travel, and extended mobility.</p>
+
+              <div class="plan-price-wrap">
+                <span class="plan-currency">₹</span>
+                <span class="plan-amount" id="priceMonthly">34,999</span>
+                <span class="plan-period">/ month</span>
+              </div>
+              <span class="plan-billing-note">Best value per day &amp; vehicle swap privileges</span>
+            </div>
+
+            <div class="pricing-card-divider"></div>
+
+            <div class="pricing-card-body">
+              <span class="plan-features-label">EXECUTIVE PRIVILEGES</span>
+              <ul class="plan-features-list">
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span><strong>30-day rental duration</strong></span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Premium vehicle options</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Flexible rental management</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Extended customer support</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                  <span>Convenient renewal options</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pricing-card-footer">
+              <button type="button" class="btn btn-secondary w-100 plan-cta-btn" data-plan-id="monthly" data-plan-name="Monthly Freedom" data-plan-price="34999">
+                <span>Choose Monthly Plan</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="pricing-plans-trust-strip">
+          <div class="trust-pill">
+            <i class="fa-solid fa-rotate-left text-primary"></i>
+            <span>Free cancellation up to 24h prior</span>
+          </div>
+          <div class="trust-sep">•</div>
+          <div class="trust-pill">
+            <i class="fa-solid fa-lock text-primary"></i>
+            <span>Guaranteed model allocation</span>
+          </div>
+          <div class="trust-sep">•</div>
+          <div class="trust-pill">
+            <i class="fa-solid fa-headset text-primary"></i>
+            <span>24/7 Roadside concierge</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="pricing-comparison-section" id="pricing-comparison">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">PLAN BREAKDOWN</span>
+          <h2 class="section-heading">Compare Plans &amp; Find Your Best Fit</h2>
+          <p class="section-subtitle">
+            Explore the features included in each rental plan and choose the option that works best for you.
+          </p>
+        </div>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table" id="comparisonTable">
+            <thead>
+              <tr>
+                <th class="col-feature">Features</th>
+                <th class="col-plan">
+                  <div class="table-th-wrap">
+                    <span class="th-plan-name">Daily Drive</span>
+                    <span class="th-plan-rate">₹1,999 / day</span>
+                  </div>
+                </th>
+                <th class="col-plan featured-th">
+                  <div class="table-th-wrap">
+                    <span class="th-popular-tag">MOST POPULAR</span>
+                    <span class="th-plan-name">Weekly Explorer</span>
+                    <span class="th-plan-rate">₹10,999 / week</span>
+                  </div>
+                </th>
+                <th class="col-plan">
+                  <div class="table-th-wrap">
+                    <span class="th-plan-name">Monthly Freedom</span>
+                    <span class="th-plan-rate">₹34,999 / month</span>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="comparisonTableBody">
+
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-regular fa-clock text-primary"></i>
+                  <span>1. Rental Duration</span>
+                </td>
+                <td>24 Hours</td>
+                <td class="featured-td"><strong>7 Days</strong></td>
+                <td>30 Days</td>
+              </tr>
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-solid fa-car-side text-primary"></i>
+                  <span>2. Vehicle Selection</span>
+                </td>
+                <td>Standard Fleet</td>
+                <td class="featured-td">Full Fleet Selection</td>
+                <td>Priority Fleet &amp; Luxury Swaps</td>
+              </tr>
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-solid fa-location-dot text-primary"></i>
+                  <span>3. Pickup Options</span>
+                </td>
+                <td>Hub &amp; Airport Handover</td>
+                <td class="featured-td">Airport &amp; Hotel Delivery</td>
+                <td>Complimentary VIP Doorstep</td>
+              </tr>
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-solid fa-headset text-primary"></i>
+                  <span>4. Customer Support</span>
+                </td>
+                <td>Standard Assistance</td>
+                <td class="featured-td">Dedicated Phone Support</td>
+                <td>24/7 Personal Concierge</td>
+              </tr>
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-solid fa-calendar-plus text-primary"></i>
+                  <span>5. Rental Extension</span>
+                </td>
+                <td>Subject to Availability</td>
+                <td class="featured-td">Guaranteed (4h Notice)</td>
+                <td>Complimentary Rollover</td>
+              </tr>
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-solid fa-arrows-rotate text-primary"></i>
+                  <span>6. Flexible Booking</span>
+                </td>
+                <td>Standard Reschedule</td>
+                <td class="featured-td">1 Free Reschedule</td>
+                <td>Unlimited Free Modifications</td>
+              </tr>
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-solid fa-route text-primary"></i>
+                  <span>7. Long-Distance Travel</span>
+                </td>
+                <td>State Permit Support</td>
+                <td class="featured-td">Interstate Fastag Included</td>
+                <td>Unlimited Kilometres Option</td>
+              </tr>
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-solid fa-arrow-up-right-dots text-primary"></i>
+                  <span>8. Vehicle Upgrade Options</span>
+                </td>
+                <td>Paid at Counter</td>
+                <td class="featured-td">Discounted Tier Upgrades</td>
+                <td>Complimentary Vehicle Swaps</td>
+              </tr>
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-solid fa-file-contract text-primary"></i>
+                  <span>9. Rental Management</span>
+                </td>
+                <td>Digital Agreement</td>
+                <td class="featured-td">Digital Fleet Pass</td>
+                <td>Dedicated Account Manager</td>
+              </tr>
+              <tr>
+                <td class="row-feature-title">
+                  <i class="fa-solid fa-shield-halved text-primary"></i>
+                  <span>10. Cancellation Policy</span>
+                </td>
+                <td>Free up to 24h Prior</td>
+                <td class="featured-td">Free up to 48h Prior</td>
+                <td>Flexible Prorated Refund</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td class="row-feature-title">
+                  <span class="text-muted">Choose Your Plan</span>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-secondary btn-sm plan-cta-btn" data-plan-id="daily" data-plan-name="Daily Drive" data-plan-price="1999">
+                    Select Daily
+                  </button>
+                </td>
+                <td class="featured-td">
+                  <button type="button" class="btn btn-primary btn-sm plan-cta-btn" data-plan-id="weekly" data-plan-name="Weekly Explorer" data-plan-price="10999">
+                    Select Weekly
+                  </button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-secondary btn-sm plan-cta-btn" data-plan-id="monthly" data-plan-name="Monthly Freedom" data-plan-price="34999">
+                    Select Monthly
+                  </button>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <div class="mobile-comparison-container" id="mobileComparison">
+          <div class="mobile-plan-tabs" role="tablist">
+            <button type="button" class="mobile-plan-tab" role="tab" aria-selected="false" data-tab-target="daily">
+              Daily Drive
+            </button>
+            <button type="button" class="mobile-plan-tab active" role="tab" aria-selected="true" data-tab-target="weekly">
+              Weekly Explorer ⭐
+            </button>
+            <button type="button" class="mobile-plan-tab" role="tab" aria-selected="false" data-tab-target="monthly">
+              Monthly Freedom
+            </button>
+          </div>
+
+          <div class="mobile-plan-content-wrap">
+            <div class="mobile-plan-panel" id="mobilePlanDaily" style="display: none;">
+              <div class="mplan-header">
+                <h4 class="mplan-title">Daily Drive</h4>
+                <span class="mplan-rate">₹1,999 / day</span>
+              </div>
+              <ul class="mplan-specs-list" id="mSpecsDaily">
+
+              </ul>
+              <button type="button" class="btn btn-secondary w-100 plan-cta-btn mt-3" data-plan-id="daily" data-plan-name="Daily Drive" data-plan-price="1999">
+                Choose Daily Plan
+              </button>
+            </div>
+
+            <div class="mobile-plan-panel active" id="mobilePlanWeekly">
+              <div class="mplan-header featured-mheader">
+                <span class="mplan-badge">MOST POPULAR</span>
+                <h4 class="mplan-title">Weekly Explorer</h4>
+                <span class="mplan-rate text-primary">₹10,999 / week</span>
+              </div>
+              <ul class="mplan-specs-list" id="mSpecsWeekly">
+
+              </ul>
+              <button type="button" class="btn btn-primary w-100 plan-cta-btn mt-3" data-plan-id="weekly" data-plan-name="Weekly Explorer" data-plan-price="10999">
+                Choose Weekly Plan
+              </button>
+            </div>
+
+            <div class="mobile-plan-panel" id="mobilePlanMonthly" style="display: none;">
+              <div class="mplan-header">
+                <h4 class="mplan-title">Monthly Freedom</h4>
+                <span class="mplan-rate">₹34,999 / month</span>
+              </div>
+              <ul class="mplan-specs-list" id="mSpecsMonthly">
+
+              </ul>
+              <button type="button" class="btn btn-secondary w-100 plan-cta-btn mt-3" data-plan-id="monthly" data-plan-name="Monthly Freedom" data-plan-price="34999">
+                Choose Monthly Plan
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="pricing-faq-section" id="pricing-faq">
+      <div class="section-container">
+
+        <div class="section-header text-center">
+          <span class="section-sub-label">PLAN INQUIRIES</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Everything you need to know before choosing your rental plan.
+          </p>
+        </div>
+
+        <div class="faq-accordion-stack" id="pricingFaqAccordion">
+
+          <div class="faq-item active">
+            <button type="button" class="faq-question-btn" aria-expanded="true">
+              <span class="faq-q-num">01</span>
+              <span class="faq-q-text">What is included in the daily rental plan?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel" style="max-height: 220px;">
+              <div class="faq-answer-inner">
+                Our Daily Drive plan includes 24 hours of self-drive freedom, standard comprehensive insurance, 24/7 live roadside assistance, sanitization, and flexible vehicle category selection. Standard pickup is available from our atelier or airport hub.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">02</span>
+              <span class="faq-q-text">What are the benefits of choosing a weekly rental?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                The Weekly Explorer package provides approximately 22% savings compared to standard daily rates, complimentary interstate FasTag toll support, doorstep handover at your residence or hotel, and one free reservation reschedule without penalty.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">03</span>
+              <span class="faq-q-text">Is there a discount for monthly rentals?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Yes. Our Monthly Freedom plan delivers our highest per-day value with substantial discounts over short-term rentals. It includes monthly vehicle swap privileges, complimentary scheduled sanitization maintenance, and dedicated account concierge.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">04</span>
+              <span class="faq-q-text">Can I extend my rental duration?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Extending your reservation is effortless. Simply request an extension through your online customer dashboard or call our 24/7 concierge at least 4 hours before your scheduled return time. Extensions are confirmed based on fleet availability.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">05</span>
+              <span class="faq-q-text">Can I change my selected vehicle after booking?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Yes. You may modify your vehicle selection up to 24 hours before your scheduled pickup without modification fees. Upgrading to a higher-tier vehicle (such as a Luxury SUV or Executive Sedan) will simply adjust the rate difference.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">06</span>
+              <span class="faq-q-text">Are fuel charges included in the rental price?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                We operate on a transparent "Same-to-Same" fuel policy. Your vehicle is delivered with a full tank of fuel and should be returned with a matching fuel level. If returned with less fuel, local market fuel charges apply without penal markups.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">07</span>
+              <span class="faq-q-text">Are there any additional charges or security deposits?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                We charge zero hidden administration fees. A refundable security deposit authorization is placed on your credit/debit card upon vehicle collection (ranging from ₹5,000 for Economy up to ₹15,000 for Luxury) and released within 48 hours after vehicle return.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span class="faq-q-num">08</span>
+              <span class="faq-q-text">What is the cancellation and refund policy?</span>
+              <span class="faq-q-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Enjoy peace of mind with our flexible cancellation policy. Cancellations submitted 24 hours or more before pickup receive a 100% full refund with zero cancellation charges. Cancellations within 24 hours may incur a nominal one-day reservation holding fee.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="pricing-cta-section" id="pricing-cta">
+
+      <div class="pricing-cta-bg-wrap" aria-hidden="true">
+        <img src="assets/cta-car.jpg" alt="VELOCE Luxury Fleet Experience" class="pricing-cta-bg-img">
+        <div class="pricing-cta-overlay"></div>
+        <div class="pricing-cta-glow"></div>
+      </div>
+
+      <div class="section-container pricing-cta-container">
+        <div class="pricing-cta-inner text-center">
+
+          <span class="pricing-cta-badge">YOUR NEXT ADVENTURE AWAITS</span>
+
+          <h2 class="pricing-cta-title">
+            Your Next Journey Starts With the Right Plan.
+          </h2>
+
+          <p class="pricing-cta-lead">
+            Choose your perfect rental plan and experience the freedom of driving without compromise.
+          </p>
+
+          <div class="pricing-cta-btn-group">
+            <a href="cars.html" class="btn btn-primary pricing-cta-btn-main">
+              <span>Explore Our Cars</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#footer" class="btn btn-secondary pricing-cta-btn-ghost">
+              <span>Contact Our Team</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <div class="pricing-cta-features-strip">
+            <div class="pricing-feat-item">
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>Guaranteed Model Allocation</span>
+            </div>
+            <div class="pricing-feat-sep"></div>
+            <div class="pricing-feat-item">
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>Doorstep &amp; Airport Delivery</span>
+            </div>
+            <div class="pricing-feat-sep"></div>
+            <div class="pricing-feat-item">
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>24/7 Roadside Assistance</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <div class="plan-modal-overlay" id="planModalOverlay" aria-hidden="true">
+    <div class="plan-modal-dialog" role="dialog" aria-labelledby="modalPlanTitle" aria-modal="true">
+
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-sub">PLAN RESERVATION</span>
+          <h3 class="modal-title" id="modalPlanTitle">Select Rental Plan</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close reservation modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form class="modal-body" id="planBookingForm" novalidate>
+
+        <div class="modal-plan-preview">
+          <div class="mplan-preview-icon">
+            <i class="fa-solid fa-tags text-primary"></i>
+          </div>
+          <div class="mplan-preview-info">
+            <span class="mplan-preview-sub">Selected Package</span>
+            <h4 class="mplan-preview-name" id="modalPreviewPlanName">Weekly Explorer</h4>
+            <div class="mplan-preview-rate">
+              <span class="mplan-currency">₹</span>
+              <strong id="modalPreviewPlanPrice">10,999</strong>
+              <span class="mplan-period" id="modalPreviewPlanPeriod">/ week</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="bookVehicleSelect" class="form-label">Choose Preferred Vehicle *</label>
+          <select id="bookVehicleSelect" class="form-control" required>
+            <option value="" disabled selected>Select from our 12 premium cars...</option>
+            <option value="swift" data-rate="2200">Maruti Suzuki Swift (Economy - ₹2,200/day)</option>
+            <option value="i20" data-rate="2600">Hyundai i20 (Hatchback - ₹2,600/day)</option>
+            <option value="city" data-rate="3400">Honda City (Sedan - ₹3,400/day)</option>
+            <option value="verna" data-rate="3600">Hyundai Verna (Sedan - ₹3,600/day)</option>
+            <option value="innova" data-rate="4800">Toyota Innova Crysta (MPV - ₹4,800/day)</option>
+            <option value="carens" data-rate="3800">Kia Carens (MPV - ₹3,800/day)</option>
+            <option value="creta" data-rate="3900">Hyundai Creta (SUV - ₹3,900/day)</option>
+            <option value="seltos" data-rate="4200">Kia Seltos (SUV - ₹4,200/day)</option>
+            <option value="xuv700" data-rate="5400">Mahindra XUV700 (SUV - ₹5,400/day)</option>
+            <option value="fortuner" data-rate="7500">Toyota Fortuner (Luxury SUV - ₹7,500/day)</option>
+            <option value="bmw3" data-rate="9800">BMW 3 Series (Luxury Sedan - ₹9,800/day)</option>
+            <option value="cclass" data-rate="10500">Mercedes-Benz C-Class (Luxury Sedan - ₹10,500/day)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookPickupDate" class="form-label">Pickup Date *</label>
+            <input type="date" id="bookPickupDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="bookReturnDate" class="form-label">Return Date *</label>
+            <input type="date" id="bookReturnDate" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookPickupLocation" class="form-label">Pickup Location *</label>
+            <select id="bookPickupLocation" class="form-control" required>
+              <option value="atelier">Beverly Hills Flagship Atelier</option>
+              <option value="airport">Airport Terminal VIP Curbside Handover</option>
+              <option value="doorstep">Doorstep Delivery (Hotel or Residence)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bookCustomerPhone" class="form-label">Mobile Number *</label>
+            <input type="tel" id="bookCustomerPhone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+
+        <div class="modal-fare-estimate">
+          <div class="fare-row">
+            <span>Rental Duration:</span>
+            <strong id="fareDuration">7 Days (Weekly Plan)</strong>
+          </div>
+          <div class="fare-row">
+            <span>Estimated Package Total:</span>
+            <strong class="text-primary fare-total" id="fareTotalAmount">₹10,999</strong>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 modal-submit-btn" id="modalSubmitBtn">
+          <span>Lock In Rental Plan</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="modal-note text-center">
+          <i class="fa-solid fa-shield-halved"></i> 100% Free Cancellation up to 24 hours before pickup. Zero advance charges.
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+  <footer class="site-footer" id="footer">
+    <div class="section-container">
+
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+            <div class="logo-icon-wrap">
+              <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
+                <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">VELOCE</span>
+              <span class="brand-sub">LUXURY FLEET</span>
+            </div>
+          </a>
+
+          <p class="footer-brand-desc">
+            Veloce is an international luxury car rental and self-drive platform offering high-performance, prestige, and electric automobiles backed by white-glove concierge standards.
+          </p>
+
+          <div class="social-links-row">
+            <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Our Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="cars.html">Self-Drive Rentals</a></li>
+            <li><a href="cars.html">Luxury Car Rentals</a></li>
+            <li><a href="pricing.html">Daily Rentals</a></li>
+            <li><a href="pricing.html">Weekly Rentals</a></li>
+            <li><a href="pricing.html">Monthly Leases</a></li>
+            <li><a href="cars.html">Airport VIP Handover</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="pricing.html" class="active">Pricing &amp; Plans</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cars.html">Our Cars</a></li>
+            <li><a href="index.html#how-it-works">How It Works</a></li>
+            <li><a href="dashboard.html" class="footer-dash-link">Customer Dashboard</a></li>
+            <li><a href="#" id="openTermsLink">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact-col">
+          <h4 class="footer-col-title">Contact &amp; Support</h4>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <div>
+                <span class="contact-sub">24/7 Concierge Hotline</span>
+                <a href="tel:+18005893283" class="contact-val">+1 (800) 589-3283</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <div>
+                <span class="contact-sub">VIP Inquiries</span>
+                <a href="mailto:concierge@veloce-drive.com" class="contact-val">concierge@veloce-drive.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <div>
+                <span class="contact-sub">Headquarters</span>
+                <span class="contact-val">742 Ocean Boulevard, Beverly Hills, CA 90210</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="footer-badge-pill">
+            <i class="fa-solid fa-shield-halved text-primary"></i>
+            <span>24/7 Live Roadside Concierge</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> VELOCE Luxury Car Rental Inc. All rights reserved.
+        </p>
+
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Terms of Service</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Rental Agreement</a>
+          <span class="dot-sep">•</span>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="pricing.js"></script>
+</body>
+</html>
+
