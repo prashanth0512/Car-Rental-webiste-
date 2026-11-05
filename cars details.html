@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark" dir="ltr">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -26,10 +27,7 @@
 
       <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
         <div class="logo-icon-wrap">
-          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
-            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
-          </svg>
+          <img src="assets/logo.png" alt="VELOCE Logo" class="logo-img">
         </div>
         <div class="brand-text">
           <span class="brand-name">VELOCE</span>
@@ -167,21 +165,22 @@
       </div></div>
   </aside>
 
-  <nav class="detail-breadcrumb-bar" aria-label="Breadcrumb navigation">
-    <div class="section-container">
-      <ol class="breadcrumb-list">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></li>
-        <li class="breadcrumb-item"><a href="cars.html">Our Cars</a></li>
-        <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></li>
-        <li class="breadcrumb-item active" id="breadcrumbActiveText" aria-current="page">Vehicle Details</li>
-      </ol>
-    </div>
-  </nav>
-
   <main class="detail-main-wrapper" id="detailMain">
 
     <section class="vehicle-detail-section" id="vehicleDetailView" style="display: none;">
+
+      <nav class="detail-breadcrumb-bar" id="detailBreadcrumbBar" aria-label="Breadcrumb navigation">
+        <div class="section-container">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></li>
+            <li class="breadcrumb-item"><a href="cars.html">Our Cars</a></li>
+            <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></li>
+            <li class="breadcrumb-item active" id="breadcrumbActiveText" aria-current="page">Vehicle Details</li>
+          </ol>
+        </div>
+      </nav>
+
       <div class="section-container">
 
         <div class="vdetail-header">
@@ -487,6 +486,31 @@
           </div>
         </div>
 
+        <div class="principle-privileges-section" id="principlePrivilegesSection">
+          <div class="section-header text-center">
+            <span class="section-sub-label" id="pPrivilegesSubLabel">EXCLUSIVE EXPEDITION SUITE</span>
+            <h2 class="section-heading" id="pPrivilegesHeading">Unrestricted Freedom Privileges Designed for Pioneers</h2>
+            <p class="section-subtitle" id="pPrivilegesSubtitle">
+              Every reservation includes unconstrained mileage, flexible cross-state returns, and remote satellite fleet unlock protocols.
+            </p>
+          </div>
+
+          <div class="pprivileges-grid" id="pPrivilegesGrid"></div>
+
+          <div class="pprivileges-banner" id="pPrivilegesBanner">
+            <div class="pbanner-left">
+              <span class="pbanner-badge" id="pPrivilegesBannerBadge">THE FREEDOM PROMISE</span>
+              <p class="pbanner-text" id="pPrivilegesBannerText">Every kilometer is yours to conquer. No limits, no monitors, no interruptions.</p>
+            </div>
+            <div class="pbanner-right">
+              <a href="#footer" class="btn btn-secondary pbanner-btn" id="pPrivilegesBannerBtn">
+                <i class="fa-solid fa-headset text-primary"></i>
+                <span id="pPrivilegesBannerBtnText">Plan Your Route With Concierge</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div class="principle-scenarios-section">
           <div class="section-header text-center">
             <span class="section-sub-label">REAL-WORLD EXPERIENCES</span>
@@ -655,10 +679,7 @@
         <div class="footer-col footer-brand-col">
           <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
             <div class="logo-icon-wrap">
-              <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
-                <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
-              </svg>
+              <img src="assets/logo.png" alt="VELOCE Logo" class="logo-img">
             </div>
             <div class="brand-text">
               <span class="brand-name">VELOCE</span>
@@ -765,4 +786,3 @@
   <script src="cars details.js"></script>
 </body>
 </html>
-

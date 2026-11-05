@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark" dir="ltr">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -26,10 +27,7 @@
 
       <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
         <div class="logo-icon-wrap">
-          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
-            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
-          </svg>
+          <img src="assets/logo.png" alt="VELOCE Logo" class="logo-img">
         </div>
         <div class="brand-text">
           <span class="brand-name">VELOCE</span>
@@ -171,55 +169,89 @@
 
     <section class="contact-hero-section" id="contact-hero">
 
-      <div class="contact-hero-bg-wrap" aria-hidden="true">
-        <img src="assets/journey-luxury.jpg" alt="VELOCE Concierge Service" class="contact-hero-bg-img">
-        <div class="contact-hero-overlay"></div>
-        <div class="contact-hero-ambient-glow"></div>
-        <div class="contact-hero-grid-pattern"></div>
+      <div class="contact-hero-top-strip" aria-label="Concierge quick contact">
+        <div class="section-container">
+          <div class="top-strip-inner">
+            <div class="top-strip-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+18005893283">+1 (800) 589-3283</a>
+            </div>
+            <div class="top-strip-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>24/7 Live Concierge Dispatch</span>
+            </div>
+            <div class="top-strip-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:concierge@veloce-drive.com">concierge@veloce-drive.com</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="section-container contact-hero-container">
-        <div class="contact-hero-content">
-
-          <nav class="contact-breadcrumb" aria-label="Breadcrumb">
-            <a href="index.html" class="breadcrumb-item">Home</a>
-            <i class="fa-solid fa-chevron-right breadcrumb-sep"></i>
-            <span class="breadcrumb-item current" aria-current="page">Contact</span>
-          </nav>
-
-          <div class="contact-hero-tag">
-            <span class="contact-tag-pulse"></span>
-            <span class="contact-tag-text">WE'RE HERE TO HELP</span>
+      <div class="section-container contact-hero-grid">
+        <div class="contact-hero-left">
+          <div class="contact-slider-controls" aria-label="Showcase vehicle switch">
+            <button type="button" class="slider-control-btn active" id="heroCarBtn1" data-car="jeep" title="Show Black Jeep Grand Cherokee 4x4">
+              <span>01</span>
+            </button>
+            <button type="button" class="slider-control-btn" id="heroCarBtn2" data-car="thar" title="Show Red Mahindra Thar 4x4">
+              <span>02</span>
+            </button>
           </div>
+          <div class="contact-hero-content">
 
-          <h1 class="contact-hero-title">
-            Let's Make Your <br>
-            <span class="contact-title-accent">Next Journey Happen.</span>
-          </h1>
+            <nav class="contact-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html" class="breadcrumb-item">Home</a>
+              <i class="fa-solid fa-chevron-right breadcrumb-sep"></i>
+              <span class="breadcrumb-item current" aria-current="page">Contact</span>
+            </nav>
 
-          <p class="contact-hero-lead">
-            Have a question about our vehicles, rental plans, or bookings? Our team is here to help you find the right solution for every journey with white-glove concierge attention.
-          </p>
+            <div class="contact-hero-tag">
+              <span class="contact-tag-pulse"></span>
+              <span class="contact-tag-text">24/7 VIP CONCIERGE &amp; FLEET SUPPORT</span>
+            </div>
 
-          <div class="contact-hero-ctas">
-            <a href="#contact-form-section" class="btn btn-primary contact-cta-main">
-              <span>Send Us a Message</span>
-              <i class="fa-solid fa-arrow-down"></i>
-            </a>
-            <a href="#contact-faq" class="btn btn-secondary contact-cta-secondary">
-              <span>View FAQs</span>
-              <i class="fa-solid fa-circle-question"></i>
-            </a>
+            <h1 class="contact-hero-title">
+              Car Rent <br>
+              <span class="contact-title-accent">For You</span>
+            </h1>
+
+            <p class="contact-hero-lead">
+              Have a question about our vehicles, rental plans, or bookings? Our team is here to help you find the right solution for every journey with white-glove concierge attention.
+            </p>
+
+            <div class="contact-hero-ctas">
+              <a href="#contact-form-section" class="btn btn-primary contact-cta-main">
+                <span>Send Us a Message</span>
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+              <a href="#contact-faq" class="btn btn-secondary contact-cta-secondary">
+                <span>View FAQs</span>
+                <i class="fa-solid fa-circle-question"></i>
+              </a>
+            </div>
+
+            <div class="contact-hero-trust-badge">
+              <i class="fa-solid fa-shield-halved text-primary"></i>
+              <span>Guaranteed Model Allocation</span> <span class="trust-dot">•</span> <span class="trust-highlight">Zero Wait Time</span>
+            </div>
+
           </div>
-
-          <div class="contact-hero-trust-badge">
-            <i class="fa-solid fa-shield-halved text-primary"></i>
-            <span>Your Journey. Our Support.</span>
-            <span class="trust-dot">•</span>
-            <span class="trust-highlight">24/7 Live Assistance</span>
-          </div>
-
         </div>
+
+        <div class="contact-hero-right">
+          <div class="contact-hero-curve-shape" aria-hidden="true"></div>
+
+          <div class="contact-hero-vehicle-stage">
+            <div class="contact-vehicle-shadow" aria-hidden="true"></div>
+            <img src="assets/hero-jeep-black.png" alt="Black Jeep Grand Cherokee 4x4" class="contact-vehicle-img" id="contactHeroCarImg" loading="eager">
+            <div class="contact-vehicle-badge" id="contactHeroCarBadge">
+              <span class="badge-tag">VELOCE FLEET</span>
+              <strong class="badge-name" id="contactHeroCarName">Jeep Grand Cherokee 4x4</strong>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </section>
@@ -458,12 +490,38 @@
           <div class="contact-map-card" id="locationMapCard">
 
             <div class="map-card-header">
-              <h3 class="map-card-title">Find Our Location</h3>
-              <p class="map-card-subtitle">Visit our flagship atelier and connect with our fleet concierge team.</p>
+              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div>
+                  <h3 class="map-card-title">Find Our Location</h3>
+                  <p class="map-card-subtitle">Visit our flagship atelier and connect with our fleet concierge team.</p>
+                </div>
+                <span class="map-live-status-badge">
+                  <span class="status-live-dot"></span>
+                  <span>Concierge Active</span>
+                </span>
+              </div>
             </div>
 
+            <!-- Hub Switcher Tabs -->
+            <div class="map-hub-switcher" role="tablist" aria-label="Select location hub">
+              <button type="button" class="map-hub-tab active" data-hub="flagship" role="tab" aria-selected="true">
+                <i class="fa-solid fa-gem"></i>
+                <span>Beverly Hills Flagship</span>
+              </button>
+              <button type="button" class="map-hub-tab" data-hub="lax" role="tab" aria-selected="false">
+                <i class="fa-solid fa-plane-departure"></i>
+                <span>LAX VIP Terminal</span>
+              </button>
+              <button type="button" class="map-hub-tab" data-hub="hangar" role="tab" aria-selected="false">
+                <i class="fa-solid fa-helicopter"></i>
+                <span>Private Jet Hangar</span>
+              </button>
+            </div>
+
+            <!-- Map View Frame -->
             <div class="map-embed-frame">
               <iframe
+                id="contactMapIframe"
                 title="VELOCE Luxury Fleet Beverly Hills Location Map"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=-118.4200%2C34.0600%2C-118.3900%2C34.0800&amp;layer=mapnik&amp;marker=34.0700%2C-118.4050"
                 class="map-iframe"
@@ -471,40 +529,78 @@
               </iframe>
               <div class="map-marker-pin">
                 <div class="pin-pulse"></div>
-                <div class="pin-icon"><i class="fa-solid fa-car"></i></div>
+                <div class="pin-icon"><i class="fa-solid fa-car" id="mapPinIcon"></i></div>
               </div>
             </div>
 
+            <!-- Atelier Privileges Quick Strip (fills the blank space perfectly!) -->
+            <div class="map-privileges-strip">
+              <div class="map-privilege-item">
+                <div class="privilege-icon">
+                  <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+                <div class="privilege-info">
+                  <strong>5-Min Handover</strong>
+                  <span>Fast-track key release</span>
+                </div>
+              </div>
+              <div class="map-privilege-item">
+                <div class="privilege-icon">
+                  <i class="fa-solid fa-square-parking"></i>
+                </div>
+                <div class="privilege-info">
+                  <strong>VIP Valet Bay</strong>
+                  <span>Complimentary parking</span>
+                </div>
+              </div>
+              <div class="map-privilege-item">
+                <div class="privilege-icon">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="privilege-info">
+                  <strong>Private Garage</strong>
+                  <span>Climate-secured fleet</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Details Body -->
             <div class="map-details-body">
 
               <div class="map-detail-item">
                 <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
                 <div class="detail-text">
-                  <span class="detail-label">Flagship Atelier</span>
-                  <strong class="detail-val">742 Ocean Boulevard, Beverly Hills, CA 90210</strong>
+                  <span class="detail-label" id="mapDetailLabel1">Flagship Atelier</span>
+                  <strong class="detail-val" id="mapDetailVal1">742 Ocean Boulevard, Beverly Hills, CA 90210</strong>
                 </div>
               </div>
 
               <div class="map-detail-item">
                 <div class="detail-icon"><i class="fa-solid fa-plane-departure"></i></div>
                 <div class="detail-text">
-                  <span class="detail-label">VIP Airport Terminal</span>
-                  <strong class="detail-val">Curbside Handover at Terminal 2 &amp; Private Jet Hangar</strong>
+                  <span class="detail-label" id="mapDetailLabel2">VIP Airport Terminal</span>
+                  <strong class="detail-val" id="mapDetailVal2">Curbside Handover at Terminal 2 &amp; Private Jet Hangar</strong>
                 </div>
               </div>
 
               <div class="map-detail-item">
                 <div class="detail-icon"><i class="fa-solid fa-clock"></i></div>
                 <div class="detail-text">
-                  <span class="detail-label">Concierge Hours</span>
-                  <strong class="detail-val">Mon &ndash; Sat: 8:00 AM &ndash; 9:00 PM | Sun: 9:00 AM &ndash; 6:00 PM</strong>
+                  <span class="detail-label" id="mapDetailLabel3">Concierge Hours</span>
+                  <strong class="detail-val" id="mapDetailVal3">Mon &ndash; Sat: 8:00 AM &ndash; 9:00 PM | Sun: 9:00 AM &ndash; 6:00 PM</strong>
                 </div>
               </div>
 
-              <a href="https://maps.google.com/?q=Beverly+Hills+CA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary w-100 map-directions-btn">
-                <i class="fa-solid fa-diamond-turn-right"></i>
-                <span>Get Driving Directions</span>
-              </a>
+              <div class="map-actions-row">
+                <a href="https://maps.google.com/?q=Beverly+Hills+CA" target="_blank" rel="noopener noreferrer" class="btn btn-primary map-directions-btn" id="mapDirectionsBtn">
+                  <i class="fa-solid fa-diamond-turn-right"></i>
+                  <span>Get Driving Directions</span>
+                </a>
+                <a href="tel:+18005893283" class="btn btn-secondary map-call-btn" id="mapCallBtn">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>Call Atelier</span>
+                </a>
+              </div>
 
             </div>
 
@@ -666,57 +762,96 @@
     </section>
 
     <section class="contact-cta-section" id="contact-cta">
+      <div class="section-container">
+        <div class="cta-banner-card premium-split-cta">
+          <div class="cta-banner-ambient-glow" aria-hidden="true"></div>
+          <div class="cta-grid-pattern" aria-hidden="true"></div>
 
-      <div class="contact-cta-bg-wrap" aria-hidden="true">
-        <img src="assets/cta-car.jpg" alt="VELOCE Luxury Fleet Experience" class="contact-cta-bg-img">
-        <div class="contact-cta-overlay"></div>
-        <div class="contact-cta-glow"></div>
-      </div>
+          <div class="cta-card-left">
+            <div class="cta-pill-badge">
+              <span class="cta-badge-dot"></span>
+              <span>START A CONVERSATION</span>
+            </div>
 
-      <div class="section-container contact-cta-container">
-        <div class="contact-cta-inner text-center">
+            <h2 class="cta-banner-heading">
+              Every Great Journey Starts With a <br>
+              <span class="cta-heading-highlight">Conversation.</span>
+            </h2>
 
-          <span class="contact-cta-badge">START A CONVERSATION</span>
+            <p class="cta-banner-desc">
+              Have a question about our vehicles, rental terms, or special itinerary requests? Connect with our team and let us tailor the perfect driving experience for you.
+            </p>
 
-          <h2 class="contact-cta-title">
-            Every Great Journey Starts With a Conversation.
-          </h2>
+            <div class="cta-perks-row">
+              <div class="cta-perk-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Guaranteed Model Allocation</span>
+              </div>
+              <div class="cta-perk-dot">•</div>
+              <div class="cta-perk-item">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span>Zero Wait Time</span>
+              </div>
+              <div class="cta-perk-dot">•</div>
+              <div class="cta-perk-item">
+                <i class="fa-solid fa-plane-departure"></i>
+                <span>Doorstep &amp; Airport Handover</span>
+              </div>
+            </div>
 
-          <p class="contact-cta-lead">
-            Have a question or need assistance? Connect with our team and let us help you find the perfect driving experience.
-          </p>
+            <div class="cta-buttons-wrap">
+              <a href="cars.html" class="btn btn-primary cta-master-btn">
+                <span>Explore Our Cars</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="pricing.html" class="btn btn-secondary cta-contact-btn">
+                <i class="fa-solid fa-tags text-primary"></i>
+                <span>View Pricing Plans</span>
+              </a>
+            </div>
 
-          <div class="contact-cta-btn-group">
-            <a href="cars.html" class="btn btn-primary contact-cta-btn-main">
-              <span>Explore Our Cars</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="pricing.html" class="btn btn-secondary contact-cta-btn-ghost">
-              <span>View Pricing Plans</span>
-              <i class="fa-solid fa-tags"></i>
-            </a>
+            <div class="cta-social-proof">
+              <div class="cta-rating-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="cta-rating-text"><strong>24/7</strong> Live Concierge &amp; Roadside Dispatch</span>
+            </div>
           </div>
 
-          <div class="contact-cta-features-strip">
-            <div class="contact-feat-item">
-              <i class="fa-solid fa-circle-check text-primary"></i>
-              <span>Guaranteed Model Allocation</span>
-            </div>
-            <div class="contact-feat-sep"></div>
-            <div class="contact-feat-item">
-              <i class="fa-solid fa-circle-check text-primary"></i>
-              <span>Doorstep &amp; Airport Delivery</span>
-            </div>
-            <div class="contact-feat-sep"></div>
-            <div class="contact-feat-item">
-              <i class="fa-solid fa-circle-check text-primary"></i>
-              <span>24/7 Roadside Assistance</span>
+          <div class="cta-card-right">
+            <div class="cta-showcase-stage">
+              <div class="cta-stage-curve" aria-hidden="true"></div>
+              <div class="cta-car-shadow" aria-hidden="true"></div>
+              <img src="assets/hero-thar-red.png" alt="VELOCE Luxury Fleet Experience" class="cta-showcase-car" loading="lazy">
+              
+              <div class="cta-floating-chip cta-chip-top">
+                <div class="chip-icon">
+                  <i class="fa-solid fa-circle-check text-primary"></i>
+                </div>
+                <div class="chip-text">
+                  <strong>White-Glove Staging</strong>
+                  <span>Detailed &amp; sanitized</span>
+                </div>
+              </div>
+
+              <div class="cta-floating-chip cta-chip-bottom">
+                <div class="chip-icon">
+                  <i class="fa-solid fa-headset text-primary"></i>
+                </div>
+                <div class="chip-text">
+                  <strong>24/7 VIP Concierge</strong>
+                  <span>Direct phone assistance</span>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
       </div>
-
     </section>
 
   </main>
@@ -729,10 +864,7 @@
         <div class="footer-col footer-brand-col">
           <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
             <div class="logo-icon-wrap">
-              <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
-                <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
-              </svg>
+              <img src="assets/logo.png" alt="VELOCE Logo" class="logo-img">
             </div>
             <div class="brand-text">
               <span class="brand-name">VELOCE</span>
@@ -838,4 +970,3 @@
   <script src="contact.js"></script>
 </body>
 </html>
-

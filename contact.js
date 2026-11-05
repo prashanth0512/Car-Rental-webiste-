@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTheme = htmlRoot.getAttribute('data-theme') || 'dark';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     applyTheme(newTheme);
-    showToast(`Switched to ${newTheme === 'dark' ? 'Dark' : 'Light'} Mode`, 'info');
+
   }
 
   if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentDir = htmlRoot.getAttribute('dir') || 'ltr';
     const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
     applyDirection(newDir);
-    showToast(`Switched layout to ${newDir.toUpperCase()}`, 'info');
+
   }
 
   if (dirToggle) dirToggle.addEventListener('click', toggleDirection);
@@ -357,6 +357,106 @@ document.addEventListener('DOMContentLoaded', () => {
       }[tag] || tag)
     );
   }
+
+  const heroCarBtn1 = document.getElementById('heroCarBtn1');
+  const heroCarBtn2 = document.getElementById('heroCarBtn2');
+  const contactHeroCarImg = document.getElementById('contactHeroCarImg');
+  const contactHeroCarName = document.getElementById('contactHeroCarName');
+
+  const contactHeroCars = {
+    jeep: {
+      src: 'assets/hero-jeep-black.png',
+      alt: 'Black Jeep Grand Cherokee 4x4',
+      name: 'Jeep Grand Cherokee 4x4'
+    },
+    thar: {
+      src: 'assets/hero-thar-red.png',
+      alt: 'Red Mahindra Thar 4x4',
+      name: 'Mahindra Thar 4x4'
+    }
+  };
+
+  function switchHeroCar(carKey) {
+    if (!contactHeroCarImg || !contactHeroCars[carKey]) return;
+    const car = contactHeroCars[carKey];
+
+    contactHeroCarImg.style.opacity = '0';
+    contactHeroCarImg.style.transform = 'scale(0.95) translateY(10px)';
+
+    setTimeout(() => {
+      contactHeroCarImg.src = car.src;
+      contactHeroCarImg.alt = car.alt;
+      if (contactHeroCarName) contactHeroCarName.textContent = car.name;
+      contactHeroCarImg.style.opacity = '1';
+      contactHeroCarImg.style.transform = 'scale(1) translateY(0)';
+    }, 220);
+
+    if (heroCarBtn1 && heroCarBtn2) {
+      heroCarBtn1.classList.toggle('active', carKey === 'jeep');
+      heroCarBtn2.classList.toggle('active', carKey === 'thar');
+    }
+  }
+
+  if (heroCarBtn1) heroCarBtn1.addEventListener('click', () => switchHeroCar('jeep'));
+  if (heroCarBtn2) heroCarBtn2.addEventListener('click', () => switchHeroCar('thar'));
+
+  // Map Hub Switcher
+  const hubTabs = document.querySelectorAll('.map-hub-tab');
+  const contactMapIframe = document.getElementById('contactMapIframe');
+  const mapDetailVal1 = document.getElementById('mapDetailVal1');
+  const mapDetailVal2 = document.getElementById('mapDetailVal2');
+  const mapDirectionsBtn = document.getElementById('mapDirectionsBtn');
+  const mapPinIcon = document.getElementById('mapPinIcon');
+
+  const hubData = {
+    flagship: {
+      src: 'https://www.openstreetmap.org/export/embed.html?bbox=-118.4200%2C34.0600%2C-118.3900%2C34.0800&layer=mapnik&marker=34.0700%2C-118.4050',
+      address: '742 Ocean Boulevard, Beverly Hills, CA 90210',
+      handover: 'Curbside Handover at Terminal 2 & Private Jet Hangar',
+      directionsUrl: 'https://maps.google.com/?q=Beverly+Hills+CA',
+      icon: 'fa-solid fa-car',
+      name: 'Beverly Hills Flagship'
+    },
+    lax: {
+      src: 'https://www.openstreetmap.org/export/embed.html?bbox=-118.4250%2C33.9350%2C-118.3950%2C33.9550&layer=mapnik&marker=33.9425%2C-118.4081',
+      address: 'LAX Curbside Staging, Terminal 2 & 4 VIP Arrival, CA 90045',
+      handover: 'Baggage-Claim Valet & Direct Airside Chauffeur Handover',
+      directionsUrl: 'https://maps.google.com/?q=Los+Angeles+International+Airport',
+      icon: 'fa-solid fa-plane-departure',
+      name: 'LAX VIP Terminal'
+    },
+    hangar: {
+      src: 'https://www.openstreetmap.org/export/embed.html?bbox=-118.5050%2C34.2050%2C-118.4750%2C34.2250&layer=mapnik&marker=34.2098%2C-118.4899',
+      address: 'Van Nuys Private Aviation Center, Hangar 4B, CA 91406',
+      handover: 'Tarmac Escort & Pre-Warmed Engine Ramp Handover',
+      directionsUrl: 'https://maps.google.com/?q=Van+Nuys+Airport',
+      icon: 'fa-solid fa-helicopter',
+      name: 'Private Jet Hangar'
+    }
+  };
+
+  hubTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const hubKey = tab.getAttribute('data-hub');
+      const data = hubData[hubKey];
+      if (!data) return;
+
+      hubTabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      if (contactMapIframe) contactMapIframe.src = data.src;
+      if (mapDetailVal1) mapDetailVal1.textContent = data.address;
+      if (mapDetailVal2) mapDetailVal2.textContent = data.handover;
+      if (mapDirectionsBtn) mapDirectionsBtn.href = data.directionsUrl;
+      if (mapPinIcon) mapPinIcon.className = data.icon;
+
+      showToast(`Selected Hub: ${data.name}`, 'info');
+    });
+  });
 
   const faqItems = document.querySelectorAll('#contactFaqAccordion .faq-item');
 

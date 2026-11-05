@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTheme = htmlRoot.getAttribute('data-theme') || 'dark';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     applyTheme(newTheme);
-    showToast(`Dashboard switched to ${newTheme === 'dark' ? 'Dark' : 'Light'} Mode`, 'info');
+
   }
 
   if (dashThemeToggle) dashThemeToggle.addEventListener('click', toggleTheme);
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentDir = htmlRoot.getAttribute('dir') || 'ltr';
     const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
     applyDirection(newDir);
-    showToast(`Dashboard layout reversed to ${newDir.toUpperCase()}`, 'info');
+
   }
 
   if (dashDirToggle) dashDirToggle.addEventListener('click', toggleDirection);

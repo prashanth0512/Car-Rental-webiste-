@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-theme="light">
+<html lang="en" data-theme="dark" dir="ltr">
 <head>
   <meta charset="UTF-8">
+  <script>
+    (function() {
+      var t = localStorage.getItem('veloce_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+      var d = localStorage.getItem('veloce_dir') || 'ltr';
+      document.documentElement.setAttribute('dir', d);
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VELOCE | Premium Luxury Car Rental & Self-Drive Experience</title>
   <meta name="description" content="Experience the pinnacle of automotive rental. Hand-picked luxury sedans, sports supercars, and premium SUVs with instant booking and doorstep delivery.">
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23E94250'%3E%3Cpath d='M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="assets/logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,10 +31,7 @@
 
       <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
         <div class="logo-icon-wrap">
-          <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
-            <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
-          </svg>
+          <img src="assets/logo.png" alt="VELOCE Logo" class="logo-img">
         </div>
         <div class="brand-text">
           <span class="brand-name">VELOCE</span>
@@ -1285,15 +1290,42 @@
         </div>
 
         <div class="cta-banner-wrapper">
-          <div class="cta-banner-card">
-            <div class="cta-banner-glow" aria-hidden="true"></div>
-            <img src="assets/cta-car.jpg" alt="Luxury Automotive Adventure" class="cta-bg-image" loading="lazy">
-            <div class="cta-overlay-content">
-              <span class="cta-sub-badge">START YOUR EXPEDITION</span>
-              <h2 class="cta-banner-heading">Ready for Your Next Adventure?</h2>
+          <div class="cta-banner-card premium-split-cta">
+            <div class="cta-banner-ambient-glow" aria-hidden="true"></div>
+            <div class="cta-grid-pattern" aria-hidden="true"></div>
+
+            <div class="cta-card-left">
+              <div class="cta-pill-badge">
+                <span class="cta-badge-dot"></span>
+                <span>START YOUR EXPEDITION</span>
+              </div>
+
+              <h2 class="cta-banner-heading">
+                Ready for Your <br>
+                <span class="cta-heading-highlight">Next Adventure?</span>
+              </h2>
+
               <p class="cta-banner-desc">
-                Choose your perfect vehicle and experience the freedom of driving. Unlock effortless online booking with instant confirmation today.
+                Choose your bespoke vehicle and experience the pure freedom of driving. Unlock effortless online reservation with instant model allocation and 24/7 white-glove delivery.
               </p>
+
+              <div class="cta-perks-row">
+                <div class="cta-perk-item">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <span>Zero Deductible</span>
+                </div>
+                <div class="cta-perk-dot">•</div>
+                <div class="cta-perk-item">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  <span>Instant Confirmation</span>
+                </div>
+                <div class="cta-perk-dot">•</div>
+                <div class="cta-perk-item">
+                  <i class="fa-solid fa-plane-departure"></i>
+                  <span>Airport Handover</span>
+                </div>
+              </div>
+
               <div class="cta-buttons-wrap">
                 <button type="button" class="btn btn-primary cta-master-btn" id="ctaBookNowBtn">
                   <span>Book Your Car Now</span>
@@ -1304,7 +1336,47 @@
                   <span>Contact Concierge</span>
                 </a>
               </div>
+
+              <div class="cta-social-proof">
+                <div class="cta-rating-stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="cta-rating-text"><strong>4.9 / 5</strong> rating from 12,500+ luxury travelers</span>
+              </div>
             </div>
+
+            <div class="cta-card-right">
+              <div class="cta-showcase-stage">
+                <div class="cta-stage-curve" aria-hidden="true"></div>
+                <div class="cta-car-shadow" aria-hidden="true"></div>
+                <img src="assets/hero-red-audi.png" alt="Veloce Luxury Sports Car" class="cta-showcase-car" loading="lazy">
+                
+                <div class="cta-floating-chip cta-chip-top">
+                  <div class="chip-icon">
+                    <i class="fa-solid fa-circle-check text-primary"></i>
+                  </div>
+                  <div class="chip-text">
+                    <strong>100% Model Guarantee</strong>
+                    <span>Exact vehicle delivered</span>
+                  </div>
+                </div>
+
+                <div class="cta-floating-chip cta-chip-bottom">
+                  <div class="chip-icon">
+                    <i class="fa-solid fa-clock-rotate-left text-primary"></i>
+                  </div>
+                  <div class="chip-text">
+                    <strong>60-Second Pickup</strong>
+                    <span>Keyless mobile handover</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -1321,10 +1393,7 @@
         <div class="footer-col footer-brand-col">
           <a href="#hero" class="brand-logo" aria-label="VELOCE Home">
             <div class="logo-icon-wrap">
-              <svg class="logo-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 16L12 6H20L12 16L20 26H12L4 16Z" fill="#E94250"/>
-                <path d="M12 16L20 6H28L20 16L28 26H20L12 16Z" fill="#E94250" fill-opacity="0.75"/>
-              </svg>
+              <img src="assets/logo.png" alt="VELOCE Logo" class="logo-img">
             </div>
             <div class="brand-text">
               <span class="brand-name">VELOCE</span>
@@ -1608,4 +1677,3 @@
   <script src="index.js"></script>
 </body>
 </html>
-

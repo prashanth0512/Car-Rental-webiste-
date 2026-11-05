@@ -307,7 +307,7 @@ const VELOCE_FLEET_DATA = [
     categoryFilter: 'SUV',
     brand: 'Mahindra',
     pricePerDay: 5500,
-    priceDisplay: '?5,500',
+    priceDisplay: '₹5,500',
     seats: 4,
     transmission: 'Automatic',
     fuel: 'Diesel',
@@ -332,7 +332,7 @@ const VELOCE_FLEET_DATA = [
     categoryFilter: 'SUV',
     brand: 'Jeep',
     pricePerDay: 9800,
-    priceDisplay: '?9,800',
+    priceDisplay: '₹9,800',
     seats: 5,
     transmission: 'Automatic',
     fuel: 'Petrol',
@@ -397,7 +397,45 @@ const VELOCE_PRINCIPLES_DATA = {
         desc: 'Navigate back-to-back client summits across multiple business districts with complete privacy and zero schedule friction.'
       }
     ],
-    recommendedCarIds: ['swift', 'creta', 'fortuner']
+    recommendedCarIds: ['swift', 'creta', 'fortuner'],
+    privileges: {
+      subLabel: 'EXCLUSIVE EXPEDITION SUITE',
+      heading: 'Unrestricted Freedom Privileges Designed for Pioneers',
+      subtitle: 'Every reservation includes unconstrained mileage, flexible cross-state returns, and remote satellite fleet unlock protocols.',
+      items: [
+        {
+          icon: 'fa-solid fa-satellite-dish',
+          tag: 'INSTANT ACTIVATION',
+          title: 'Keyless Satellite Staging',
+          desc: 'Skip rental counters completely. Access encrypted vehicle key fob unlock protocols directly through your smartphone anywhere.',
+          stat: '30s Unlock'
+        },
+        {
+          icon: 'fa-solid fa-route',
+          tag: 'VELOCE EXCLUSIVE',
+          title: 'Curated Secret Highway Trails',
+          desc: 'Complimentary in-dash navigation presets featuring scenic mountain passes, coastal sunset viewpoints, and private dining stops.',
+          stat: '25+ Private Trails'
+        },
+        {
+          icon: 'fa-solid fa-infinity',
+          tag: 'COMPLIMENTARY',
+          title: 'Zero Odometer Boundaries',
+          desc: 'Drive as far as your wanderlust inspires. We impose zero daily kilometer quotas and zero surcharge penalties for extended itineraries.',
+          stat: 'Unlimited KM'
+        },
+        {
+          icon: 'fa-solid fa-city',
+          tag: 'FLEXIBLE LOGISTICS',
+          title: 'Dynamic Multi-City Handover',
+          desc: 'Collect your luxury vehicle at one city hub or airport private terminal and conclude your grand tour in another with seamless drop-off.',
+          stat: '40+ Hubs'
+        }
+      ],
+      bannerBadge: 'THE FREEDOM PROMISE',
+      bannerText: 'Every kilometer is yours to conquer. No limits, no monitors, no interruptions.',
+      bannerActionText: 'Plan Your Route With Concierge'
+    }
   },
   safety: {
     type: 'safety',
@@ -444,7 +482,45 @@ const VELOCE_PRINCIPLES_DATA = {
         desc: 'High-intensity LED headlamps, verified battery health, and 24/7 live tele-concierge standing by ensure you are never stranded.'
       }
     ],
-    recommendedCarIds: ['innova', 'xuv700', 'cclass']
+    recommendedCarIds: ['innova', 'xuv700', 'cclass'],
+    privileges: {
+      subLabel: 'CERTIFIED AERONAUTICAL PROTOCOLS',
+      heading: 'Multi-Tiered Safety Standards You Can Trust Blindfolded',
+      subtitle: 'Every vehicle undergoes clinical 150-point diagnostic checks, hospital-grade cabin sterilization, and zero-deductible coverage.',
+      items: [
+        {
+          icon: 'fa-solid fa-clipboard-check',
+          tag: 'DIAGNOSTIC PROTOCOL',
+          title: '150-Point Master Engineering Scan',
+          desc: 'Laser tread-depth profiling, brake thermal integrity, steering suspension alignment, and active ADAS sensor calibration before every journey.',
+          stat: '150 Checks'
+        },
+        {
+          icon: 'fa-solid fa-shield-virus',
+          tag: 'CLINICAL HYGIENE',
+          title: 'Hospital-Grade Cabin Sterilization',
+          desc: 'Dual ozone air purification and ultrasonic antimicrobial misting ensure a 99.9% pathogen-free cabin environment for your family.',
+          stat: '99.9% Sanitized'
+        },
+        {
+          icon: 'fa-solid fa-tower-broadcast',
+          tag: '24/7 DEDICATED',
+          title: 'Satellite SOS & Rapid Recovery',
+          desc: 'Autonomous emergency telemetry triggers direct priority dispatch within 3 minutes, linked to nationwide paramedic and recovery teams.',
+          stat: '<3 Min Response'
+        },
+        {
+          icon: 'fa-solid fa-file-shield',
+          tag: 'ZERO LIABILITY',
+          title: 'Zero-Deductible Comprehensive Cover',
+          desc: 'Travel with absolute confidence. Accidental scratches, windshield stone chips, and roadside hazards are 100% absorbed by our policy.',
+          stat: '₹0 Liability'
+        }
+      ],
+      bannerBadge: 'THE TRUST STANDARD',
+      bannerText: 'Every machine is maintained to race-car precision. Your family’s safety is non-negotiable.',
+      bannerActionText: 'Inspect Our Safety Report'
+    }
   },
   comfort: {
     type: 'comfort',
@@ -491,7 +567,45 @@ const VELOCE_PRINCIPLES_DATA = {
         desc: 'Work on your laptop in comfortable rear executive captain seats between meetings with quiet air-conditioned privacy.'
       }
     ],
-    recommendedCarIds: ['city', 'carens', 'bmw3']
+    recommendedCarIds: ['city', 'carens', 'bmw3'],
+    privileges: {
+      subLabel: 'WHITE-GLOVE CONCIERGE AMENITIES',
+      heading: 'First-Class Comfort Standards Tailored to Every Mile',
+      subtitle: 'Indulge in pre-chilled cabin climate staging, acoustic soundproofing, artisan refreshments, and doorstep valet drop-offs.',
+      items: [
+        {
+          icon: 'fa-solid fa-bell-concierge',
+          tag: 'VIP CURBSIDE',
+          title: 'Doorstep & Airport Valet Delivery',
+          desc: 'Step out of your private jet or residential lobby straight into your vehicle with your preferred climate and seating position pre-configured.',
+          stat: '100% On-Time'
+        },
+        {
+          icon: 'fa-solid fa-volume-xmark',
+          tag: 'ACOUSTIC REFINEMENT',
+          title: 'Acoustic Sanctuary & HEPA Filters',
+          desc: 'Double-laminated acoustic privacy glass, active engine noise dampening, and automated ionizers maintain whisper-quiet tranquility.',
+          stat: '-18dB Cabin'
+        },
+        {
+          icon: 'fa-solid fa-mug-hot',
+          tag: 'IN-CABIN LUXURY',
+          title: 'Bespoke Artisan Travel Hamper',
+          desc: 'Complimentary San Pellegrino sparkling water, organic artisanal snacks, universal braided fast-chargers, and scented hot wipes.',
+          stat: 'Complimentary'
+        },
+        {
+          icon: 'fa-solid fa-stopwatch',
+          tag: 'EXPRESS SERVICE',
+          title: 'Zero-Wait Express Digital Check-in',
+          desc: 'Never stand in a counter queue again. Return your key in our luxury lounge or hand it to our valet with digital receipts in 60 seconds.',
+          stat: '60s Return'
+        }
+      ],
+      bannerBadge: 'WHITE-GLOVE EXCELLENCE',
+      bannerText: 'True luxury is the complete absence of effort. Every detail is catered to before you ask.',
+      bannerActionText: 'Request VIP Chauffeur / Valet'
+    }
   }
 };
 

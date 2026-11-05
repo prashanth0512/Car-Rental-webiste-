@@ -46,9 +46,27 @@
   width: fit-content;
 }
 
-.auth-logo {
-  width: 40px;
-  height: 40px;
+.auth-brand .logo-icon-wrap {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid rgba(233, 66, 80, 0.4);
+  box-shadow: 0 4px 14px rgba(233, 66, 80, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.auth-brand .logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .auth-brand-text {

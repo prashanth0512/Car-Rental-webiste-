@@ -143,8 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileThemeText = document.getElementById('mobileThemeText');
   const htmlRoot = document.documentElement;
 
-  const savedTheme = localStorage.getItem('veloce_theme') ||
-    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const savedTheme = localStorage.getItem('veloce_theme') || 'dark';
 
   applyTheme(savedTheme, false);
 
@@ -156,19 +155,13 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileThemeText.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
     }
 
-    if (showToastMsg) {
-      showToast(
-        theme === 'dark' ? 'Switched to Dark Automotive Mode' : 'Switched to Light Luxury Mode',
-        'theme',
-        theme === 'dark' ? 'fa-solid fa-moon' : 'fa-solid fa-sun'
-      );
-    }
+
   }
 
   function toggleTheme() {
-    const currentTheme = htmlRoot.getAttribute('data-theme') || 'light';
+    const currentTheme = htmlRoot.getAttribute('data-theme') || 'dark';
     const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    applyTheme(nextTheme, true);
+    applyTheme(nextTheme, false);
   }
 
   if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
@@ -190,19 +183,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (dirText) dirText.textContent = isRtl ? 'LTR' : 'RTL';
     if (mobileDirText) mobileDirText.textContent = isRtl ? 'Switch to LTR' : 'Switch to RTL';
 
-    if (showToastMsg) {
-      showToast(
-        isRtl ? 'Switched to RTL (Right-to-Left) Layout' : 'Switched to LTR (Left-to-Right) Layout',
-        'dir',
-        'fa-solid fa-globe'
-      );
-    }
+
   }
 
   function toggleDirection() {
     const currentDir = htmlRoot.getAttribute('dir') || 'ltr';
     const nextDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
-    applyDirection(nextDir, true);
+    applyDirection(nextDir, false);
   }
 
   if (dirToggle) dirToggle.addEventListener('click', toggleDirection);
@@ -555,30 +542,83 @@ document.addEventListener('DOMContentLoaded', () => {
   const carouselDots = document.querySelectorAll('.dot-btn');
   const totalSlides = carouselDots.length;
 
-  function updateCarousel(index) {
+  function getCarouselStep() {
+    if (!testimonialsTrack) return 0;
+    const firstCard = testimonialsTrack.querySelector('.testimonial-card');
+    if (!firstCard) return 0;
+    const styles = window.getComputedStyle(testimonialsTrack);
+    const gap = parseFloat(styles.columnGap || styles.gap) || 0;
+    return firstCard.getBoundingClientRect().width + gap;
+  }
+
+  function getVisibleCards() {
+    const step = getCarouselStep();
+    if (!step || !testimonialsTrack) return 1;
+    return Math.max(1, Math.round(testimonialsTrack.clientWidth / step));
+  }
+
+  function maxIndex() {
+    return Math.max(0, totalSlides - getVisibleCards());
+  }
+
+  function refreshCarouselDots() {
+    const max = maxIndex();
+    carouselDots.forEach((dot, i) => {
+      dot.style.display = i <= max ? '' : 'none';
+    });
+  }
+
+  function updateCarousel(index, instant) {
+    const max = maxIndex();
+    index = Math.min(Math.max(index, 0), max);
     activeTestimonialIndex = index;
     carouselDots.forEach((dot, i) => {
       dot.classList.toggle('active', i === index);
     });
 
-    if (window.innerWidth <= 768) {
-      if (testimonialsTrack) {
-        testimonialsTrack.style.transform = `translateX(-${index * 100}%)`;
-      }
+    if (testimonialsTrack) {
+      testimonialsTrack.scrollTo({
+        left: (document.documentElement.getAttribute('dir') === 'rtl' ? -1 : 1) * index * getCarouselStep(),
+        behavior: instant ? 'auto' : 'smooth'
+      });
     }
   }
+
+  if (testimonialsTrack) {
+    let scrollTimer = null;
+    testimonialsTrack.addEventListener('scroll', () => {
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        const step = getCarouselStep();
+        if (!step) return;
+        const idx = Math.min(Math.round(Math.abs(testimonialsTrack.scrollLeft) / step), maxIndex());
+        activeTestimonialIndex = idx;
+        carouselDots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === idx);
+        });
+      }, 80);
+    }, { passive: true });
+  }
+
+  window.addEventListener('resize', () => {
+    refreshCarouselDots();
+    updateCarousel(activeTestimonialIndex, true);
+  });
+
+  refreshCarouselDots();
 
   if (prevTestimonialBtn) {
     prevTestimonialBtn.addEventListener('click', () => {
       let nextIndex = activeTestimonialIndex - 1;
-      if (nextIndex < 0) nextIndex = totalSlides - 1;
+      if (nextIndex < 0) nextIndex = maxIndex();
       updateCarousel(nextIndex);
     });
   }
 
   if (nextTestimonialBtn) {
     nextTestimonialBtn.addEventListener('click', () => {
-      let nextIndex = (activeTestimonialIndex + 1) % totalSlides;
+      let nextIndex = activeTestimonialIndex + 1;
+      if (nextIndex > maxIndex()) nextIndex = 0;
       updateCarousel(nextIndex);
     });
   }

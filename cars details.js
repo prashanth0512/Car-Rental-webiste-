@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTheme = htmlRoot.getAttribute('data-theme') || 'dark';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     applyTheme(newTheme);
-    showToast(`Switched to ${newTheme === 'dark' ? 'Dark' : 'Light'} Mode`, 'info');
+
   }
 
   if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentDir = htmlRoot.getAttribute('dir') || 'ltr';
     const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
     applyDirection(newDir);
-    showToast(`Switched layout to ${newDir.toUpperCase()}`, 'info');
+
   }
 
   if (dirToggle) dirToggle.addEventListener('click', toggleDirection);
@@ -252,6 +252,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderVehicleDetail(car) {
     if (vehicleDetailView) vehicleDetailView.style.display = 'block';
+    const breadcrumbBar = document.getElementById('detailBreadcrumbBar') || document.querySelector('.detail-breadcrumb-bar');
+    if (breadcrumbBar) breadcrumbBar.style.display = '';
+    document.body.classList.remove('service-detail-view');
     if (principleDetailView) principleDetailView.style.display = 'none';
     if (detailFallbackView) detailFallbackView.style.display = 'none';
 
@@ -427,6 +430,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderPrincipleDetail(principle) {
     if (vehicleDetailView) vehicleDetailView.style.display = 'none';
     if (principleDetailView) principleDetailView.style.display = 'block';
+    const breadcrumbBar = document.getElementById('detailBreadcrumbBar') || document.querySelector('.detail-breadcrumb-bar');
+    if (breadcrumbBar) breadcrumbBar.style.display = 'none';
+    document.body.classList.add('service-detail-view');
     if (detailFallbackView) detailFallbackView.style.display = 'none';
 
     if (detailPageTitle) {
@@ -501,6 +507,42 @@ document.addEventListener('DOMContentLoaded', () => {
       attachBookNowListeners();
     }
 
+    const pPrivilegesSubLabel = document.getElementById('pPrivilegesSubLabel');
+    const pPrivilegesHeading = document.getElementById('pPrivilegesHeading');
+    const pPrivilegesSubtitle = document.getElementById('pPrivilegesSubtitle');
+    const pPrivilegesGrid = document.getElementById('pPrivilegesGrid');
+    const pPrivilegesBannerBadge = document.getElementById('pPrivilegesBannerBadge');
+    const pPrivilegesBannerText = document.getElementById('pPrivilegesBannerText');
+    const pPrivilegesBannerBtnText = document.getElementById('pPrivilegesBannerBtnText');
+
+    if (principle.privileges) {
+      if (pPrivilegesSubLabel) pPrivilegesSubLabel.textContent = principle.privileges.subLabel;
+      if (pPrivilegesHeading) pPrivilegesHeading.textContent = principle.privileges.heading;
+      if (pPrivilegesSubtitle) pPrivilegesSubtitle.textContent = principle.privileges.subtitle;
+      if (pPrivilegesBannerBadge) pPrivilegesBannerBadge.textContent = principle.privileges.bannerBadge;
+      if (pPrivilegesBannerText) pPrivilegesBannerText.textContent = principle.privileges.bannerText;
+      if (pPrivilegesBannerBtnText) pPrivilegesBannerBtnText.textContent = principle.privileges.bannerActionText;
+
+      if (pPrivilegesGrid && Array.isArray(principle.privileges.items)) {
+        pPrivilegesGrid.innerHTML = principle.privileges.items.map(item => `
+          <div class="pprivilege-card">
+            <div class="pprivilege-top-row">
+              <div class="pprivilege-icon-wrap">
+                <i class="${item.icon}"></i>
+              </div>
+              <span class="pprivilege-badge">${item.tag}</span>
+            </div>
+            <h3 class="pprivilege-title">${item.title}</h3>
+            <p class="pprivilege-desc">${item.desc}</p>
+            <div class="pprivilege-stat-badge">
+              <i class="fa-solid fa-sparkles"></i>
+              <span>${item.stat}</span>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
     const pDetailCtaTitle = document.getElementById('pDetailCtaTitle');
     if (pDetailCtaTitle) {
       pDetailCtaTitle.textContent = `Experience True ${principle.title} on Every Journey.`;
@@ -511,6 +553,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (vehicleDetailView) vehicleDetailView.style.display = 'none';
     if (principleDetailView) principleDetailView.style.display = 'none';
     if (detailFallbackView) detailFallbackView.style.display = 'block';
+    const breadcrumbBar = document.getElementById('detailBreadcrumbBar') || document.querySelector('.detail-breadcrumb-bar');
+    if (breadcrumbBar) breadcrumbBar.style.display = '';
+    document.body.classList.remove('service-detail-view');
 
     if (breadcrumbActiveText) {
       breadcrumbActiveText.textContent = 'Explore Fleet & Philosophies';

@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTheme = htmlRoot.getAttribute('data-theme') || 'dark';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     applyTheme(newTheme);
-    showToast(`Switched to ${newTheme === 'dark' ? 'Dark' : 'Light'} Mode`, 'info');
+
   }
 
   if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentDir = htmlRoot.getAttribute('dir') || 'ltr';
     const newDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
     applyDirection(newDir);
-    showToast(`Switched layout to ${newDir.toUpperCase()}`, 'info');
+
   }
 
   if (dirToggle) dirToggle.addEventListener('click', toggleDirection);
