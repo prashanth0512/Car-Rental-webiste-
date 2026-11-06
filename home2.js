@@ -133,8 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   if (mobileHomeDropdown && mobileHomeSubmenu) {
+    mobileHomeDropdown.classList.add('active', 'active-page');
+    mobileHomeSubmenu.classList.add('show', 'open', 'active');
+    const home2Link = mobileHomeSubmenu.querySelector('a[href*="home2.html"]');
+    if (home2Link) home2Link.classList.add('active');
     mobileHomeDropdown.addEventListener('click', () => {
-      const isOpen = mobileHomeSubmenu.classList.toggle('active');
+      const isOpen = mobileHomeSubmenu.classList.toggle('active'); mobileHomeSubmenu.classList.toggle('show', isOpen); mobileHomeSubmenu.classList.toggle('open', isOpen); mobileHomeDropdown.classList.toggle('active', isOpen);
       const arrow = mobileHomeDropdown.querySelector('i');
       if (arrow) {
         arrow.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';

@@ -1476,17 +1476,23 @@
 @media (max-width: 992px) {
   .h2-hero-section {
     height: auto;
-    min-height: calc(100vh - var(--header-height));
-    padding: 60px 0 50px;
+    min-height: auto;
+    padding: 36px 0 40px;
   }
 
   .h2-hero-container {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 28px;
   }
 
   .h2-hero-content {
     max-width: 100%;
+  }
+
+  .h2-hero-lead {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .h2-hero-ctas {
@@ -1495,6 +1501,8 @@
 
   .h2-hero-stats {
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .h2-hero-tag {
@@ -1503,11 +1511,11 @@
   }
 
   .h2-car-slider {
-    height: 280px;
+    height: 260px;
   }
 
   .h2-car-img {
-    max-height: 280px;
+    max-height: 260px;
   }
 
   .h2-journey-row {

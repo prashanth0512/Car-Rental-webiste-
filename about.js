@@ -116,13 +116,22 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobileMenu);
 
   if (mobileHomeDropdown && mobileHomeSubmenu) {
-    mobileHomeDropdown.addEventListener('click', () => {
-      mobileHomeDropdown.classList.toggle('active');
-      mobileHomeSubmenu.classList.toggle('open');
+    mobileHomeDropdown.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = mobileHomeSubmenu.classList.toggle('show');
+      mobileHomeSubmenu.classList.toggle('open', isOpen);
+      mobileHomeDropdown.classList.toggle('active', isOpen);
+      const icon = mobileHomeDropdown.querySelector('i');
+      if (icon) icon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
     });
   }
 
+  const currentPath = window.location.pathname.split('/').pop() || 'about.html';
   document.querySelectorAll('.mobile-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && (href === currentPath || (href === 'about.html' && currentPath.includes('about')))) {
+      link.classList.add('active');
+    }
     link.addEventListener('click', () => {
       if (link.getAttribute('href')?.startsWith('#')) {
         closeMobileMenu();

@@ -247,8 +247,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   if (mobileHomeDropdown && mobileHomeSubmenu) {
+    mobileHomeDropdown.classList.add('active', 'active-page');
+    mobileHomeSubmenu.classList.add('show', 'open');
+    const home1Link = mobileHomeSubmenu.querySelector('a[href*="index.html"]');
+    if (home1Link) home1Link.classList.add('active');
     mobileHomeDropdown.addEventListener('click', () => {
-      mobileHomeSubmenu.classList.toggle('show');
+      const isOpen = mobileHomeSubmenu.classList.toggle('show'); mobileHomeSubmenu.classList.toggle('open', isOpen); mobileHomeDropdown.classList.toggle('active', isOpen); const arrow = mobileHomeDropdown.querySelector('i'); if (arrow) arrow.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
     });
   }
 

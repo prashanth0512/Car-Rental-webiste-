@@ -116,11 +116,23 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileNav);
 
   if (mobileHomeDropdown && mobileHomeSubmenu) {
-    mobileHomeDropdown.addEventListener('click', () => {
-      const isExpanded = mobileHomeSubmenu.classList.toggle('open');
-      mobileHomeDropdown.classList.toggle('active', isExpanded);
+    mobileHomeDropdown.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = mobileHomeSubmenu.classList.toggle('show');
+      mobileHomeSubmenu.classList.toggle('open', isOpen);
+      mobileHomeDropdown.classList.toggle('active', isOpen);
+      const icon = mobileHomeDropdown.querySelector('i');
+      if (icon) icon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
     });
   }
+
+  const currentPath = window.location.pathname.split('/').pop() || 'cars.html';
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && (href === currentPath || (href === 'cars.html' && currentPath.includes('cars')))) {
+      link.classList.add('active');
+    }
+  });
 
   const toastContainer = document.getElementById('toastContainer');
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | VELOCE LUXURY FLEET</title>
+  <meta name="description" content="The page or vehicle you are searching for is not available. Return to VELOCE Luxury Fleet home or explore our cars.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="404.css">
+</head>
+<body class="error-404-page">
+  <div class="page-topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/logo.png" alt="VELOCE Logo" class="logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VELOCE</span>
+          <span class="brand-sub">LUXURY FLEET</span>
+        </div>
+      </a>
+      <div class="topbar-actions">
+        <button type="button" class="action-btn dir-toggle" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+          <span class="dir-text" id="dirText">RTL</span>
+        </button>
+        <button type="button" class="action-btn theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main class="error-stage-wrapper">
+    <div class="ambient-glow" aria-hidden="true"></div>
+    <div class="ambient-grid" aria-hidden="true"></div>
+
+    <div class="error-container">
+      <div class="error-visual-stage">
+        <div class="error-digits-track">
+          <span class="error-digit error-four-left">4</span>
+          <div class="error-center-portal">
+            <div class="portal-radar-ring"></div>
+            <div class="portal-radar-ring-outer"></div>
+            <div class="portal-road">
+              <div class="road-lane-strip"></div>
+            </div>
+            <div class="car-cruising-wrap">
+              <img src="assets/hero-red-audi.png" alt="VELOCE Luxury Sports Car" class="cruising-car-img">
+              <div class="car-headlight-beam beam-left"></div>
+              <div class="car-headlight-beam beam-right"></div>
+              <div class="car-underglow"></div>
+            </div>
+          </div>
+          <span class="error-digit error-four-right">4</span>
+        </div>
+      </div>
+
+      <div class="error-content">
+        <div class="error-badge">
+          <span class="badge-radar-dot"></span>
+          <span>OFF-ROAD • 404 ERROR</span>
+        </div>
+
+        <h1 class="error-title">
+          Looks Like You've Taken a <span class="title-highlight">Wrong Turn.</span>
+        </h1>
+
+        <p class="error-desc">
+          The destination or vehicle you are searching for is off the grid. Let's get you back in the driver's seat.
+        </p>
+
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-primary error-btn">
+            <i class="fa-solid fa-house"></i>
+            <span>Back to Home</span>
+          </a>
+          <a href="cars.html" class="btn btn-secondary error-btn">
+            <i class="fa-solid fa-car-side"></i>
+            <span>Explore Fleet</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="404.js"></script>
+</body>
+</html>

@@ -121,10 +121,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (mobileHomeDropdown && mobileHomeSubmenu) {
     mobileHomeDropdown.addEventListener('click', () => {
-      const isExpanded = mobileHomeSubmenu.classList.toggle('open');
+      const isExpanded = mobileHomeSubmenu.classList.toggle('show'); mobileHomeSubmenu.classList.toggle('open', isExpanded); const arrow = mobileHomeDropdown.querySelector('i'); if (arrow) arrow.style.transform = isExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
       mobileHomeDropdown.classList.toggle('active', isExpanded);
     });
   }
+
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && (href === 'contact.html' || href.includes('contact'))) {
+      link.classList.add('active');
+    }
+  });
 
   const toastContainer = document.getElementById('toastContainer');
 
@@ -400,7 +407,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (heroCarBtn1) heroCarBtn1.addEventListener('click', () => switchHeroCar('jeep'));
   if (heroCarBtn2) heroCarBtn2.addEventListener('click', () => switchHeroCar('thar'));
 
-  // Map Hub Switcher
   const hubTabs = document.querySelectorAll('.map-hub-tab');
   const contactMapIframe = document.getElementById('contactMapIframe');
   const mapDetailVal1 = document.getElementById('mapDetailVal1');

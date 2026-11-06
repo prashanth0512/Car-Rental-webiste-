@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | VELOCE LUXURY FLEET — 15 Days to Launch</title>
+  <meta name="description" content="Something extraordinary is arriving. VELOCE Luxury Fleet next-generation car rental experience launches in 15 days.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="coming soon.css">
+</head>
+<body class="coming-soon-page">
+  <div class="page-topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="brand-logo" aria-label="VELOCE Home">
+        <div class="logo-icon-wrap">
+          <img src="assets/logo.png" alt="VELOCE Logo" class="logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VELOCE</span>
+          <span class="brand-sub">LUXURY FLEET</span>
+        </div>
+      </a>
+      <div class="topbar-actions">
+        <button type="button" class="action-btn dir-toggle" id="dirToggle" title="Toggle RTL/LTR" aria-label="Toggle text direction">
+          <span class="dir-text" id="dirText">RTL</span>
+        </button>
+        <button type="button" class="action-btn theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon theme-icon-moon"></i>
+          <i class="fa-solid fa-sun theme-icon-sun"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main class="coming-stage-wrapper">
+    <div class="ambient-glow" aria-hidden="true"></div>
+    <div class="ambient-grid" aria-hidden="true"></div>
+
+    <div class="coming-container">
+      <div class="coming-car-stage">
+        <div class="spotlight-cone"></div>
+        <div class="car-halo-ring"></div>
+        <div class="showcase-car-wrap">
+          <img src="assets/hero-thar-red.png" alt="VELOCE Next Generation Fleet Showcase" class="showcase-car-img">
+          <div class="car-platform-glow"></div>
+        </div>
+      </div>
+
+      <div class="coming-content">
+        <div class="coming-badge">
+          <span class="badge-pulse-dot"></span>
+          <span>EXCLUSIVE PREVIEW • 15 DAYS TO LAUNCH</span>
+        </div>
+
+        <h1 class="coming-title">
+          Unleashing the Next Level of <span class="title-highlight">Automotive Luxury.</span>
+        </h1>
+
+        <p class="coming-desc">
+          Our ultra-exclusive fleet reservations, airport VIP tarmac deliveries, and digital handover portal unlock soon.
+        </p>
+
+        <div class="countdown-clock" id="countdownClock" role="timer" aria-label="Countdown to official launch">
+          <div class="countdown-card">
+            <div class="countdown-card-inner">
+              <span class="countdown-num" id="daysNum">15</span>
+              <span class="countdown-sub">DAYS</span>
+            </div>
+          </div>
+          <div class="countdown-sep">:</div>
+
+          <div class="countdown-card">
+            <div class="countdown-card-inner">
+              <span class="countdown-num" id="hoursNum">00</span>
+              <span class="countdown-sub">HOURS</span>
+            </div>
+          </div>
+          <div class="countdown-sep">:</div>
+
+          <div class="countdown-card">
+            <div class="countdown-card-inner">
+              <span class="countdown-num" id="minutesNum">00</span>
+              <span class="countdown-sub">MINUTES</span>
+            </div>
+          </div>
+          <div class="countdown-sep">:</div>
+
+          <div class="countdown-card">
+            <div class="countdown-card-inner">
+              <span class="countdown-num" id="secondsNum">00</span>
+              <span class="countdown-sub">SECONDS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="coming-actions">
+          <a href="index.html" class="btn btn-primary coming-btn">
+            <i class="fa-solid fa-house"></i>
+            <span>Back to Home</span>
+          </a>
+          <a href="cars.html" class="btn btn-secondary coming-btn">
+            <i class="fa-solid fa-car-side"></i>
+            <span>Explore Current Fleet</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="coming soon.js"></script>
+</body>
+</html>
